@@ -132,6 +132,19 @@ h3 {
   flex: 0 0 auto;
 }
 
+.has-submenu {
+  --submenu-gap: 0.45rem;
+}
+
+.has-submenu::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max(100%, 13.5rem);
+  height: var(--submenu-gap);
+}
+
 .nav-link,
 .nav-submenu a {
   display: block;
@@ -172,7 +185,7 @@ h3 {
 
 .nav-submenu {
   position: absolute;
-  top: calc(100% + 0.45rem);
+  top: calc(100% + var(--submenu-gap));
   left: 0;
   z-index: 30;
   min-width: 13.5rem;
@@ -188,6 +201,15 @@ h3 {
   background: rgba(17, 22, 16, 0.86);
   box-shadow: 0 16px 44px rgba(17, 22, 16, 0.28);
   backdrop-filter: blur(14px);
+}
+
+.nav-submenu::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  height: var(--submenu-gap);
 }
 
 .nav-item:hover .nav-submenu,
@@ -650,16 +672,37 @@ h1 {
 
 .site-footer {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.4rem 1.25rem;
+  align-items: center;
+  padding: 0.7rem 1rem;
   color: rgba(246, 241, 230, 0.76);
+  font-size: 0.74rem;
+  line-height: 1.2;
   background: var(--ink);
+}
+
+.footer-license {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.footer-source-license,
+.footer-wiki-license {
+  color: rgba(246, 241, 230, 0.88);
 }
 
 .site-footer a {
   color: var(--brass);
   font-weight: 800;
+}
+
+.footer-back-link {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 @media (max-width: 920px) {
@@ -672,13 +715,15 @@ h1 {
 
   .header-actions {
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
 
   .site-nav {
     max-width: 100%;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    overflow: visible;
   }
 
   .hero {
@@ -827,6 +872,20 @@ h1 {
   }
 
   .site-footer {
+    align-items: flex-start;
+    padding: 0.75rem 0.8rem;
+    font-size: 0.72rem;
+  }
+
+  .footer-license {
+    align-items: flex-start;
     flex-direction: column;
+    gap: 0.22rem;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .footer-license [aria-hidden="true"] {
+    display: none;
   }
 }

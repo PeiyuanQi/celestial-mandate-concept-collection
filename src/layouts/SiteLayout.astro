@@ -37,6 +37,8 @@ const navHref = (href: string) => withBasePath(href);
 const isExactRoute = (href: string) => href === currentRoute;
 const isSectionActive = (item: HomeContent["nav"][number]) =>
   isExactRoute(item.href) || Boolean(item.children?.some((child) => isExactRoute(child.href)));
+const showWikiNotice = currentPage === "wiki";
+const buildYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -62,6 +64,7 @@ const isSectionActive = (item: HomeContent["nav"][number]) =>
       ))
     }
     <link rel="alternate" hreflang="x-default" href={defaultUrl} />
+    {showWikiNotice && <link rel="license" href={pageContent.footer.wikiNotice.href} />}
     <title>{pageTitle}</title>
     <link rel="icon" href={withBasePath("/favicon.svg")} type="image/svg+xml" />
   </head>
@@ -123,8 +126,40 @@ const isSectionActive = (item: HomeContent["nav"][number]) =>
     <slot />
 
     <footer class="site-footer">
-      <span>{pageContent.footer.label}</span>
-      <a href="#top">{pageContent.footer.backToTop}</a>
+      <div class="footer-license">
+        <span>© <time datetime={String(buildYear)} data-current-year>{buildYear}</time> {pageContent.footer.label}</span>
+        <span aria-hidden="true">·</span>
+        <span>{pageContent.footer.rights}</span>
+        <span aria-hidden="true">·</span>
+        <span class="footer-source-license">
+          {pageContent.footer.sourceNotice.text}{" "}
+          <a href={pageContent.footer.sourceNotice.href}>
+            {pageContent.footer.sourceNotice.linkLabel}
+          </a>
+        </span>
+        {
+          showWikiNotice && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span class="footer-wiki-license">
+                {pageContent.footer.wikiNotice.text}{" "}
+                <a href={pageContent.footer.wikiNotice.href} rel="license">
+                  {pageContent.footer.wikiNotice.linkLabel}
+                </a>
+              </span>
+            </>
+          )
+        }
+        <span aria-hidden="true">·</span>
+        <a class="footer-back-link" href="#top">{pageContent.footer.backToTop}</a>
+      </div>
     </footer>
+    <script is:inline>
+      for (const yearNode of document.querySelectorAll("[data-current-year]")) {
+        const currentYear = String(new Date().getFullYear());
+        yearNode.textContent = currentYear;
+        yearNode.setAttribute("datetime", currentYear);
+      }
+    </script>
   </body>
 </html>

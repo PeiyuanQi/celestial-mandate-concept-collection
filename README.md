@@ -19,6 +19,17 @@ This repo includes an Astro static website for introducing Celestial Mandate as 
 
 The GitHub Pages workflow in `.github/workflows/deploy.yml` builds the site and publishes `dist/` when changes are pushed to `main`. In GitHub repository settings, set Pages > Source to GitHub Actions before publishing. GitHub Pages does not assign a repo-name subdomain to project sites; a URL like `https://celestial-mandate-concept-collection.github.io/` would require a GitHub user or organization with that exact Pages host, or an explicit custom-domain setup.
 
+## License
+
+This repository mixes source code and creative/reference content, so licensing is split by category.
+
+- Source code, build scripts, configuration files, and developer tooling are licensed under the Apache License 2.0. See `LICENSE`.
+- Product copy, concept text, design notes, reference summaries, visual assets, project names, and non-wiki website content are Copyright (c) 2026 Celestial Mandate contributors. All rights reserved unless a file states otherwise.
+- Public wiki content is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0), unless a wiki page states otherwise.
+- Third-party packages, references, images, scans, archives, and source material keep their own licenses and are not relicensed by this repository.
+
+See `COPYRIGHT.md` for the full license-scope note.
+
 ## Development Flow
 
 - Read `AGENTS.md` before using an agent on this repo.

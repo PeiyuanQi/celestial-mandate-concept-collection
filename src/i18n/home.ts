@@ -87,6 +87,17 @@ export type HomeContent = {
   footer: {
     label: string;
     backToTop: string;
+    rights: string;
+    sourceNotice: {
+      text: string;
+      linkLabel: string;
+      href: string;
+    };
+    wikiNotice: {
+      text: string;
+      linkLabel: string;
+      href: string;
+    };
   };
 };
 
@@ -241,7 +252,18 @@ export const homeContent: Record<Locale, HomeContent> = {
     },
     footer: {
       label: "社稷",
-      backToTop: "返回顶部",
+      backToTop: "顶部",
+      rights: "保留所有权利",
+      sourceNotice: {
+        text: "源码",
+        linkLabel: "Apache-2.0",
+        href: "https://www.apache.org/licenses/LICENSE-2.0",
+      },
+      wikiNotice: {
+        text: "维基",
+        linkLabel: "CC BY-SA 4.0",
+        href: "https://creativecommons.org/licenses/by-sa/4.0/",
+      },
     },
   },
   en: {
@@ -388,8 +410,19 @@ export const homeContent: Record<Locale, HomeContent> = {
       ],
     },
     footer: {
-      label: "Celestial Mandate (社稷)",
-      backToTop: "Back to top",
+      label: "Celestial Mandate",
+      backToTop: "Top",
+      rights: "All rights reserved",
+      sourceNotice: {
+        text: "Code",
+        linkLabel: "Apache-2.0",
+        href: "https://www.apache.org/licenses/LICENSE-2.0",
+      },
+      wikiNotice: {
+        text: "Wiki",
+        linkLabel: "CC BY-SA 4.0",
+        href: "https://creativecommons.org/licenses/by-sa/4.0/",
+      },
     },
   },
 };

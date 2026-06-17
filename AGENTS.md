@@ -24,6 +24,7 @@
 - Do not invent setup, run, build, or test commands. When tooling changes, document exact commands here and in `README.md`.
 - For concept material, prefer clear filenames, concise headings, and traceable source notes where claims or references matter.
 - Do not copy raw reference archives, scans, ebooks, third-party images, or license-restricted source material into the public website. Prefer original product copy, original generated assets, and concise source-note summaries.
+- Preserve license boundaries: source code, build scripts, configuration files, and developer tooling are Apache-2.0-licensed; product copy, concept text, reference summaries, visual assets, project names, and non-wiki content are all rights reserved unless a file states otherwise; public wiki content is CC BY-SA 4.0 unless a wiki page states otherwise.
 - The website is Chinese-first: `/` is the canonical Chinese site, and `/en/` is the first supported translation. Keep Chinese copy as the ground truth in `src/i18n/home.ts`, then update English from that source.
 - Keep locale routes, metadata, and language switcher labels aligned when adding future languages.
 

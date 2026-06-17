@@ -4,8 +4,8 @@
 - `CLAUDE.md` is the Claude Code bridge for this agent instruction file.
 
 ## Project Context
-- This repository is currently a documentation-first concept collection for Celestial Mandate.
-- `README.md` is the human-facing development flow until a more specific guide exists.
+- This repository is a documentation-first concept collection and static product website for Celestial Mandate.
+- `README.md` is the human-facing development flow.
 - Keep concept docs, reference notes, terminology, and workflow guidance aligned when scope or structure changes.
 
 ## Source Of Truth
@@ -20,11 +20,17 @@
 - Prefer rebase-based conflict resolution unless the repo later documents a merge workflow.
 
 ## Content And Coding Rules
-- Follow the repo's existing style once content conventions emerge; no lint, formatter, package, or build configuration exists yet.
-- Do not invent setup, run, build, or test commands. When tooling is added, document exact commands here and in `README.md`.
+- Follow the repo's existing style for Astro, TypeScript-flavored `.astro` files, and CSS once content conventions emerge.
+- Do not invent setup, run, build, or test commands. When tooling changes, document exact commands here and in `README.md`.
 - For concept material, prefer clear filenames, concise headings, and traceable source notes where claims or references matter.
+- Do not copy raw reference archives, scans, ebooks, third-party images, or license-restricted source material into the public website. Prefer original product copy, original generated assets, and concise source-note summaries.
+- The website is Chinese-first: `/` is the canonical Chinese site, and `/en/` is the first supported translation. Keep Chinese copy as the ground truth in `src/i18n/home.ts`, then update English from that source.
+- Keep locale routes, metadata, and language switcher labels aligned when adding future languages.
 
 ## Verification
-- No project-specific setup, run, test, lint, or build command is defined yet.
+- Setup: use Node.js `22.12.0` or newer, then run `npm install`
+- Run locally: `npm run dev`
+- Build: `npm run build`
 - For documentation-only changes, run `git diff --check`.
+- Astro telemetry is disabled through the project npm scripts and GitHub Pages workflow.
 - After adding tooling, record the exact setup and verification commands in this section.

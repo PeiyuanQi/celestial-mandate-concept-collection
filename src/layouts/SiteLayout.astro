@@ -1,0 +1,130 @@
+---
+import "../styles/global.css";
+import {
+  defaultLocale,
+  homeContent,
+  localeLabels,
+  pageRoutes,
+  supportedLocales,
+  type HomeContent,
+  type Locale,
+  type SitePage,
+} from "../i18n/home";
+
+interface Props {
+  pageContent: HomeContent;
+  locale: Locale;
+  currentPage: SitePage;
+  title?: string;
+  description?: string;
+}
+
+const { pageContent, locale, currentPage, title, description } = Astro.props;
+const basePath = import.meta.env.BASE_URL;
+const withBasePath = (path: string) =>
+  `${basePath.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
+const absoluteUrl = (path: string) =>
+  new URL(withBasePath(path), Astro.site).toString();
+const heroImagePath = withBasePath("/images/hero-command-table.png");
+const socialImage = new URL(heroImagePath, Astro.site).toString();
+const pageTitle =
+  title ?? `${pageContent.meta.title} | ${pageContent.meta.titleSuffix}`;
+const pageDescription = description ?? pageContent.meta.description;
+const currentRoute = pageRoutes[locale][currentPage];
+const currentUrl = absoluteUrl(currentRoute);
+const defaultUrl = absoluteUrl(pageRoutes[defaultLocale][currentPage]);
+const navHref = (href: string) => withBasePath(href);
+const isExactRoute = (href: string) => href === currentRoute;
+const isSectionActive = (item: HomeContent["nav"][number]) =>
+  isExactRoute(item.href) || Boolean(item.children?.some((child) => isExactRoute(child.href)));
+---
+
+<!doctype html>
+<html lang={pageContent.htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={pageDescription} />
+    <meta name="theme-color" content="#111610" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:locale" content={locale === "zh-Hans" ? "zh_CN" : "en_US"} />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href={currentUrl} />
+    {
+      supportedLocales.map((targetLocale) => (
+        <link
+          rel="alternate"
+          hreflang={targetLocale}
+          href={absoluteUrl(pageRoutes[targetLocale][currentPage])}
+        />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={defaultUrl} />
+    <title>{pageTitle}</title>
+    <link rel="icon" href={withBasePath("/favicon.svg")} type="image/svg+xml" />
+  </head>
+  <body data-locale={locale}>
+    <header class="site-header" aria-label={pageContent.primaryAriaLabel}>
+      <a class="brand" href={withBasePath(pageRoutes[locale].home)} aria-label={pageContent.brand.homeLabel}>
+        <span class="brand-mark" aria-hidden="true">{pageContent.brand.mark}</span>
+        <span>{pageContent.brand.name}</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label={pageContent.navAriaLabel}>
+          {
+            pageContent.nav.map((item) => (
+              <div class={`nav-item${item.children ? " has-submenu" : ""}`}>
+                <a
+                  class={`nav-link${isSectionActive(item) ? " active" : ""}`}
+                  href={navHref(item.href)}
+                  aria-current={isExactRoute(item.href) ? "page" : undefined}
+                  aria-haspopup={item.children ? "true" : undefined}
+                >
+                  {item.label}
+                </a>
+                {item.children && (
+                  <div class="nav-submenu" role="menu">
+                    {item.children.map((child) => (
+                      <a
+                        class={isExactRoute(child.href) ? "active" : ""}
+                        href={navHref(child.href)}
+                        role="menuitem"
+                        aria-current={isExactRoute(child.href) ? "page" : undefined}
+                      >
+                        {child.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))
+          }
+        </nav>
+        <nav class="language-switcher" aria-label={pageContent.languageSwitcherLabel}>
+          {
+            supportedLocales.map((targetLocale) => (
+              <a
+                class={`language-link${targetLocale === locale ? " active" : ""}`}
+                href={withBasePath(pageRoutes[targetLocale][currentPage])}
+                hreflang={targetLocale}
+                lang={homeContent[targetLocale].htmlLang}
+                aria-current={targetLocale === locale ? "page" : undefined}
+              >
+                {localeLabels[targetLocale]}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <span>{pageContent.footer.label}</span>
+      <a href="#top">{pageContent.footer.backToTop}</a>
+    </footer>
+  </body>
+</html>

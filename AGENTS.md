@@ -6,6 +6,7 @@
 ## Project Context
 - This repository is a documentation-first concept collection and static product website for Celestial Mandate.
 - `README.md` is the human-facing development flow.
+- The preferred personal-domain deploy target is `https://configured external website target`, built with `npm run build-website` and published through the `external website repo` site.
 - Keep concept docs, reference notes, terminology, and workflow guidance aligned when scope or structure changes.
 
 ## Source Of Truth
@@ -32,6 +33,7 @@
 - Setup: use Node.js `22.12.0` or newer, then run `npm install`
 - Run locally: `npm run dev`
 - Build: `npm run build`
+- Build for `configured external website target`: `npm run build-website`
 - For documentation-only changes, run `git diff --check`.
 - Astro telemetry is disabled through the project npm scripts and GitHub Pages workflow.
 - After adding tooling, record the exact setup and verification commands in this section.

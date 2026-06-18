@@ -1,24 +1,74 @@
 ---
 import SiteLayout from "./SiteLayout.astro";
 import {
-  pageRoutes,
-  type HomeContent,
   type Locale,
+  type SiteContent,
   type SitePage,
-} from "../i18n/home";
+} from "../i18n/content";
+
+type PageIntro = {
+  kicker: string;
+  title: string;
+  body: string;
+};
 
 interface Props {
-  pageContent: HomeContent;
+  pageContent: SiteContent;
   locale: Locale;
   currentPage: Exclude<SitePage, "home">;
+  pageIntro?: PageIntro;
+  currentPath?: string;
+  localizedPaths?: Partial<Record<Locale, string>>;
 }
 
-const { pageContent, locale, currentPage } = Astro.props;
+const {
+  pageContent,
+  locale,
+  currentPage,
+  pageIntro: pageIntroOverride,
+  currentPath,
+  localizedPaths,
+} = Astro.props;
 const basePath = import.meta.env.BASE_URL;
 const withBasePath = (path: string) =>
   `${basePath.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
-const heroImagePath = withBasePath("/images/hero-command-table.png");
-const pageIntro = {
+type PageHeroImage = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+};
+
+const pageHeroImages: Record<Exclude<SitePage, "home">, PageHeroImage> = {
+  gameplay: {
+    src: "/images/hero-gameplay-relay-station.png",
+    width: 1659,
+    height: 948,
+    alt: pageContent.gameplay.heroImageAlt,
+  },
+  dataPacks: {
+    src: "/images/hero-data-packs-archive.png",
+    width: 1672,
+    height: 941,
+    alt: pageContent.dataPack.heroImageAlt,
+  },
+  chapterOne: {
+    src: "/images/hero-po-zhen-zi-southern-ming.png",
+    width: 1672,
+    height: 941,
+    alt: pageContent.dataPack.chapter.heroImageAlt,
+  },
+  wiki: {
+    src: "/images/hero-wiki-archive-index.png",
+    width: 1672,
+    height: 941,
+    alt: pageContent.wiki.heroImageAlt,
+  },
+};
+
+const pageHeroImage = pageHeroImages[currentPage];
+const heroImagePath = withBasePath(pageHeroImage.src);
+const defaultPageIntro = {
   gameplay: {
     kicker: pageContent.gameplay.kicker,
     title: pageContent.gameplay.title,
@@ -40,6 +90,7 @@ const pageIntro = {
     body: pageContent.wiki.body,
   },
 }[currentPage];
+const pageIntro = pageIntroOverride ?? defaultPageIntro;
 const pageTitle = `${pageIntro.title} | ${pageContent.meta.title}`;
 ---
 
@@ -49,15 +100,17 @@ const pageTitle = `${pageIntro.title} | ${pageContent.meta.title}`;
   currentPage={currentPage}
   title={pageTitle}
   description={pageIntro.body}
+  currentPath={currentPath}
+  localizedPaths={localizedPaths}
 >
   <main id="top" class="subpage-main">
     <section class="subpage-hero" aria-labelledby="subpage-title">
       <img
         class="hero-image"
         src={heroImagePath}
-        width="1792"
-        height="1024"
-        alt={pageContent.hero.imageAlt}
+        width={pageHeroImage.width}
+        height={pageHeroImage.height}
+        alt={pageHeroImage.alt}
       />
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="subpage-hero-content">
@@ -67,97 +120,6 @@ const pageTitle = `${pageIntro.title} | ${pageContent.meta.title}`;
       </div>
     </section>
 
-    {
-      currentPage === "gameplay" && (
-        <section class="pillars" aria-labelledby="gameplay-detail-title">
-          <div class="section-inner">
-            <div class="section-heading">
-              <p class="kicker">{pageContent.gameplay.kicker}</p>
-              <h2 id="gameplay-detail-title">{pageContent.gameplay.title}</h2>
-            </div>
-            <div class="pillar-grid">
-              {pageContent.gameplay.pillars.map((pillar, index) => (
-                <article class="pillar-card">
-                  <span class="pillar-index">{String(index + 1).padStart(2, "0")}</span>
-                  <h3>{pillar.label}</h3>
-                  <p>{pillar.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      )
-    }
-
-    {
-      currentPage === "dataPacks" && (
-        <section class="scope section-band" aria-labelledby="data-pack-detail-title">
-          <div class="section-inner scope-grid">
-            <div class="scope-panel">
-              <p class="kicker">{pageContent.dataPack.kicker}</p>
-              <h2 id="data-pack-detail-title">{pageContent.dataPack.title}</h2>
-              <p>{pageContent.dataPack.body}</p>
-            </div>
-            <a
-              class="chapter-card chapter-link"
-              href={withBasePath(pageRoutes[locale].chapterOne)}
-            >
-              <span>{pageContent.dataPack.chapter.kicker}</span>
-              <h3>{pageContent.dataPack.chapter.title}</h3>
-              <p>{pageContent.dataPack.chapter.body}</p>
-              <ul aria-label={pageContent.dataPack.chapter.title}>
-                {pageContent.dataPack.chapter.points.map((point) => <li>{point}</li>)}
-              </ul>
-            </a>
-          </div>
-        </section>
-      )
-    }
-
-    {
-      currentPage === "chapterOne" && (
-        <section class="scope section-band" aria-labelledby="chapter-detail-title">
-          <div class="section-inner chapter-detail">
-            <div class="scope-panel">
-              <p class="kicker">{pageContent.dataPack.kicker}</p>
-              <h2 id="chapter-detail-title">{pageContent.dataPack.chapter.title}</h2>
-              <p>{pageContent.dataPack.chapter.body}</p>
-            </div>
-            <ul class="chapter-point-grid" aria-label={pageContent.dataPack.chapter.title}>
-              {pageContent.dataPack.chapter.points.map((point, index) => (
-                <li>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <strong>{point}</strong>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )
-    }
-
-    {
-      currentPage === "wiki" && (
-        <section class="collection" aria-labelledby="wiki-detail-title">
-          <div class="section-inner collection-grid">
-            <div>
-              <p class="kicker">{pageContent.wiki.kicker}</p>
-              <h2 id="wiki-detail-title">{pageContent.wiki.title}</h2>
-              <p>{pageContent.wiki.body}</p>
-            </div>
-            <div class="wiki-grid" aria-label={pageContent.wiki.categoriesAriaLabel}>
-              {pageContent.wiki.categories.map((category, index) => (
-                <section class="wiki-card" aria-labelledby={`wiki-detail-category-${index}`}>
-                  <h3 id={`wiki-detail-category-${index}`}>{category.label}</h3>
-                  <ul>
-                    {category.items.map((item) => <li>{item}</li>)}
-                  </ul>
-                </section>
-              ))}
-            </div>
-          </div>
-        </section>
-      )
-    }
+    <slot />
   </main>
 </SiteLayout>

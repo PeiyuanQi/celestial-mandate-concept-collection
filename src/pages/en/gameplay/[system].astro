@@ -1,0 +1,15 @@
+---
+import GameplaySystemPage from "../../../layouts/subpages/GameplaySystemPage.astro";
+import { siteContent } from "../../../i18n/content";
+
+export function getStaticPaths() {
+  return siteContent.en.gameplay.systems.map((system) => ({
+    params: { system: system.slug },
+    props: { system },
+  }));
+}
+
+const { system } = Astro.props;
+---
+
+<GameplaySystemPage locale="en" pageContent={siteContent.en} system={system} />

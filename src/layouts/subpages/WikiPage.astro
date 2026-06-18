@@ -1,0 +1,35 @@
+---
+import { type Locale, type SiteContent } from "../../i18n/content";
+import SubPage from "../SubPage.astro";
+
+interface Props {
+  pageContent: SiteContent;
+  locale: Locale;
+}
+
+const { pageContent, locale } = Astro.props;
+---
+
+<SubPage locale={locale} currentPage="wiki" pageContent={pageContent}>
+  <section class="collection" aria-labelledby="wiki-detail-title">
+    <div class="section-inner collection-grid">
+      <div>
+        <p class="kicker">{pageContent.wiki.kicker}</p>
+        <h2 id="wiki-detail-title">{pageContent.wiki.title}</h2>
+        <p>{pageContent.wiki.body}</p>
+      </div>
+      <div class="wiki-grid" aria-label={pageContent.wiki.categoriesAriaLabel}>
+        {
+          pageContent.wiki.categories.map((category, index) => (
+            <section class="wiki-card" aria-labelledby={`wiki-detail-category-${index}`}>
+              <h3 id={`wiki-detail-category-${index}`}>{category.label}</h3>
+              <ul>
+                {category.items.map((item) => <li>{item}</li>)}
+              </ul>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</SubPage>

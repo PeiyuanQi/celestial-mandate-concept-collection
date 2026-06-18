@@ -1,0 +1,33 @@
+---
+import { type Locale, type SiteContent } from "../../i18n/content";
+import SubPage from "../SubPage.astro";
+
+interface Props {
+  pageContent: SiteContent;
+  locale: Locale;
+}
+
+const { pageContent, locale } = Astro.props;
+---
+
+<SubPage locale={locale} currentPage="chapterOne" pageContent={pageContent}>
+  <section class="scope section-band" aria-labelledby="chapter-detail-title">
+    <div class="section-inner chapter-detail">
+      <div class="scope-panel">
+        <p class="kicker">{pageContent.dataPack.kicker}</p>
+        <h2 id="chapter-detail-title">{pageContent.dataPack.chapter.title}</h2>
+        <p>{pageContent.dataPack.chapter.body}</p>
+      </div>
+      <ul class="chapter-point-grid" aria-label={pageContent.dataPack.chapter.title}>
+        {
+          pageContent.dataPack.chapter.points.map((point, index) => (
+            <li>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{point}</strong>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</SubPage>

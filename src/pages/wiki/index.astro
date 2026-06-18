@@ -1,10 +1,9 @@
 ---
-import SubPage from "../../layouts/SubPage.astro";
-import { homeContent } from "../../i18n/home";
+import WikiPage from "../../layouts/subpages/WikiPage.astro";
+import { siteContent } from "../../i18n/content";
 ---
 
-<SubPage
+<WikiPage
   locale="zh-Hans"
-  currentPage="wiki"
-  pageContent={homeContent["zh-Hans"]}
+  pageContent={siteContent["zh-Hans"]}
 />

@@ -1,6 +1,6 @@
 ---
-import SubPage from "../../../layouts/SubPage.astro";
-import { homeContent } from "../../../i18n/home";
+import WikiPage from "../../../layouts/subpages/WikiPage.astro";
+import { siteContent } from "../../../i18n/content";
 ---
 
-<SubPage locale="en" currentPage="wiki" pageContent={homeContent.en} />
+<WikiPage locale="en" pageContent={siteContent.en} />

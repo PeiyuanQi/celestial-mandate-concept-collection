@@ -1,10 +1,9 @@
 ---
-import SubPage from "../../layouts/SubPage.astro";
-import { homeContent } from "../../i18n/home";
+import GameplayPage from "../../layouts/subpages/GameplayPage.astro";
+import { siteContent } from "../../i18n/content";
 ---
 
-<SubPage
+<GameplayPage
   locale="zh-Hans"
-  currentPage="gameplay"
-  pageContent={homeContent["zh-Hans"]}
+  pageContent={siteContent["zh-Hans"]}
 />

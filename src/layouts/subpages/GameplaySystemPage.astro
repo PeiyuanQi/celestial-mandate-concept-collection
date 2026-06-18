@@ -1,0 +1,114 @@
+---
+import {
+  pageRoutes,
+  type GameplaySystem,
+  type Locale,
+  type SiteContent,
+} from "../../i18n/content";
+import SubPage from "../SubPage.astro";
+
+interface Props {
+  pageContent: SiteContent;
+  locale: Locale;
+  system: GameplaySystem;
+}
+
+const { pageContent, locale, system } = Astro.props;
+const basePath = import.meta.env.BASE_URL;
+const withBasePath = (path: string) =>
+  `${basePath.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
+const systemPath = (targetLocale: Locale, slug: string) =>
+  `${pageRoutes[targetLocale].gameplay}${slug}/`;
+const currentPath = systemPath(locale, system.slug);
+const localizedPaths = {
+  "zh-Hans": systemPath("zh-Hans", system.slug),
+  en: systemPath("en", system.slug),
+};
+const relatedSystems = system.relatedSlugs
+  .map((slug) =>
+    pageContent.gameplay.systems.find((candidate) => candidate.slug === slug),
+  )
+  .filter((candidate): candidate is GameplaySystem => Boolean(candidate));
+---
+
+<SubPage
+  locale={locale}
+  currentPage="gameplay"
+  pageContent={pageContent}
+  pageIntro={{
+    kicker: pageContent.gameplay.systemDetail.kicker,
+    title: system.title,
+    body: system.deck,
+  }}
+  currentPath={currentPath}
+  localizedPaths={localizedPaths}
+>
+  <section class="system-detail" aria-labelledby="system-detail-title">
+    <div class="section-inner system-detail-grid">
+      <aside class="system-rail" aria-label={system.category}>
+        <a class="system-back-link" href={withBasePath(pageRoutes[locale].gameplay)}>
+          {pageContent.gameplay.systemDetail.backLabel}
+        </a>
+        <p class="system-rail-label">{pageContent.gameplay.systemDetail.sourceLabel}</p>
+        <p class="system-category">{system.category}</p>
+        <ul class="system-rail-points" aria-label={system.shortTitle}>
+          {system.indexPoints.map((point) => <li>{point}</li>)}
+        </ul>
+      </aside>
+
+      <article class="system-article">
+        <p class="kicker">{system.category}</p>
+        <h2 id="system-detail-title">
+          {pageContent.gameplay.systemDetail.overviewTitle}
+        </h2>
+        <p class="system-summary">{system.summary}</p>
+
+        <div class="system-section-block">
+          <h3>{pageContent.gameplay.systemDetail.questionsTitle}</h3>
+          <ol class="system-question-list">
+            {system.questions.map((question) => <li>{question}</li>)}
+          </ol>
+        </div>
+
+        <div class="system-section-block">
+          <h3>{pageContent.gameplay.systemDetail.feedbackTitle}</h3>
+          <div class="system-feedback-grid">
+            {
+              system.feedback.map((item) => (
+                <div class="system-feedback-item">
+                  <span>{item.label}</span>
+                  <p>{item.text}</p>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="system-section-block">
+          <h3>{pageContent.gameplay.systemDetail.guardrailsTitle}</h3>
+          <ul class="system-guardrail-list">
+            {system.guardrails.map((guardrail) => <li>{guardrail}</li>)}
+          </ul>
+        </div>
+
+        {
+          relatedSystems.length > 0 && (
+            <nav class="related-systems" aria-labelledby="related-systems-title">
+              <h3 id="related-systems-title">
+                {pageContent.gameplay.systemDetail.relatedTitle}
+              </h3>
+              <div class="related-system-grid">
+                {relatedSystems.map((related) => (
+                  <a href={withBasePath(systemPath(locale, related.slug))}>
+                    <span>{related.category}</span>
+                    <strong>{related.shortTitle}</strong>
+                  </a>
+                ))}
+              </div>
+            </nav>
+          )
+        }
+      </article>
+    </div>
+  </section>
+</SubPage>

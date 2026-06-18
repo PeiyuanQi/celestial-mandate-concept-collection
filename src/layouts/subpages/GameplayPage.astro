@@ -1,0 +1,250 @@
+---
+import {
+  pageRoutes,
+  type Locale,
+  type SiteContent,
+} from "../../i18n/content";
+import SubPage from "../SubPage.astro";
+
+interface Props {
+  pageContent: SiteContent;
+  locale: Locale;
+}
+
+const { pageContent, locale } = Astro.props;
+const basePath = import.meta.env.BASE_URL;
+const withBasePath = (path: string) =>
+  `${basePath.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
+const systemHref = (slug: string) =>
+  withBasePath(`${pageRoutes[locale].gameplay}${slug}/`);
+const systemsBySlug = Object.fromEntries(
+  pageContent.gameplay.systems.map((system) => [system.slug, system]),
+);
+const systemGroups = pageContent.gameplay.systemGroups.map((group, index) => ({
+  ...group,
+  index,
+  tabId: `gameplay-tab-${group.id}`,
+  panelId: `gameplay-panel-${group.id}`,
+  systems: group.systemSlugs
+    .map((slug) => systemsBySlug[slug])
+    .filter(Boolean),
+}));
+const browserCopy =
+  locale === "zh-Hans"
+    ? {
+        stepsLabel: "你会经历",
+        systemsLabel: "深入了解",
+        systemLinkLabel: "进入系统",
+      }
+    : {
+        stepsLabel: "What You Navigate",
+        systemsLabel: "Explore Further",
+        systemLinkLabel: "Open System",
+      };
+---
+
+<SubPage locale={locale} currentPage="gameplay" pageContent={pageContent}>
+  <section class="pillars" aria-labelledby="gameplay-detail-title">
+    <div class="section-inner">
+      <div class="section-heading">
+        <p class="kicker">{pageContent.gameplay.kicker}</p>
+        <h2 id="gameplay-detail-title">{pageContent.gameplay.title}</h2>
+      </div>
+      <div class="pillar-grid">
+        {
+          pageContent.gameplay.pillars.map((pillar, index) => (
+            <article class="pillar-card">
+              <span class="pillar-index">{String(index + 1).padStart(2, "0")}</span>
+              <h3>{pillar.label}</h3>
+              <p>{pillar.text}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="system-index" aria-labelledby="gameplay-system-index-title">
+    <div class="section-inner">
+      <div class="system-index-heading">
+        <p class="kicker">{pageContent.gameplay.systemIndex.kicker}</p>
+        <h2 id="gameplay-system-index-title">
+          {pageContent.gameplay.systemIndex.title}
+        </h2>
+        <p>{pageContent.gameplay.systemIndex.body}</p>
+      </div>
+      <div
+        class="gameplay-browser"
+        data-gameplay-browser
+      >
+        <nav
+          class="gameplay-browser-nav"
+          role="tablist"
+          aria-label={pageContent.gameplay.systemIndex.ariaLabel}
+        >
+          {
+            systemGroups.map((group) => (
+              <a
+                id={group.tabId}
+                class:list={[
+                  "gameplay-browser-tab",
+                  group.index === 0 && "is-active",
+                ]}
+                href={`#${group.panelId}`}
+                role="tab"
+                aria-selected={group.index === 0 ? "true" : "false"}
+                aria-controls={group.panelId}
+                tabindex={group.index === 0 ? "0" : "-1"}
+                data-browser-tab
+                data-target={group.panelId}
+              >
+                <span class="gameplay-browser-tab-number">
+                  {String(group.index + 1).padStart(2, "0")}
+                </span>
+                <span class="gameplay-browser-tab-label">{group.label}</span>
+                <strong>{group.title}</strong>
+                <span>{group.question}</span>
+              </a>
+            ))
+          }
+        </nav>
+
+        <div class="gameplay-browser-stage">
+          {
+            systemGroups.map((group) => (
+              <article
+                id={group.panelId}
+                class:list={[
+                  "gameplay-browser-panel",
+                  group.index === 0 && "is-active",
+                ]}
+                role="tabpanel"
+                aria-labelledby={group.tabId}
+                tabindex="0"
+                data-browser-panel
+              >
+                <p class="kicker">{group.label}</p>
+                <h3>{group.title}</h3>
+                <p class="gameplay-panel-body">{group.body}</p>
+                <div class="gameplay-panel-content">
+                  <section class="gameplay-panel-flow">
+                    <h4>{browserCopy.stepsLabel}</h4>
+                    <ol>
+                      {group.steps.map((step) => (
+                        <li>{step}</li>
+                      ))}
+                    </ol>
+                  </section>
+                  <section class="gameplay-panel-systems">
+                    <h4>{browserCopy.systemsLabel}</h4>
+                    <ul>
+                      {group.systems.map((system) => (
+                        <li>
+                          <a href={systemHref(system.slug)}>
+                            <span>{system.category}</span>
+                            <strong>{system.shortTitle}</strong>
+                            <p>{system.deck}</p>
+                            <em>{browserCopy.systemLinkLabel}</em>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</SubPage>
+
+<script>
+  const browsers = document.querySelectorAll("[data-gameplay-browser]");
+
+  browsers.forEach((browser) => {
+    const tabs = Array.from(browser.querySelectorAll("[data-browser-tab]"));
+    const panels = Array.from(browser.querySelectorAll("[data-browser-panel]"));
+
+    if (tabs.length === 0 || panels.length === 0) {
+      return;
+    }
+
+    browser.setAttribute("data-enhanced", "true");
+
+    const activatePanel = (panelId, shouldFocus = false, shouldUpdateHash = false) => {
+      tabs.forEach((tab) => {
+        const isActive = tab.getAttribute("data-target") === panelId;
+        tab.classList.toggle("is-active", isActive);
+        tab.setAttribute("aria-selected", String(isActive));
+        tab.setAttribute("tabindex", isActive ? "0" : "-1");
+
+        if (isActive && shouldFocus) {
+          tab.focus();
+        }
+      });
+
+      panels.forEach((panel) => {
+        const isActive = panel.id === panelId;
+        panel.classList.toggle("is-active", isActive);
+        panel.hidden = !isActive;
+      });
+
+      if (shouldUpdateHash) {
+        history.replaceState(null, "", `#${panelId}`);
+      }
+    };
+
+    const initialPanelId =
+      window.location.hash && browser.querySelector(window.location.hash)
+        ? window.location.hash.slice(1)
+        : tabs[0].getAttribute("data-target");
+
+    activatePanel(initialPanelId);
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", (event) => {
+        event.preventDefault();
+        const panelId = tab.getAttribute("data-target");
+
+        if (panelId) {
+          activatePanel(panelId, false, true);
+        }
+      });
+
+      tab.addEventListener("keydown", (event) => {
+        const keyActions = {
+          ArrowDown: 1,
+          ArrowRight: 1,
+          ArrowUp: -1,
+          ArrowLeft: -1,
+        };
+
+        if (event.key === "Home" || event.key === "End") {
+          event.preventDefault();
+          const nextIndex = event.key === "Home" ? 0 : tabs.length - 1;
+          const panelId = tabs[nextIndex].getAttribute("data-target");
+
+          if (panelId) {
+            activatePanel(panelId, true, true);
+          }
+
+          return;
+        }
+
+        if (!(event.key in keyActions)) {
+          return;
+        }
+
+        event.preventDefault();
+        const nextIndex = (index + keyActions[event.key] + tabs.length) % tabs.length;
+        const panelId = tabs[nextIndex].getAttribute("data-target");
+
+        if (panelId) {
+          activatePanel(panelId, true, true);
+        }
+      });
+    });
+  });
+</script>

@@ -1,9 +1,9 @@
 ---
 import SiteLayout from "./SiteLayout.astro";
-import { type HomeContent, type Locale } from "../i18n/home";
+import { type Locale, type SiteContent } from "../i18n/content";
 
 interface Props {
-  pageContent: HomeContent;
+  pageContent: SiteContent;
   locale: Locale;
 }
 
@@ -20,8 +20,8 @@ const heroImagePath = withBasePath("/images/hero-command-table.png");
       <img
         class="hero-image"
         src={heroImagePath}
-        width="1792"
-        height="1024"
+        width="1672"
+        height="941"
         alt={pageContent.hero.imageAlt}
       />
       <div class="hero-shade" aria-hidden="true"></div>
@@ -29,6 +29,10 @@ const heroImagePath = withBasePath("/images/hero-command-table.png");
         <div class="hero-message">
           <p class="eyebrow">{pageContent.hero.eyebrow}</p>
           <h1 id="hero-title">{pageContent.hero.title}</h1>
+          <figure class="hero-quote">
+            <blockquote>{pageContent.hero.quote}</blockquote>
+            <figcaption>{pageContent.hero.quoteSource}</figcaption>
+          </figure>
           <p class="hero-copy">{pageContent.hero.copy}</p>
           <div class="hero-actions" aria-label={pageContent.navAriaLabel}>
             {
@@ -51,6 +55,16 @@ const heroImagePath = withBasePath("/images/hero-command-table.png");
             ))
           }
         </dl>
+      </div>
+    </section>
+
+    <section class="intro home-intro" aria-labelledby="home-intro-title">
+      <div class="section-inner intro-grid">
+        <div>
+          <p class="kicker">{pageContent.intro.kicker}</p>
+          <h2 id="home-intro-title">{pageContent.intro.title}</h2>
+        </div>
+        <p>{pageContent.intro.body}</p>
       </div>
     </section>
   </main>

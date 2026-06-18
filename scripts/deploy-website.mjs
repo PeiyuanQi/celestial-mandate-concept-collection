@@ -2,15 +2,17 @@ import { cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { loadLocalEnv, requireEnv } from './deploy-config.mjs';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDir, '..');
-const personalSiteRoot = resolve(
-  process.env.PERSONAL_WEBSITE_DIR ?? '/Users/site-owner/Documents/Website/external website repo',
-);
-const publicTarget = resolve(personalSiteRoot, 'public/projects/celestial-mandate');
-const publicTargetPath = 'public/projects/celestial-mandate';
-const docsTargetPath = 'docs/projects/celestial-mandate';
+
+loadLocalEnv();
+
+const personalSiteRoot = resolve(requireEnv('WEBSITE_REPO_DIR'));
+const publicTargetPath = requireEnv('WEBSITE_PUBLIC_TARGET');
+const docsTargetPath = requireEnv('WEBSITE_DOCS_TARGET');
+const publicTarget = resolve(personalSiteRoot, publicTargetPath);
 const deployMessage = process.env.DEPLOY_COMMIT_MESSAGE ?? 'Deploy Celestial Mandate project site';
 
 function run(command, args, options = {}) {
@@ -58,7 +60,7 @@ console.log('Checking personal site checkout...');
 assertPersonalSiteMain();
 assertCleanGit(personalSiteRoot, 'Personal site checkout');
 
-console.log('Building Celestial Mandate for configured external website...');
+console.log('Building Celestial Mandate website...');
 run('npm', ['run', 'build-website'], { cwd: projectRoot });
 
 console.log('Copying build output into the personal site...');
@@ -84,4 +86,4 @@ run(resolve(personalSiteRoot, 'node_modules/.bin/gh-pages'), ['-d', 'docs', '-t'
   cwd: personalSiteRoot,
 });
 
-console.log('Published https://configured external website target');
+console.log('Published website.');

@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "build-website": "SITE_URL=https://configured external website BASE_PATH=/projects/celestial-mandate npm run build",
+    "build-website": "node scripts/build-website.mjs",
     "deploy-website": "node scripts/deploy-website.mjs",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
   },

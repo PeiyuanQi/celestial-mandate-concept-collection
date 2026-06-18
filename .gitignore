@@ -4,4 +4,5 @@ dist/
 .astro/
 .npm-cache/
 .playwright-mcp/
+.local/
 !package-lock.json

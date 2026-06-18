@@ -6,7 +6,7 @@ import { spawnSync } from 'node:child_process';
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDir, '..');
 const personalSiteRoot = resolve(
-  process.env.site-owner_SITE_DIR ?? '/Users/site-owner/Documents/Website/external website repo',
+  process.env.PERSONAL_WEBSITE_DIR ?? '/Users/site-owner/Documents/Website/external website repo',
 );
 const publicTarget = resolve(personalSiteRoot, 'public/projects/celestial-mandate');
 const publicTargetPath = 'public/projects/celestial-mandate';

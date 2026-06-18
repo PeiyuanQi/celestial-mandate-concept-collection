@@ -95,11 +95,6 @@ export type HomeContent = {
     label: string;
     backToTop: string;
     rights: string;
-    sourceNotice: {
-      text: string;
-      linkLabel: string;
-      href: string;
-    };
     wikiNotice: {
       text: string;
       linkLabel: string;
@@ -453,11 +448,6 @@ export const homeContent: Record<Locale, HomeContent> = {
       label: "Celestial Mandate",
       backToTop: "Top",
       rights: "All rights reserved",
-      sourceNotice: {
-        text: "Code",
-        linkLabel: "Apache-2.0",
-        href: "https://www.apache.org/licenses/LICENSE-2.0",
-      },
       wikiNotice: {
         text: "Wiki",
         linkLabel: "CC BY-SA 4.0",

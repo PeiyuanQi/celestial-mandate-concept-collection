@@ -130,13 +130,6 @@ const buildYear = new Date().getFullYear();
         <span>© <time datetime={String(buildYear)} data-current-year>{buildYear}</time> {pageContent.footer.label}</span>
         <span aria-hidden="true">·</span>
         <span>{pageContent.footer.rights}</span>
-        <span aria-hidden="true">·</span>
-        <span class="footer-source-license">
-          {pageContent.footer.sourceNotice.text}{" "}
-          <a href={pageContent.footer.sourceNotice.href}>
-            {pageContent.footer.sourceNotice.linkLabel}
-          </a>
-        </span>
         {
           showWikiNotice && (
             <>

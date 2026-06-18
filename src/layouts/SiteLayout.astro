@@ -68,7 +68,7 @@ const buildYear = new Date().getFullYear();
     <title>{pageTitle}</title>
     <link rel="icon" href={withBasePath("/favicon.svg")} type="image/svg+xml" />
   </head>
-  <body data-locale={locale}>
+  <body data-locale={locale} data-page={currentPage}>
     <header class="site-header" aria-label={pageContent.primaryAriaLabel}>
       <a class="brand" href={withBasePath(pageRoutes[locale].home)} aria-label={pageContent.brand.homeLabel}>
         <span class="brand-mark" aria-hidden="true">{pageContent.brand.mark}</span>

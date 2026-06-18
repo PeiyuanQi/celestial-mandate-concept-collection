@@ -15,8 +15,8 @@ const heroImagePath = withBasePath("/images/hero-command-table.png");
 ---
 
 <SiteLayout pageContent={pageContent} locale={locale} currentPage="home">
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+  <main id="top" class="home-main">
+    <section class="hero home-hero" aria-labelledby="hero-title">
       <img
         class="hero-image"
         src={heroImagePath}
@@ -25,29 +25,32 @@ const heroImagePath = withBasePath("/images/hero-command-table.png");
         alt={pageContent.hero.imageAlt}
       />
       <div class="hero-shade" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow">{pageContent.hero.eyebrow}</p>
-        <h1 id="hero-title">{pageContent.hero.title}</h1>
-        <p class="hero-copy">{pageContent.hero.copy}</p>
-        <div class="hero-actions" aria-label={pageContent.navAriaLabel}>
+      <div class="hero-content home-hero-content">
+        <div class="hero-message">
+          <p class="eyebrow">{pageContent.hero.eyebrow}</p>
+          <h1 id="hero-title">{pageContent.hero.title}</h1>
+          <p class="hero-copy">{pageContent.hero.copy}</p>
+          <div class="hero-actions" aria-label={pageContent.navAriaLabel}>
+            {
+              pageContent.hero.actions.map((action) => (
+                <a class={`button ${action.variant}`} href={withBasePath(action.href)}>
+                  {action.label}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+
+        <dl class="hero-signal-grid" aria-label={pageContent.hero.signalsAriaLabel}>
           {
-            pageContent.hero.actions.map((action) => (
-              <a class={`button ${action.variant}`} href={withBasePath(action.href)}>
-                {action.label}
-              </a>
+            pageContent.hero.signals.map((signal) => (
+              <div class="hero-signal">
+                <dt>{signal.label}</dt>
+                <dd>{signal.text}</dd>
+              </div>
             ))
           }
-        </div>
-      </div>
-    </section>
-
-    <section class="intro section-band" aria-labelledby="intro-title">
-      <div class="section-inner intro-grid">
-        <div>
-          <p class="kicker">{pageContent.intro.kicker}</p>
-          <h2 id="intro-title">{pageContent.intro.title}</h2>
-        </div>
-        <p>{pageContent.intro.body}</p>
+        </dl>
       </div>
     </section>
   </main>

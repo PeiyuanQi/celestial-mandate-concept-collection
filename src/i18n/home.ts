@@ -25,6 +25,11 @@ type Pillar = {
   text: string;
 };
 
+type HeroSignal = {
+  label: string;
+  text: string;
+};
+
 type Chapter = {
   kicker: string;
   title: string;
@@ -59,6 +64,8 @@ export type HomeContent = {
     copy: string;
     imageAlt: string;
     actions: Action[];
+    signalsAriaLabel: string;
+    signals: HeroSignal[];
   };
   intro: {
     kicker: string;
@@ -161,10 +168,10 @@ export const homeContent: Record<Locale, HomeContent> = {
     ],
     languageSwitcherLabel: "选择语言",
     hero: {
-      eyebrow: "历史社会模拟",
+      eyebrow: "明末残局 · 角色席位策略",
       title: "社稷",
       copy:
-        "治理一个奏报迟来、每一道命令都必须穿过人心、地形、匮乏与政争的国家。",
+        "坐进一个摇晃的政权，而不是俯瞰一张听话的地图：奏报会迟到，粮饷会断线，命令离开案头就开始变形。",
       imageAlt: "一张铺满地图、路线、筹码、封蜡与报告的指挥桌。",
       actions: [
         {
@@ -178,12 +185,31 @@ export const homeContent: Record<Locale, HomeContent> = {
           variant: "secondary",
         },
       ],
+      signalsAriaLabel: "首页核心讯号",
+      signals: [
+        {
+          label: "奏报",
+          text: "晚一步，局势已变。",
+        },
+        {
+          label: "命令",
+          text: "出门后便会走样。",
+        },
+        {
+          label: "江河",
+          text: "水陆路线决定可抵达之处。",
+        },
+        {
+          label: "席位",
+          text: "有职位，没有全知视野。",
+        },
+      ],
     },
     intro: {
-      kicker: "核心亮点",
-      title: "你不能只靠一道命令，把国家变成国家。",
+      kicker: "核心",
+      title: "权力先经过世界，才变成行动。",
       body:
-        "这是一个关于政治秩序如何在压力下运转的策略概念。玩家从动荡政权中的某个角色位置出发，把有限的信誉、后勤、僚属、粮食、白银与关系转化为行动，而行动仍可能迟到、走样、遭到抵抗，或被事态追上。",
+        "地图、江河、人物与奏报给开局以真实压力，玩家席位与系统演绎给历史留下余地。",
     },
     gameplay: {
       kicker: "玩法介绍",
@@ -254,11 +280,6 @@ export const homeContent: Record<Locale, HomeContent> = {
       label: "社稷",
       backToTop: "顶部",
       rights: "保留所有权利",
-      sourceNotice: {
-        text: "源码",
-        linkLabel: "Apache-2.0",
-        href: "https://www.apache.org/licenses/LICENSE-2.0",
-      },
       wikiNotice: {
         text: "维基",
         linkLabel: "CC BY-SA 4.0",
@@ -298,10 +319,10 @@ export const homeContent: Record<Locale, HomeContent> = {
     ],
     languageSwitcherLabel: "Select language",
     hero: {
-      eyebrow: "Historical society simulation",
+      eyebrow: "Late-Ming crisis · character-seat strategy",
       title: "Celestial Mandate (社稷)",
       copy:
-        "Govern a state where reports are late, and every order must survive people, terrain, scarcity, and politics.",
+        "Sit inside an unstable regime, not above an obedient map: reports arrive late, grain and pay break down, and orders begin changing the moment they leave your desk.",
       imageAlt:
         "A command table with layered maps, routes, tokens, wax seals, and reports.",
       actions: [
@@ -316,12 +337,31 @@ export const homeContent: Record<Locale, HomeContent> = {
           variant: "secondary",
         },
       ],
+      signalsAriaLabel: "Home page core signals",
+      signals: [
+        {
+          label: "Reports",
+          text: "Late by design; the situation has moved.",
+        },
+        {
+          label: "Orders",
+          text: "They change once they leave your desk.",
+        },
+        {
+          label: "Waterways",
+          text: "Routes decide what can be reached.",
+        },
+        {
+          label: "Seat",
+          text: "You hold an office, not omniscience.",
+        },
+      ],
     },
     intro: {
-      kicker: "The core",
-      title: "You cannot simply order a state into existence.",
+      kicker: "Core",
+      title: "Power must pass through the world before it becomes action.",
       body:
-        "Celestial Mandate (社稷) is a strategy concept about making political order function under pressure. Players act from a character-bound seat inside an unstable regime, turning scarce credibility, logistics, staff, grain, silver, and relationships into action that may still arrive late, distorted, resisted, or overtaken by events.",
+        "Maps, waterways, people, and reports give each opening real pressure; player seats and systemic play leave history room to unfold.",
     },
     gameplay: {
       kicker: "Gameplay",

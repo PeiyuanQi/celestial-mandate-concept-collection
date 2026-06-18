@@ -1,15 +1,22 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { homedir } from 'node:os';
 
 export const projectRoot = resolve(new URL('..', import.meta.url).pathname);
 export const localEnvPath = resolve(projectRoot, '.local/website-deploy.env');
+export const deployEnvPaths = [
+  process.env.WEBSITE_DEPLOY_ENV,
+  resolve(homedir(), '.codex/local/celestial-mandate-concept-collection/website-deploy.env'),
+  localEnvPath,
+].filter(Boolean);
 
 export function loadLocalEnv() {
-  if (!existsSync(localEnvPath)) {
+  const envPath = deployEnvPaths.find((path) => existsSync(path));
+  if (!envPath) {
     return;
   }
 
-  const lines = readFileSync(localEnvPath, 'utf8').split(/\r?\n/);
+  const lines = readFileSync(envPath, 'utf8').split(/\r?\n/);
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed || trimmed.startsWith('#')) {
@@ -34,7 +41,7 @@ export function loadLocalEnv() {
 export function requireEnv(name) {
   const value = process.env[name];
   if (!value) {
-    throw new Error(`Missing ${name}. Set it in ${localEnvPath} or in the environment.`);
+    throw new Error(`Missing ${name}. Set it in a local deploy env file or in the environment.`);
   }
 
   return value;

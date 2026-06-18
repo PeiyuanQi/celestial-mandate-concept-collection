@@ -22,7 +22,7 @@ This repo includes an Astro static website for introducing Celestial Mandate as 
 
 The GitHub Pages workflow in `.github/workflows/deploy.yml` builds the site and publishes `dist/` when changes are pushed to `main`. In GitHub repository settings, set Pages > Source to GitHub Actions before publishing.
 
-Use `npm run deploy-website` from this repo as the single external-site deploy command. It reads local deploy settings from `.local/website-deploy.env` or environment variables, builds the Astro site for that configured URL and base path, replaces the configured target folder in the external site repo, regenerates that repo's checked-in `docs/` output, commits and pushes `main` when files changed, then publishes the live `gh-pages` branch.
+Use `npm run deploy-website` from this repo as the single external-site deploy command. It reads local deploy settings from a local deploy env file or environment variables, builds the Astro site for that configured URL and base path, replaces the configured target folder in the external site repo, regenerates that repo's checked-in `docs/` output, commits and pushes `main` when files changed, then publishes the live `gh-pages` branch.
 
 The local deploy settings file is intentionally ignored by Git. It supports:
 

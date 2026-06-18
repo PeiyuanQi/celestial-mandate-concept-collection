@@ -164,7 +164,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       eyebrow: "历史社会模拟",
       title: "社稷",
       copy:
-        "治理一个合法性脆弱、奏报迟来、每一道命令都必须穿过人心、地形、匮乏与政争的国家。",
+        "治理一个奏报迟来、每一道命令都必须穿过人心、地形、匮乏与政争的国家。",
       imageAlt: "一张铺满地图、路线、筹码、封蜡与报告的指挥桌。",
       actions: [
         {
@@ -180,7 +180,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       ],
     },
     intro: {
-      kicker: "核心承诺",
+      kicker: "核心亮点",
       title: "你不能只靠一道命令，把国家变成国家。",
       body:
         "这是一个关于政治秩序如何在压力下运转的策略概念。玩家从动荡政权中的某个角色位置出发，把有限的信誉、后勤、僚属、粮食、白银与关系转化为行动，而行动仍可能迟到、走样、遭到抵抗，或被事态追上。",
@@ -197,7 +197,7 @@ export const homeContent: Record<Locale, HomeContent> = {
             "命令要穿过衙署、信使、幕僚、派系信任、地形与地方接受度，才可能变成行动。",
         },
         {
-          label: "国家不是一块颜色",
+          label: "国家地图色块",
           text:
             "同一地点可以同时存在相互竞争的名义、薄弱行政、军事占据、士绅影响、财政缺口与被争夺的合法性。",
         },
@@ -206,9 +206,9 @@ export const homeContent: Record<Locale, HomeContent> = {
           text: "历史压力以因果结构存在，而不是按剧本准点抵达的结局。",
         },
         {
-          label: "数据必须可追溯",
+          label: "真实历史环境再现",
           text:
-            "来源笔记、不确定性标记与场景包，会把作者声称与模拟结果清楚分开。",
+            "地理,水文,人物,地方,事件,给开局以真相,给演绎以空间。",
         },
       ],
     },
@@ -301,7 +301,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       eyebrow: "Historical society simulation",
       title: "Celestial Mandate (社稷)",
       copy:
-        "Govern a state where legitimacy is fragile, reports are late, and every order must survive people, terrain, scarcity, and politics.",
+        "Govern a state where reports are late, and every order must survive people, terrain, scarcity, and politics.",
       imageAlt:
         "A command table with layered maps, routes, tokens, wax seals, and reports.",
       actions: [
@@ -318,7 +318,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       ],
     },
     intro: {
-      kicker: "The promise",
+      kicker: "The core",
       title: "You cannot simply order a state into existence.",
       body:
         "Celestial Mandate (社稷) is a strategy concept about making political order function under pressure. Players act from a character-bound seat inside an unstable regime, turning scarce credibility, logistics, staff, grain, silver, and relationships into action that may still arrive late, distorted, resisted, or overtaken by events.",
@@ -335,7 +335,7 @@ export const homeContent: Record<Locale, HomeContent> = {
             "Commands pass through offices, messengers, staff, factional trust, terrain, and local acceptance before they become action.",
         },
         {
-          label: "A State Is Not A Color",
+          label: "A State Is Not A Tile",
           text:
             "Places can hold rival claims, weak administration, military occupation, elite influence, fiscal gaps, and disputed legitimacy at once.",
         },
@@ -345,9 +345,9 @@ export const homeContent: Record<Locale, HomeContent> = {
             "Historical pressure exists as causal structure, not as an appointment with a scripted ending.",
         },
         {
-          label: "Data Stays Traceable",
+          label: "Faithful Historical Simulation",
           text:
-            "Source notes, uncertainty labels, and scenario packages keep authored claims distinct from simulated outcomes.",
+            "Geography, waterways, people, places, and events ground each opening in historical reality while leaving room for the simulation to unfold.",
         },
       ],
     },

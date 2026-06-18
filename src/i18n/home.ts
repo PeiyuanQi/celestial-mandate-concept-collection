@@ -184,19 +184,19 @@ export const homeContent: Record<Locale, HomeContent> = {
       signals: [
         {
           label: "奏报",
-          text: "晚一步，局势已变。",
+          text: "迟之一瞬，局势已易。",
         },
         {
           label: "命令",
-          text: "出门后便会走样。",
+          text: "令既出，行之有差。。",
         },
         {
           label: "江河",
-          text: "水陆路线决定可抵达之处。",
+          text: "水陆所通，方为可达。",
         },
         {
-          label: "席位",
-          text: "有职位，没有全知视野。",
+          label: "身居高位",
+          text: "天下事，未必尽明。",
         },
       ],
     },
@@ -314,8 +314,8 @@ export const homeContent: Record<Locale, HomeContent> = {
     ],
     languageSwitcherLabel: "Select language",
     hero: {
-      eyebrow: "Late-Ming crisis · character-seat strategy",
-      title: "Celestial Mandate (社稷)",
+      eyebrow: "History Simulation Strategy",
+      title: "社稷",
       copy:
         "Sit inside an unstable regime, not above an obedient map: reports arrive late, grain and pay break down, and orders begin changing the moment they leave your desk.",
       imageAlt:

@@ -3,10 +3,10 @@ import { poZhenZiChapter } from "./po-zhen-zi";
 
 export const dataPackContent: Record<Locale, DataPackContent> = {
   "zh-Hans": {
-    kicker: "资料包",
+    kicker: "资料片",
     title: "按章节收束时代、地点、人物与系统。",
     body:
-      "资料包是公开材料进入可玩结构的入口：时代范围、关键地点、势力关系、系统假设与来源笔记，在这里被整理成可迭代的章节。",
+      "资料片是公开材料进入可玩结构的入口：时代范围、关键地点、势力关系、系统假设与来源笔记，在这里被整理成可迭代的章节。",
     heroImageAlt:
       "昏暗案头上摊开多组资料卡、地图卷与石质标记，像一座按章节整理的历史档案库。",
     chapter: poZhenZiChapter["zh-Hans"],

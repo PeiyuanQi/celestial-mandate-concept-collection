@@ -66,11 +66,6 @@ export type Chapter = {
   points: string[];
 };
 
-export type WikiCategory = {
-  label: string;
-  items: string[];
-};
-
 export type HomePageContent = {
   htmlLang: string;
   meta: {
@@ -156,8 +151,14 @@ export type WikiContent = {
   title: string;
   body: string;
   heroImageAlt: string;
-  categoriesAriaLabel: string;
-  categories: WikiCategory[];
+  navAriaLabel: string;
+  readerAriaLabel: string;
+  searchLabel: string;
+  searchPlaceholder: string;
+  entryCountLabel: string;
+  sourceLabel: string;
+  loadingLabel: string;
+  emptyLabel: string;
 };
 
 export type SiteContent = HomePageContent & {

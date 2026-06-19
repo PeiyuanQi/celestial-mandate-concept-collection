@@ -22,7 +22,7 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       { href: pageRoutes["zh-Hans"].gameplay, label: "玩法介绍" },
       {
         href: pageRoutes["zh-Hans"].dataPacks,
-        label: "资料包",
+        label: "资料片",
         children: [
           {
             href: pageRoutes["zh-Hans"].chapterOne,
@@ -77,7 +77,7 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       kicker: "这是什么",
       title: "不是复述一段历史，而是模拟权力如何抵达现实。",
       body:
-        "公开资料、地理水文、人物关系和系统假设被整理成可玩的章节。每个资料包给出开局压力；玩法系统决定命令、回报、合法性与地方接受度如何相互牵扯。",
+        "公开资料、地理水文、人物关系和系统假设被整理成可玩的章节。每个资料片给出开局压力；玩法系统决定命令、回报、合法性与地方接受度如何相互牵扯。",
     },
     footer: {
       label: "社稷",

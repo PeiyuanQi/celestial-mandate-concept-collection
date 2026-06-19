@@ -12,10 +12,13 @@ This repo includes an Astro static website for introducing Celestial Mandate as 
 - Locale routes and shared content types live in `src/i18n/routes.ts` and `src/i18n/types.ts`; page copy is split under `src/i18n/pages/`, while data-pack copy lives under `src/i18n/data-packs/`.
 - `src/i18n/content.ts` aggregates localized content for the Astro pages; shared page markup lives in `src/layouts/`, with individual subpage bodies under `src/layouts/subpages/`.
 - When updating product copy, update the Chinese source first, then keep the English translation aligned.
+- Use `资料片` as the Chinese display term for DLC; keep the English display term as `DLC`.
+- Public wiki entries are generated from markdown under `../celestial-mandate/references/`. Update that source first, then run `npm run sync-wiki` to refresh `src/i18n/wiki/generated.ts` and `public/wiki-content/`.
 - Keep the site's Chinese typography pairing intact: Ma Shan Zheng is the display face for titles, hero text, chapter names, and expressive labels; Noto Sans SC is the readable body face. Use the shared `--font-display` and `--font-body` CSS variables for future website work.
 - Install Git LFS before working with visual, audio, video, PDF, and design-source assets tracked by `.gitattributes`.
 - Use Node.js `22.12.0` or newer.
 - Install dependencies: `npm install`
+- Sync public wiki content: `npm run sync-wiki`
 - Run locally: `npm run dev`
 - Build the static site: `npm run build`
 - Build for the configured external website target: `npm run build-website`
@@ -53,6 +56,7 @@ See `COPYRIGHT.md` for the full license-scope note.
 - Read `AGENTS.md` before using an agent on this repo.
 - Use a git worktree for parallel or unrelated agent work. The `.worktrees/` directory is ignored for local worktrees.
 - Setup: install Git LFS, use Node.js `22.12.0` or newer, then run `npm install`.
+- Sync public wiki content from the adjacent research archive when wiki entries change: run `npm run sync-wiki`.
 - Run locally: run `npm run dev`.
 - Verify: run `npm run build` for website changes, or `npm run build-website` when preparing external-site deploy output. Use `npm run deploy-website` for the full external-site publish flow. For documentation-only changes, run `git diff --check`.
 - Astro telemetry is disabled through the project npm scripts and GitHub Pages workflow.

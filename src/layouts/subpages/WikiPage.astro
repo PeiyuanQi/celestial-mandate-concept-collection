@@ -1,6 +1,13 @@
 ---
+import {
+  initialWikiEntryHtml,
+  initialWikiEntryId,
+  wikiCategoryGroups,
+  wikiDlcGroups,
+  wikiEntries,
+} from "../../i18n/wiki/generated";
 import { type Locale, type SiteContent } from "../../i18n/content";
-import SubPage from "../SubPage.astro";
+import SiteLayout from "../SiteLayout.astro";
 
 interface Props {
   pageContent: SiteContent;
@@ -8,28 +15,344 @@ interface Props {
 }
 
 const { pageContent, locale } = Astro.props;
+const basePath = import.meta.env.BASE_URL;
+const withBasePath = (path: string) =>
+  `${basePath.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
+const pageTitle = `${pageContent.wiki.title} | ${pageContent.meta.title}`;
+
+const dlcById = new Map(wikiDlcGroups.map((dlc) => [dlc.id, dlc]));
+const categoryById = new Map(
+  wikiCategoryGroups.map((category) => [category.id, category]),
+);
+const entries = [...wikiEntries];
+const initialEntry =
+  entries.find((entry) => entry.id === initialWikiEntryId) ?? entries[0];
+const initialDlc = initialEntry ? dlcById.get(initialEntry.dlcId) : undefined;
+const initialCategory = initialEntry
+  ? categoryById.get(initialEntry.categoryId)
+  : undefined;
+const entryCount = entries.length;
+const countText = `${entryCount} ${pageContent.wiki.entryCountLabel}`;
+const groupedEntries = wikiDlcGroups
+  .map((dlc) => ({
+    ...dlc,
+    categories: wikiCategoryGroups
+      .map((category) => ({
+        ...category,
+        entries: entries.filter(
+          (entry) => entry.dlcId === dlc.id && entry.categoryId === category.id,
+        ),
+      }))
+      .filter((category) => category.entries.length > 0),
+  }))
+  .filter((dlc) => dlc.categories.length > 0);
+const browserEntries = entries.map((entry) => {
+  const dlc = dlcById.get(entry.dlcId);
+  const category = categoryById.get(entry.categoryId);
+  const dlcLabel = dlc?.label[locale] ?? entry.dlcId;
+  const categoryLabel = category?.label[locale] ?? entry.categoryId;
+
+  return {
+    id: entry.id,
+    title: entry.title,
+    sourcePath: entry.sourcePath,
+    contentPath: withBasePath(entry.contentPath),
+    dlcLabel,
+    categoryLabel,
+    searchText: [
+      entry.title,
+      entry.slug,
+      entry.sourcePath,
+      entry.excerpt,
+      dlcLabel,
+      categoryLabel,
+    ]
+      .join(" ")
+      .normalize("NFKC")
+      .toLocaleLowerCase(),
+  };
+});
+const safeEntryJson = JSON.stringify(browserEntries).replace(
+  /[<>&]/g,
+  (character) =>
+    ({
+      "<": "\\u003c",
+      ">": "\\u003e",
+      "&": "\\u0026",
+    })[character] ?? character,
+);
 ---
 
-<SubPage locale={locale} currentPage="wiki" pageContent={pageContent}>
-  <section class="collection" aria-labelledby="wiki-detail-title">
-    <div class="section-inner collection-grid">
-      <div>
-        <p class="kicker">{pageContent.wiki.kicker}</p>
-        <h2 id="wiki-detail-title">{pageContent.wiki.title}</h2>
-        <p>{pageContent.wiki.body}</p>
-      </div>
-      <div class="wiki-grid" aria-label={pageContent.wiki.categoriesAriaLabel}>
+<SiteLayout
+  pageContent={pageContent}
+  locale={locale}
+  currentPage="wiki"
+  title={pageTitle}
+  description={pageContent.wiki.body}
+>
+  <main id="top" class="wiki-main">
+    <section class="wiki-browser" aria-labelledby="wiki-title">
+      <aside class="wiki-sidebar" aria-label={pageContent.wiki.navAriaLabel}>
+        <div class="wiki-sidebar-intro">
+          <p class="kicker">{pageContent.wiki.kicker}</p>
+          <h1 id="wiki-title">{pageContent.wiki.title}</h1>
+          <p>{pageContent.wiki.body}</p>
+        </div>
+
+        <div class="wiki-search-box">
+          <label for="wiki-search">{pageContent.wiki.searchLabel}</label>
+          <input
+            id="wiki-search"
+            type="search"
+            placeholder={pageContent.wiki.searchPlaceholder}
+            autocomplete="off"
+            data-wiki-search
+          />
+          <span data-wiki-count>{countText}</span>
+        </div>
+
+        <nav class="wiki-nav" aria-label={pageContent.wiki.navAriaLabel}>
+          {
+            groupedEntries.map((dlc) => (
+              <section class="wiki-dlc-group" data-wiki-dlc-group>
+                <h2>{dlc.label[locale]}</h2>
+                {dlc.categories.map((category) => (
+                  <details
+                    class="wiki-category-group"
+                    data-wiki-category-group
+                    open={category.entries.some((entry) => entry.id === initialEntry?.id)}
+                  >
+                    <summary>
+                      <span>{category.label[locale]}</span>
+                      <span>{category.entries.length}</span>
+                    </summary>
+                    <ol>
+                      {category.entries.map((entry) => (
+                        <li class="wiki-entry-item">
+                          <button
+                            class:list={[
+                              "wiki-entry-button",
+                              entry.id === initialEntry?.id && "active",
+                            ]}
+                            type="button"
+                            data-wiki-entry-button={entry.id}
+                            data-wiki-search-text={[
+                              entry.title,
+                              entry.slug,
+                              entry.sourcePath,
+                              entry.excerpt,
+                              dlc.label[locale],
+                              category.label[locale],
+                            ]
+                              .join(" ")
+                              .normalize("NFKC")
+                              .toLocaleLowerCase()}
+                          >
+                            <span>{entry.title}</span>
+                            <small>{entry.slug}</small>
+                          </button>
+                        </li>
+                      ))}
+                    </ol>
+                  </details>
+                ))}
+              </section>
+            ))
+          }
+        </nav>
+        <p class="wiki-empty" hidden data-wiki-empty>{pageContent.wiki.emptyLabel}</p>
+      </aside>
+
+      <article
+        class="wiki-reader"
+        aria-label={pageContent.wiki.readerAriaLabel}
+        data-loading-label={pageContent.wiki.loadingLabel}
+        data-empty-label={pageContent.wiki.emptyLabel}
+      >
         {
-          pageContent.wiki.categories.map((category, index) => (
-            <section class="wiki-card" aria-labelledby={`wiki-detail-category-${index}`}>
-              <h3 id={`wiki-detail-category-${index}`}>{category.label}</h3>
-              <ul>
-                {category.items.map((item) => <li>{item}</li>)}
-              </ul>
-            </section>
-          ))
+          initialEntry && (
+            <>
+              <header class="wiki-reader-header">
+                <p class="wiki-reader-kicker" data-wiki-reader-dlc>
+                  {initialDlc?.label[locale]}
+                </p>
+                <h2 data-wiki-reader-title>{initialEntry.title}</h2>
+                <div class="wiki-reader-meta">
+                  <span data-wiki-reader-category>
+                    {initialCategory?.label[locale]}
+                  </span>
+                  <span>
+                    {pageContent.wiki.sourceLabel}:{" "}
+                    <code data-wiki-reader-source>{initialEntry.sourcePath}</code>
+                  </span>
+                </div>
+              </header>
+              <div
+                class="wiki-article-content"
+                data-wiki-content
+                set:html={initialWikiEntryHtml}
+              />
+            </>
+          )
         }
-      </div>
-    </div>
-  </section>
-</SubPage>
+      </article>
+    </section>
+  </main>
+
+  <script type="application/json" id="wiki-entry-data" set:html={safeEntryJson} />
+  <script is:inline>
+    (() => {
+      const dataNode = document.getElementById("wiki-entry-data");
+      const entries = dataNode ? JSON.parse(dataNode.textContent || "[]") : [];
+      const entryById = new Map(entries.map((entry) => [entry.id, entry]));
+      const buttons = Array.from(
+        document.querySelectorAll("[data-wiki-entry-button]"),
+      );
+      const searchInput = document.querySelector("[data-wiki-search]");
+      const countNode = document.querySelector("[data-wiki-count]");
+      const emptyNode = document.querySelector("[data-wiki-empty]");
+      const reader = document.querySelector(".wiki-reader");
+      const titleNode = document.querySelector("[data-wiki-reader-title]");
+      const dlcNode = document.querySelector("[data-wiki-reader-dlc]");
+      const categoryNode = document.querySelector("[data-wiki-reader-category]");
+      const sourceNode = document.querySelector("[data-wiki-reader-source]");
+      const contentNode = document.querySelector("[data-wiki-content]");
+      const countLabel = countNode?.textContent?.replace(/^\d+\s*/, "") ?? "";
+      const loadingLabel = reader?.getAttribute("data-loading-label") ?? "";
+      const emptyLabel = reader?.getAttribute("data-empty-label") ?? "";
+
+      const normalize = (value) =>
+        value.normalize("NFKC").toLocaleLowerCase().trim();
+
+      const openActiveCategory = () => {
+        const activeButton = document.querySelector(".wiki-entry-button.active");
+        for (const category of document.querySelectorAll(
+          "[data-wiki-category-group]",
+        )) {
+          category.open = Boolean(activeButton && category.contains(activeButton));
+        }
+      };
+
+      const setActiveButton = (id) => {
+        for (const button of buttons) {
+          const isActive = button.getAttribute("data-wiki-entry-button") === id;
+          button.classList.toggle("active", isActive);
+          if (isActive) {
+            button.setAttribute("aria-current", "true");
+          } else {
+            button.removeAttribute("aria-current");
+          }
+        }
+        if (!normalize(searchInput?.value ?? "")) {
+          openActiveCategory();
+        }
+      };
+
+      const setArticleContent = async (id, shouldUpdateHash = true) => {
+        const entry = entryById.get(id);
+        if (!entry || !contentNode) {
+          return;
+        }
+
+        setActiveButton(id);
+        if (titleNode) titleNode.textContent = entry.title;
+        if (dlcNode) dlcNode.textContent = entry.dlcLabel;
+        if (categoryNode) categoryNode.textContent = entry.categoryLabel;
+        if (sourceNode) sourceNode.textContent = entry.sourcePath;
+        contentNode.setAttribute("aria-busy", "true");
+        contentNode.innerHTML = `<p class="wiki-loading">${loadingLabel}</p>`;
+
+        try {
+          const response = await fetch(entry.contentPath);
+          if (!response.ok) {
+            throw new Error(`Failed to load ${entry.contentPath}`);
+          }
+          const article = await response.json();
+          contentNode.innerHTML = article.html;
+        } catch (_error) {
+          contentNode.innerHTML = `<p class="wiki-loading">${emptyLabel}</p>`;
+        } finally {
+          contentNode.removeAttribute("aria-busy");
+        }
+
+        if (shouldUpdateHash) {
+          history.replaceState(null, "", `#${encodeURIComponent(id)}`);
+        }
+      };
+
+      const updateFilter = () => {
+        const query = normalize(searchInput?.value ?? "");
+        let visibleCount = 0;
+
+        for (const button of buttons) {
+          const item = button.closest(".wiki-entry-item");
+          const haystack = button.getAttribute("data-wiki-search-text") ?? "";
+          const isMatch = !query || haystack.includes(query);
+          if (item) {
+            item.hidden = !isMatch;
+          }
+          if (isMatch) {
+            visibleCount += 1;
+          }
+        }
+
+        for (const category of document.querySelectorAll(
+          "[data-wiki-category-group]",
+        )) {
+          const hasVisible = Boolean(
+            category.querySelector(".wiki-entry-item:not([hidden])"),
+          );
+          category.hidden = query ? !hasVisible : false;
+          category.open = query ? hasVisible : category.open;
+        }
+
+        if (!query) {
+          openActiveCategory();
+        }
+
+        for (const dlc of document.querySelectorAll("[data-wiki-dlc-group]")) {
+          const hasVisible = Boolean(
+            dlc.querySelector("[data-wiki-category-group]:not([hidden])"),
+          );
+          dlc.hidden = !hasVisible;
+        }
+
+        if (countNode) {
+          countNode.textContent = `${visibleCount} ${countLabel}`;
+        }
+        if (emptyNode) {
+          emptyNode.hidden = visibleCount !== 0;
+        }
+      };
+
+      for (const button of buttons) {
+        button.addEventListener("click", () => {
+          const id = button.getAttribute("data-wiki-entry-button");
+          if (id) {
+            setArticleContent(id);
+          }
+        });
+      }
+
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) {
+          return;
+        }
+        const link = target.closest("[data-wiki-entry-link]");
+        const id = link?.getAttribute("data-wiki-entry-link");
+        if (id && entryById.has(id)) {
+          event.preventDefault();
+          setArticleContent(id);
+        }
+      });
+
+      searchInput?.addEventListener("input", updateFilter);
+
+      const hashId = decodeURIComponent(window.location.hash.slice(1));
+      if (hashId && entryById.has(hashId)) {
+        setArticleContent(hashId, false);
+      }
+    })();
+  </script>
+</SiteLayout>

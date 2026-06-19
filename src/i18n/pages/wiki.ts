@@ -3,71 +3,34 @@ import { type Locale, type WikiContent } from "../types";
 export const wikiContent: Record<Locale, WikiContent> = {
   "zh-Hans": {
     kicker: "维基",
-    title: "像战争策略游戏维基一样拆开可查询对象。",
+    title: "社稷中文维基",
     body:
-      "维基区用于列举人物、地点、术语与系统，让设计笔记、资料包和历史输入可以互相引用，而不是散落在单篇说明里。",
+      "按资料片浏览已有百科文件：人物、事件、地点和时间线都从相邻研究库同步，保持可检索、可追溯。",
     heroImageAlt:
-      "暗色档案桌面上整齐排列人物、地点、术语与系统卡片，细线把可查询条目连接起来。",
-    categoriesAriaLabel: "维基分类",
-    categories: [
-      {
-        label: "人物",
-        items: ["弘光朝廷", "江北四镇", "史可法", "高杰"],
-      },
-      {
-        label: "地点",
-        items: ["南京", "镇江", "扬州", "淮安"],
-      },
-      {
-        label: "术语",
-        items: ["合法性", "命令封包", "关系触达", "供给焦虑"],
-      },
-      {
-        label: "系统",
-        items: ["角色席位", "后勤线路", "回报循环", "地方接受度"],
-      },
-    ],
+      "皇史宬式砖石档案库里，木架、册匣、黄册与案牍在灯下层层排开。",
+    navAriaLabel: "维基词条导航",
+    readerAriaLabel: "维基正文",
+    searchLabel: "搜索",
+    searchPlaceholder: "搜索词条、文件名或摘要",
+    entryCountLabel: "个词条",
+    sourceLabel: "来源",
+    loadingLabel: "正在载入词条",
+    emptyLabel: "没有匹配词条",
   },
   en: {
     kicker: "Wiki",
-    title: "A strategy-wiki style index for things you can look up.",
+    title: "Celestial Mandate Wiki",
     body:
-      "The wiki area lists characters, places, terms, and systems so design notes, DLC, and historical inputs can reference each other instead of living as isolated essays.",
+      "Browse existing encyclopedia files by DLC: people, events, places, and timelines are synced from the adjacent research archive and kept searchable.",
     heroImageAlt:
-      "A dark archive desk with orderly cards for characters, places, terms, and systems, linked by fine index lines.",
-    categoriesAriaLabel: "Wiki categories",
-    categories: [
-      {
-        label: "Characters",
-        items: [
-          "Hongguang court",
-          "Jiangbei Four Towns",
-          "Shi Kefa",
-          "Gao Jie",
-        ],
-      },
-      {
-        label: "Places",
-        items: ["Nanjing", "Zhenjiang", "Yangzhou", "Huai'an"],
-      },
-      {
-        label: "Terms",
-        items: [
-          "Legitimacy",
-          "Command packet",
-          "Relational reach",
-          "Supply anxiety",
-        ],
-      },
-      {
-        label: "Systems",
-        items: [
-          "Character seats",
-          "Logistics routes",
-          "Report loops",
-          "Local acceptance",
-        ],
-      },
-    ],
+      "A Huangshicheng-style imperial archive with stone vaults, wooden shelves, register bundles, and dossiers under warm lamplight.",
+    navAriaLabel: "Wiki entry navigation",
+    readerAriaLabel: "Wiki article",
+    searchLabel: "Search",
+    searchPlaceholder: "Search entries, filenames, or excerpts",
+    entryCountLabel: "entries",
+    sourceLabel: "Source",
+    loadingLabel: "Loading entry",
+    emptyLabel: "No matching entries",
   },
 };

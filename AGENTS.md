@@ -29,7 +29,7 @@
 - The website is Chinese-first: `/` is the canonical Chinese site, and `/en/` is the first supported translation. Keep Chinese copy as the ground truth in the page content files under `src/i18n/pages/` and `src/i18n/data-packs/`, then update English from that source.
 - Use `资料片` as the Chinese display term for DLC; keep the English display term as `DLC`.
 - The public wiki is generated from markdown under `../celestial-mandate/references/`. When asked to update wiki entries, inspect that source first, then run `npm run sync-wiki`; the current public categories are people, events, places, and chronicle/timeline. Do not sync raw archives, scans, ebooks, binaries, or unrestricted reference folders into the website.
-- Preserve the Chinese typography pairing: use Ma Shan Zheng for display roles such as titles, hero text, chapter names, and expressive labels, and use Noto Sans SC for readable body copy. Keep new CSS wired through the shared `--font-display` and `--font-body` variables unless there is a documented design reason to do otherwise.
+- Preserve the locale typography pairing: use Ma Shan Zheng for Chinese display roles such as titles, hero text, chapter names, and expressive labels; use Spectral for English display roles; use Noto Sans SC for readable body copy. Keep new CSS wired through the shared `--font-display` and `--font-body` variables unless there is a documented design reason to do otherwise.
 - Keep locale routes, metadata, and language switcher labels aligned when adding future languages.
 - Keep `src/layouts/SubPage.astro` as the shared subpage shell; put individual subpage bodies in `src/layouts/subpages/`.
 

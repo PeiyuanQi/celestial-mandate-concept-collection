@@ -14,7 +14,7 @@ This repo includes an Astro static website for introducing Celestial Mandate as 
 - When updating product copy, update the Chinese source first, then keep the English translation aligned.
 - Use `资料片` as the Chinese display term for DLC; keep the English display term as `DLC`.
 - Public wiki entries are generated from markdown under `../celestial-mandate/references/`. Update that source first, then run `npm run sync-wiki` to refresh `src/i18n/wiki/generated.ts` and `public/wiki-content/`.
-- Keep the site's Chinese typography pairing intact: Ma Shan Zheng is the display face for titles, hero text, chapter names, and expressive labels; Noto Sans SC is the readable body face. Use the shared `--font-display` and `--font-body` CSS variables for future website work.
+- Keep the site's locale typography pairing intact: Ma Shan Zheng is the Chinese display face for titles, hero text, chapter names, and expressive labels; Spectral is the English display face; Noto Sans SC is the readable body face. Use the shared `--font-display` and `--font-body` CSS variables for future website work.
 - Install Git LFS before working with visual, audio, video, PDF, and design-source assets tracked by `.gitattributes`.
 - Use Node.js `22.12.0` or newer.
 - Install dependencies: `npm install`

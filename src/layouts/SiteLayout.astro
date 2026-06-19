@@ -60,6 +60,11 @@ const isSectionActive = (item: SiteContent["nav"][number]) =>
 const showWikiNotice = currentPage === "wiki";
 const buildYear = new Date().getFullYear();
 const brandIconPath = withBasePath("/brand-icon.svg");
+const wikiBackgroundStyle =
+  currentPage === "wiki"
+    ? `--wiki-background-image: url("${withBasePath("/images/hero-wiki-archive-index.png")}")`
+    : undefined;
+const submenuToggleLabel = locale === "zh-Hans" ? "展开子菜单" : "Toggle submenu";
 ---
 
 <!doctype html>
@@ -89,25 +94,50 @@ const brandIconPath = withBasePath("/brand-icon.svg");
     <title>{pageTitle}</title>
     <link rel="icon" href={withBasePath("/favicon.svg")} type="image/svg+xml" />
   </head>
-  <body data-locale={locale} data-page={currentPage}>
+  <body data-locale={locale} data-page={currentPage} style={wikiBackgroundStyle}>
     <header class="site-header" aria-label={pageContent.primaryAriaLabel}>
       <a class="brand" href={withBasePath(pageRoutes[locale].home)} aria-label={pageContent.brand.homeLabel}>
         <img class="brand-mark" src={brandIconPath} width="36" height="36" alt="" aria-hidden="true" />
         <span class="brand-name">{pageContent.brand.name}</span>
       </a>
-      <div class="header-actions">
-        <nav class="site-nav" aria-label={pageContent.navAriaLabel}>
+      <div class="header-actions" data-mobile-nav>
+        <button
+          class="mobile-nav-trigger"
+          type="button"
+          aria-label={pageContent.navAriaLabel}
+          aria-haspopup="menu"
+          aria-expanded="false"
+          data-mobile-nav-trigger
+        >
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <nav class="site-nav" aria-label={pageContent.navAriaLabel} data-mobile-nav-menu>
           {
             pageContent.nav.map((item) => (
               <div class={`nav-item${item.children ? " has-submenu" : ""}`}>
-                <a
-                  class={`nav-link${isSectionActive(item) ? " active" : ""}`}
-                  href={navHref(item.href)}
-                  aria-current={isExactRoute(item.href) ? "page" : undefined}
-                  aria-haspopup={item.children ? "true" : undefined}
-                >
-                  {item.label}
-                </a>
+                <div class="nav-link-row">
+                  <a
+                    class={`nav-link${isSectionActive(item) ? " active" : ""}`}
+                    href={navHref(item.href)}
+                    aria-current={isExactRoute(item.href) ? "page" : undefined}
+                    aria-haspopup={item.children ? "true" : undefined}
+                  >
+                    {item.label}
+                  </a>
+                  {item.children && (
+                    <button
+                      class="submenu-toggle"
+                      type="button"
+                      aria-label={`${submenuToggleLabel}: ${item.label}`}
+                      aria-expanded="false"
+                      data-submenu-toggle
+                    >
+                      <span class="submenu-toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  )}
+                </div>
                 {item.children && (
                   <div class="nav-submenu" role="menu">
                     {item.children.map((child) => (
@@ -126,20 +156,36 @@ const brandIconPath = withBasePath("/brand-icon.svg");
             ))
           }
         </nav>
-        <nav class="language-switcher" aria-label={pageContent.languageSwitcherLabel}>
-          {
-            supportedLocales.map((targetLocale) => (
-              <a
-                class={`language-link${targetLocale === locale ? " active" : ""}`}
-                href={withBasePath(routeForLocale(targetLocale))}
-                hreflang={targetLocale}
-                lang={siteContent[targetLocale].htmlLang}
-                aria-current={targetLocale === locale ? "page" : undefined}
-              >
-                {localeLabels[targetLocale]}
-              </a>
-            ))
-          }
+        <nav class="language-switcher" aria-label={pageContent.languageSwitcherLabel} data-language-switcher>
+          <button
+            class="language-trigger"
+            type="button"
+            aria-label={`${pageContent.languageSwitcherLabel}: ${localeLabels[locale]}`}
+            aria-haspopup="menu"
+            aria-expanded="false"
+            data-language-trigger
+          >
+            <svg class="language-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+              <path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.2 2.2 3.4 5.1 3.4 9S14.2 18.8 12 21M12 3C9.8 5.2 8.6 8.1 8.6 12s1.2 6.8 3.4 9" />
+            </svg>
+          </button>
+          <div class="language-menu" role="menu">
+            {
+              supportedLocales.map((targetLocale) => (
+                <a
+                  class={`language-link${targetLocale === locale ? " active" : ""}`}
+                  href={withBasePath(routeForLocale(targetLocale))}
+                  hreflang={targetLocale}
+                  lang={siteContent[targetLocale].htmlLang}
+                  role="menuitem"
+                  aria-current={targetLocale === locale ? "page" : undefined}
+                >
+                  {localeLabels[targetLocale]}
+                </a>
+              ))
+            }
+          </div>
         </nav>
       </div>
     </header>
@@ -174,6 +220,117 @@ const brandIconPath = withBasePath("/brand-icon.svg");
         yearNode.textContent = currentYear;
         yearNode.setAttribute("datetime", currentYear);
       }
+
+      const mobileNavs = document.querySelectorAll("[data-mobile-nav]");
+      const languageSwitchers = document.querySelectorAll("[data-language-switcher]");
+      const closeLanguageSwitcher = (switcher) => {
+        const trigger = switcher.querySelector("[data-language-trigger]");
+        switcher.removeAttribute("data-open");
+        trigger?.setAttribute("aria-expanded", "false");
+      };
+      const closeMobileNav = (navRoot) => {
+        const trigger = navRoot.querySelector("[data-mobile-nav-trigger]");
+        navRoot.removeAttribute("data-nav-open");
+        trigger?.setAttribute("aria-expanded", "false");
+        for (const navItem of navRoot.querySelectorAll("[data-submenu-open]")) {
+          navItem.removeAttribute("data-submenu-open");
+        }
+        for (const submenuToggle of navRoot.querySelectorAll("[data-submenu-toggle]")) {
+          submenuToggle.setAttribute("aria-expanded", "false");
+        }
+      };
+
+      for (const navRoot of mobileNavs) {
+        const trigger = navRoot.querySelector("[data-mobile-nav-trigger]");
+        if (!trigger) continue;
+
+        trigger.addEventListener("click", (event) => {
+          event.preventDefault();
+          const willOpen = navRoot.getAttribute("data-nav-open") !== "true";
+          for (const switcher of languageSwitchers) {
+            closeLanguageSwitcher(switcher);
+          }
+          if (willOpen) {
+            navRoot.setAttribute("data-nav-open", "true");
+          } else {
+            navRoot.removeAttribute("data-nav-open");
+          }
+          trigger.setAttribute("aria-expanded", String(willOpen));
+        });
+
+        navRoot.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeMobileNav(navRoot);
+            trigger.focus();
+          }
+        });
+
+        for (const submenuToggle of navRoot.querySelectorAll("[data-submenu-toggle]")) {
+          submenuToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            const navItem = submenuToggle.closest(".has-submenu");
+            if (!navItem) return;
+
+            const willOpen = navItem.getAttribute("data-submenu-open") !== "true";
+            if (willOpen) {
+              navItem.setAttribute("data-submenu-open", "true");
+            } else {
+              navItem.removeAttribute("data-submenu-open");
+            }
+            submenuToggle.setAttribute("aria-expanded", String(willOpen));
+          });
+        }
+
+        navRoot.querySelector("[data-mobile-nav-menu]")?.addEventListener("click", (event) => {
+          const target = event.target;
+          if (target instanceof Element && target.closest("a")) {
+            closeMobileNav(navRoot);
+          }
+        });
+      }
+
+      for (const switcher of languageSwitchers) {
+        const trigger = switcher.querySelector("[data-language-trigger]");
+        if (!trigger) continue;
+
+        trigger.addEventListener("click", (event) => {
+          event.preventDefault();
+          const willOpen = switcher.getAttribute("data-open") !== "true";
+          for (const navRoot of mobileNavs) {
+            closeMobileNav(navRoot);
+          }
+          if (willOpen) {
+            switcher.setAttribute("data-open", "true");
+          } else {
+            switcher.removeAttribute("data-open");
+          }
+          trigger.setAttribute("aria-expanded", String(willOpen));
+        });
+
+        switcher.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeLanguageSwitcher(switcher);
+            trigger.focus();
+          }
+        });
+      }
+
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof Node)) return;
+
+        for (const switcher of languageSwitchers) {
+          if (!switcher.contains(target)) {
+            closeLanguageSwitcher(switcher);
+          }
+        }
+
+        for (const navRoot of mobileNavs) {
+          if (!navRoot.contains(target)) {
+            closeMobileNav(navRoot);
+          }
+        }
+      });
     </script>
   </body>
 </html>

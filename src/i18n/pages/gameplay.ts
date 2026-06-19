@@ -3,11 +3,12 @@ import { type GameplayContent, type Locale } from "../types";
 export const gameplayContent: Record<Locale, GameplayContent> = {
   "zh-Hans": {
     kicker: "玩法介绍",
-    title: "策略，生于受限的权力。",
+    title: "权力有限，才有策略。",
     body:
       "你不是站在地图外拖动棋子，而是坐进一个会迟疑、会缺粮、会传错话、会被地方社会反推的政权。",
     heroImageAlt:
       "暮色中的驿站庭院，信使携文书换马，屋内官员围着地图商议命令。",
+    pillarsTitle: "玩法的四个支点",
     pillars: [
       {
         label: "权威",
@@ -172,7 +173,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "命令与消息",
         title: "命令与消息：权力需要抵达",
         deck:
-          "没有行动点。你的限制来自起草、排队、信使、路途、回执、过期报告和地方是否接受。",
+          "你的限制来自起草、排队、信使、路途、回执、过期报告和地方是否接受。",
         summary:
           "命令不是点击后全地图立刻生效。它会变成一份指令，经过幕僚起草、节点排队、信使传递、地方校验，再变成行动或被拒绝。消息回来也需要时间，所以你常常在过期情报上做决定。",
         indexPoints: ["自然时钟", "信使延迟", "过期报告"],
@@ -615,11 +616,12 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
   },
   en: {
     kicker: "Gameplay",
-    title: "Strategy, built from constrained power.",
+    title: "Limited power makes strategy matter.",
     body:
       "You do not stand outside the map moving obedient pieces. You sit inside a regime that hesitates, runs short of grain, misreads messages, and gets pushed back by local society.",
     heroImageAlt:
       "A relay station courtyard at dusk where a courier changes horses while officials study a map inside.",
+    pillarsTitle: "Four Gameplay Pillars",
     pillars: [
       {
         label: "Authority",
@@ -784,7 +786,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "Orders",
         title: "Orders and Messages: Power Has to Arrive",
         deck:
-          "There are no action points. Your limits are drafting, queues, messengers, travel, acknowledgements, stale reports, and local acceptance.",
+          "Your limits are drafting, queues, messengers, travel, acknowledgements, stale reports, and local acceptance.",
         summary:
           "An order is not an instant map edit. It becomes a packet drafted by staff, queued at a node, carried through a route, checked locally, and then accepted, rejected, delayed, or distorted. Reports take time to return, so you often decide with old information.",
         indexPoints: ["Natural clock", "Messenger delay", "Stale reports"],

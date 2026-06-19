@@ -115,6 +115,7 @@ export type GameplayContent = {
   title: string;
   body: string;
   heroImageAlt: string;
+  pillarsTitle: string;
   pillars: Pillar[];
   systemIndex: {
     kicker: string;

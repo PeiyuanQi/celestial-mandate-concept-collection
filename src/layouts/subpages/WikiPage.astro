@@ -348,6 +348,8 @@ const safeEntryJson = JSON.stringify(browserEntries).replace(
       });
 
       searchInput?.addEventListener("input", updateFilter);
+      searchInput?.addEventListener("search", updateFilter);
+      searchInput?.addEventListener("change", updateFilter);
 
       const hashId = decodeURIComponent(window.location.hash.slice(1));
       if (hashId && entryById.has(hashId)) {

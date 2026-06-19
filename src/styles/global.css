@@ -1513,6 +1513,15 @@ body[data-page="wiki"] .site-header {
   backdrop-filter: blur(14px);
 }
 
+body[data-page="wiki"] h1,
+body[data-page="wiki"] h2,
+body[data-page="wiki"] h3,
+body[data-page="wiki"] h4,
+body[data-page="wiki"] h5,
+body[data-page="wiki"] h6 {
+  font-family: var(--font-body);
+}
+
 .wiki-main {
   min-height: 100svh;
   padding: 6.35rem 1.25rem 4rem;

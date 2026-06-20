@@ -158,6 +158,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/bai-wenxuan.json"
   },
   {
+    "id": "po-zhen-zi__people__bai-yongfu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "bai-yongfu",
+    "title": "柏永馥 / Bai Yongfu",
+    "excerpt": "Stable draft ID: person.bai yongfu Status: Phase 1 low visibility profile; name variant and later same name continuity unresolved",
+    "sourcePath": "references/southern-ming/people/bai-yongfu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/bai-yongfu.json"
+  },
+  {
     "id": "po-zhen-zi__people__boluo",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -166,6 +176,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.boluo Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/boluo.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/boluo.json"
+  },
+  {
+    "id": "po-zhen-zi__people__bu-congshan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "bu-congshan",
+    "title": "卜从善 / Bu Congshan",
+    "excerpt": "Stable draft ID: person.bu congshan Status: low visibility Phase 1 roster profile",
+    "sourcePath": "references/southern-ming/people/bu-congshan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/bu-congshan.json"
   },
   {
     "id": "po-zhen-zi__people__cai-dechun",
@@ -228,6 +248,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/cao-zhijian.json"
   },
   {
+    "id": "po-zhen-zi__people__chang-jinjie",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "chang-jinjie",
+    "title": "常进节 / Chang Jinjie",
+    "excerpt": "Stable draft ID: person.chang jinjie Status: Phase 1 北都太子案太监识认证人。",
+    "sourcePath": "references/southern-ming/people/chang-jinjie.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/chang-jinjie.json"
+  },
+  {
     "id": "po-zhen-zi__people__chang-shouning",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -243,7 +273,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "chang-yanling",
     "title": "常延龄 / Chang Yanling",
-    "excerpt": "Stable draft ID: person.chang yanling Status: seed profile",
+    "excerpt": "Stable draft ID: person.chang yanling Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/chang-yanling.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/chang-yanling.json"
   },
@@ -253,7 +283,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "chang-yingjun",
     "title": "常应俊 / Chang Yingjun",
-    "excerpt": "Stable draft ID: person.chang yingjun Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.chang yingjun Status: Phase 1 low visibility profile; no direct CBDB hit",
     "sourcePath": "references/southern-ming/people/chang-yingjun.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/chang-yingjun.json"
   },
@@ -356,6 +386,16 @@ export const wikiEntries = [
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-guang-zheng.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/chen-guang-zheng.json"
+  },
+  {
+    "id": "po-zhen-zi__people__chen-hongfan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "chen-hongfan",
+    "title": "陈洪范 / Chen Hongfan",
+    "excerpt": "Stable draft ID: person.chen hongfan Status: anchored Phase 1 profile with infiltration and post Hangzhou tail caveats",
+    "sourcePath": "references/southern-ming/people/chen-hongfan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-hongfan.json"
   },
   {
     "id": "po-zhen-zi__people__chen-hui",
@@ -503,9 +543,19 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "chen-xiance",
     "title": "陈献策 / Chen Xiance",
-    "excerpt": "Stable draft ID: person.chen xiance Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.chen xiance Status: low visibility profile",
     "sourcePath": "references/southern-ming/people/chen-xiance.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/chen-xiance.json"
+  },
+  {
+    "id": "po-zhen-zi__people__chen-yan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "chen-yan",
+    "title": "陈演 / Chen Yan",
+    "excerpt": "Stable draft ID: person.chen yan Status: Phase 1 起点低可见度人物；内阁责任比例待校。",
+    "sourcePath": "references/southern-ming/people/chen-yan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yan.json"
   },
   {
     "id": "po-zhen-zi__people__chen-yaoce",
@@ -526,6 +576,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.chen yonghua Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-yonghua.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/chen-yonghua.json"
+  },
+  {
+    "id": "po-zhen-zi__people__chen-yuding",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "chen-yuding",
+    "title": "陈于鼎 / Chen Yuding",
+    "excerpt": "Stable draft ID: person.chen yuding Status: Phase 1 南京接管低可见度人物；造册接口。",
+    "sourcePath": "references/southern-ming/people/chen-yuding.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yuding.json"
   },
   {
     "id": "po-zhen-zi__people__chen-ze",
@@ -598,6 +658,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/cheng-xun.json"
   },
   {
+    "id": "po-zhen-zi__people__dabei-heshang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "dabei-heshang",
+    "title": "大悲和尚 / Dabei Heshang",
+    "excerpt": "Stable draft ID: person.dabei heshang Status: succession risk seed profile",
+    "sourcePath": "references/southern-ming/people/dabei-heshang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/dabei-heshang.json"
+  },
+  {
     "id": "po-zhen-zi__people__dai-jie-zheng",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -653,7 +723,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "deng-linzu",
     "title": "邓林祖 / Deng Linzu",
-    "excerpt": "Stable draft ID: person.deng linzu Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.deng linzu Status: low visibility terminal loyalist roster profile",
     "sourcePath": "references/southern-ming/people/deng-linzu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/deng-linzu.json"
   },
@@ -738,6 +808,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/ding-kuichu.json"
   },
   {
+    "id": "po-zhen-zi__people__ding-wang-chongzhen",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ding-wang-chongzhen",
+    "title": "定王 / Prince of Ding, Chongzhen Son",
+    "excerpt": "Stable draft ID: person.ding wang chongzhen Status: 崇祯诸子不确定性人物页；名讳和结局待辨析。",
+    "sourcePath": "references/southern-ming/people/ding-wang-chongzhen.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ding-wang-chongzhen.json"
+  },
+  {
     "id": "po-zhen-zi__people__dong-gongzhong",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -748,6 +828,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/dong-gongzhong.json"
   },
   {
+    "id": "po-zhen-zi__people__dorgon",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "dorgon",
+    "title": "多尔衮 / Dorgon",
+    "excerpt": "Stable draft ID: person.dorgon Status: Phase 1 起点外部压力人物侧写；清方早期履历仍待清实录、宗室传和满文档案互校。",
+    "sourcePath": "references/southern-ming/people/dorgon.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/dorgon.json"
+  },
+  {
     "id": "po-zhen-zi__people__dou-mingwang",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -756,6 +846,16 @@ export const wikiEntries = [
     "excerpt": "窦名望，南明泰安伯，磨盘山战役中李定国伏击部署的初伏将领。部分材料作“窦民望”。",
     "sourcePath": "references/southern-ming/people/dou-mingwang.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/dou-mingwang.json"
+  },
+  {
+    "id": "po-zhen-zi__people__du-hongyu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "du-hongyu",
+    "title": "杜弘域 / 杜宏域 / Du Hongyu",
+    "excerpt": "Stable draft ID: person.du hongyu uncertain Status: low visibility Phase 1 roster profile; identity disambiguation required",
+    "sourcePath": "references/southern-ming/people/du-hongyu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/du-hongyu.json"
   },
   {
     "id": "po-zhen-zi__people__du-hui-zheng",
@@ -828,6 +928,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/fan-shi-sha-tingzhou.json"
   },
   {
+    "id": "po-zhen-zi__people__fan-wencheng",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "fan-wencheng",
+    "title": "范文程 / Fan Wencheng",
+    "excerpt": "Stable draft ID: person.fan wencheng Status: Phase 1 起点清方政策人物侧写；早年仕履和完整奏议仍待清方材料互校。",
+    "sourcePath": "references/southern-ming/people/fan-wencheng.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/fan-wencheng.json"
+  },
+  {
     "id": "po-zhen-zi__people__fan-yingxu",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -836,6 +946,36 @@ export const wikiEntries = [
     "excerpt": "范应旭，安龙时期安隆/安龙府知府，参与永历行在的供给和地方行政安排。",
     "sourcePath": "references/southern-ming/people/fan-yingxu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/fan-yingxu.json"
+  },
+  {
+    "id": "po-zhen-zi__people__fang-dayou",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "fang-dayou",
+    "title": "方大猷 / Fang Dayou",
+    "excerpt": "Stable draft ID: person.fang dayou Status: 弘光北使清方德州限制/山东行政接口人物；降顺、降清路径待校。",
+    "sourcePath": "references/southern-ming/people/fang-dayou.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-dayou.json"
+  },
+  {
+    "id": "po-zhen-zi__people__fang-gonggan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "fang-gonggan",
+    "title": "方拱乾 / 方拱干 / Fang Gonggan",
+    "excerpt": "Stable draft ID: person.fang gonggan Status: low visibility Phase 1 recognition witness profile",
+    "sourcePath": "references/southern-ming/people/fang-gonggan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-gonggan.json"
+  },
+  {
+    "id": "po-zhen-zi__people__fang-guoan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "fang-guoan",
+    "title": "方国安 / Fang Guoan",
+    "excerpt": "Stable draft ID: person.fang guoan Status: Phase 1 terminal route profile with Zhejiang boundary",
+    "sourcePath": "references/southern-ming/people/fang-guoan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-guoan.json"
   },
   {
     "id": "po-zhen-zi__people__fang-yiyuan",
@@ -888,6 +1028,26 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/feng-guoen.json"
   },
   {
+    "id": "po-zhen-zi__people__feng-kezong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "feng-kezong",
+    "title": "冯可宗 / 冯可京 / Feng Kezong",
+    "excerpt": "Stable draft ID: person.feng kezong Status: low visibility Phase 1 custody interface profile",
+    "sourcePath": "references/southern-ming/people/feng-kezong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-kezong.json"
+  },
+  {
+    "id": "po-zhen-zi__people__feng-quan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "feng-quan",
+    "title": "冯铨 / Feng Quan",
+    "excerpt": "Stable draft ID: person.feng quan Status: Phase 1 清内院/降清旧臣接口人物；完整清方履历待校。",
+    "sourcePath": "references/southern-ming/people/feng-quan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-quan.json"
+  },
+  {
     "id": "po-zhen-zi__people__feng-shi-zhang-chaogang-wife",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -928,6 +1088,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/gan-hui.json"
   },
   {
+    "id": "po-zhen-zi__people__ganglin",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ganglin",
+    "title": "刚林 / Ganglin",
+    "excerpt": "Stable draft ID: person.ganglin Status: 弘光北使鸿胪寺礼仪/主权压迫接口人物；职衔异文待校。",
+    "sourcePath": "references/southern-ming/people/ganglin.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ganglin.json"
+  },
+  {
     "id": "po-zhen-zi__people__gao-bizheng",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -958,6 +1128,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/gao-dejie.json"
   },
   {
+    "id": "po-zhen-zi__people__gao-di",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "gao-di",
+    "title": "高第 / Gao Di",
+    "excerpt": "Stable draft ID: person.gao di Status: Phase 1 起点低可见度人物；原山海关总兵层待校。",
+    "sourcePath": "references/southern-ming/people/gao-di.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-di.json"
+  },
+  {
     "id": "po-zhen-zi__people__gao-gongji",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -973,7 +1153,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "gao-hongtu",
     "title": "高弘图 / Gao Hongtu",
-    "excerpt": "Stable draft ID: person.gao hongtu Status: seed profile",
+    "excerpt": "Stable draft ID: person.gao hongtu Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/gao-hongtu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/gao-hongtu.json"
   },
@@ -996,6 +1176,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.gao jinku Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-jinku.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/gao-jinku.json"
+  },
+  {
+    "id": "po-zhen-zi__people__gao-mengji",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "gao-mengji",
+    "title": "高梦箕 / Gao Mengji",
+    "excerpt": "Stable draft ID: person.gao mengji Status: low visibility Phase 1 profile",
+    "sourcePath": "references/southern-ming/people/gao-mengji.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-mengji.json"
   },
   {
     "id": "po-zhen-zi__people__gao-mianzu",
@@ -1168,6 +1358,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/gu-yuanjing.json"
   },
   {
+    "id": "po-zhen-zi__people__guan-shaoning",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "guan-shaoning",
+    "title": "管绍宁 / Guan Shaoning",
+    "excerpt": "Stable draft ID: person.guan shaoning Status: Phase 1 南京接管低可见度人物；礼部/文书入口待补。",
+    "sourcePath": "references/southern-ming/people/guan-shaoning.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/guan-shaoning.json"
+  },
+  {
     "id": "po-zhen-zi__people__guan-xiaozhong",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -1243,7 +1443,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "guo-zuoyong",
     "title": "郭祚永 / Guo Zuoyong",
-    "excerpt": "Stable draft ID: person.guo zuoyong Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.guo zuoyong Status: Phase 1 thin roster profile; no direct CBDB hit; 0515 source note",
     "sourcePath": "references/southern-ming/people/guo-zuoyong.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/guo-zuoyong.json"
   },
@@ -1283,7 +1483,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "han-zanzhou",
     "title": "韩赞周 / Han Zanzhou",
-    "excerpt": "Stable draft ID: person.han zanzhou Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.han zanzhou Status: Phase 1 low visibility profile; no direct CBDB hit",
     "sourcePath": "references/southern-ming/people/han-zanzhou.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/han-zanzhou.json"
   },
@@ -1318,6 +1518,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/hao-wenxing.json"
   },
   {
+    "id": "po-zhen-zi__people__hao-xiaozhong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "hao-xiaozhong",
+    "title": "郝效忠 / Hao Xiaozhong",
+    "excerpt": "Stable draft ID: person.hao xiaozhong Status: low visibility Jiujiang command chain profile",
+    "sourcePath": "references/southern-ming/people/hao-xiaozhong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/hao-xiaozhong.json"
+  },
+  {
     "id": "po-zhen-zi__people__hao-yaoqi",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -1348,6 +1558,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/he-bin.json"
   },
   {
+    "id": "po-zhen-zi__people__he-gang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "he-gang",
+    "title": "何刚 / He Gang",
+    "excerpt": "Stable draft ID: person.he gang Status: low visibility Yangzhou defense profile",
+    "sourcePath": "references/southern-ming/people/he-gang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/he-gang.json"
+  },
+  {
     "id": "po-zhen-zi__people__he-jiuyi",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -1376,6 +1596,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.he luohui Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/he-luohui.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/he-luohui.json"
+  },
+  {
+    "id": "po-zhen-zi__people__he-ruizheng",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "he-ruizheng",
+    "title": "何瑞征 / He Ruizheng",
+    "excerpt": "Stable draft ID: person.he ruizheng uncertain Status: identity disambiguation profile；与何应瑞混写风险高。",
+    "sourcePath": "references/southern-ming/people/he-ruizheng.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/he-ruizheng.json"
   },
   {
     "id": "po-zhen-zi__people__he-shiming",
@@ -1483,7 +1713,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "hong-chengchou",
     "title": "洪承畴 / Hong Chengchou",
-    "excerpt": "洪承畴，明降清重臣，清初经略南方军务。1658 年西南总攻中，他节制或调拨汉军，与湖南、广西入黔路线密切相关。",
+    "excerpt": "Stable draft ID: person.hong chengchou Status: Phase 1 起点层已补；1658 西南征服层为后续边界材料。",
     "sourcePath": "references/southern-ming/people/hong-chengchou.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/hong-chengchou.json"
   },
@@ -1536,6 +1766,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.hou tongzeng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/hou-tongzeng.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/hou-tongzeng.json"
+  },
+  {
+    "id": "po-zhen-zi__people__hu-chengshan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "hu-chengshan",
+    "title": "胡承善 / Hu Chengshan",
+    "excerpt": "Stable draft ID: person.hu chengshan Status: Phase 1 瓜仪掣盐中书薄人物；已按 audit.sm.0530 建页。",
+    "sourcePath": "references/southern-ming/people/hu-chengshan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/hu-chengshan.json"
   },
   {
     "id": "po-zhen-zi__people__hu-jing-zheng",
@@ -1648,6 +1888,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-an.json"
   },
   {
+    "id": "po-zhen-zi__people__huang-binqing",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "huang-binqing",
+    "title": "黄斌卿 / Huang Binqing",
+    "excerpt": "Stable draft ID: person.huang binqing Status: secondary Phase 1 profile with later maritime boundary",
+    "sourcePath": "references/southern-ming/people/huang-binqing.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/huang-binqing.json"
+  },
+  {
     "id": "po-zhen-zi__people__huang-chang-zheng",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -1698,12 +1948,22 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-deqie.json"
   },
   {
+    "id": "po-zhen-zi__people__huang-duanbo",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "huang-duanbo",
+    "title": "黄端伯 / Huang Duanbo",
+    "excerpt": "Stable draft ID: person.huang duanbo Status: Phase 1 南京接管低可见度人物；死难叙事较厚，处置链待校。",
+    "sourcePath": "references/southern-ming/people/huang-duanbo.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/huang-duanbo.json"
+  },
+  {
     "id": "po-zhen-zi__people__huang-fei-wuhu",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
     "slug": "huang-fei-wuhu",
     "title": "黄飞（芜湖末局） / Huang Fei",
-    "excerpt": "Stable draft ID: person.huang fei wuhu Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.huang fei wuhu Status: low visibility profile with Huang Fei / Huang Fei 黄蜚 identity collision",
     "sourcePath": "references/southern-ming/people/huang-fei-wuhu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-fei-wuhu.json"
   },
@@ -1713,7 +1973,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "huang-fei",
     "title": "黄蜚 / Huang Fei",
-    "excerpt": "黄蜚，太湖另一路义军支线中的武力节点人物。现有锚点只支持徐安远“入太湖从黄蜚兵”并兵败被杀这一关系层；黄蜚本人职衔、根据地、战斗日序和结局仍待校。",
+    "excerpt": "Stable draft ID: person.huang fei taihu Status: seed profile with Wuhu identity collision warning",
     "sourcePath": "references/southern-ming/people/huang-fei.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-fei.json"
   },
@@ -1728,12 +1988,32 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-geng.json"
   },
   {
+    "id": "po-zhen-zi__people__huang-jiarui",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "huang-jiarui",
+    "title": "黄家瑞 / Huang Jiarui",
+    "excerpt": "Stable draft ID: person.huang jiarui Status: anchored secondary Phase 1 profile",
+    "sourcePath": "references/southern-ming/people/huang-jiarui.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/huang-jiarui.json"
+  },
+  {
+    "id": "po-zhen-zi__people__huang-jiazhi",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "huang-jiazhi",
+    "title": "黄家鼒 / Huang Jiazhi",
+    "excerpt": "Stable draft ID: person.huang jiazhi Status: thin low visibility profile；苏州招抚异文待校。",
+    "sourcePath": "references/southern-ming/people/huang-jiazhi.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/huang-jiazhi.json"
+  },
+  {
     "id": "po-zhen-zi__people__huang-jiuding",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
     "slug": "huang-jiuding",
     "title": "黄九鼎 / Huang Jiuding",
-    "excerpt": "Stable draft ID: person.huang jiuding Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.huang jiuding Status: Phase 1 thin roster profile; no direct CBDB hit; 0515 source note",
     "sourcePath": "references/southern-ming/people/huang-jiuding.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-jiuding.json"
   },
@@ -1753,7 +2033,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "huang-ming-wuhu",
     "title": "黄名（芜湖末局） / Huang Ming",
-    "excerpt": "Stable draft ID: person.huang ming wuhu Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.huang ming wuhu Status: low visibility profile",
     "sourcePath": "references/southern-ming/people/huang-ming-wuhu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-ming-wuhu.json"
   },
@@ -1828,6 +2108,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/huang-zhao.json"
   },
   {
+    "id": "po-zhen-zi__people__hui-dengxiang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "hui-dengxiang",
+    "title": "惠登相 / Hui Dengxiang",
+    "excerpt": "Stable draft ID: person.hui dengxiang Status: low visibility Left Army discipline split profile",
+    "sourcePath": "references/southern-ming/people/hui-dengxiang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/hui-dengxiang.json"
+  },
+  {
     "id": "po-zhen-zi__people__huo-ziheng",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -1863,9 +2153,19 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "jiang-yueguang",
     "title": "姜曰广 / Jiang Yueguang",
-    "excerpt": "Stable draft ID: person.jiang yueguang Status: anchored seed profile",
+    "excerpt": "Stable draft ID: person.jiang yueguang Status: anchored Phase 1 profile with later life bridge",
     "sourcePath": "references/southern-ming/people/jiang-yueguang.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/jiang-yueguang.json"
+  },
+  {
+    "id": "po-zhen-zi__people__jiang-yuntai",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "jiang-yuntai",
+    "title": "蒋云台 / Jiang Yuntai",
+    "excerpt": "Stable draft ID: person.jiang yuntai Status: low visibility Phase 1 profile",
+    "sourcePath": "references/southern-ming/people/jiang-yuntai.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/jiang-yuntai.json"
   },
   {
     "id": "po-zhen-zi__people__jiao-hongcao",
@@ -1976,6 +2276,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.jin tongwu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/jin-tongwu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/jin-tongwu.json"
+  },
+  {
+    "id": "po-zhen-zi__people__jin-wang-qiugui",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "jin-wang-qiugui",
+    "title": "晋王求桂 / Jin Wang QiuGui",
+    "excerpt": "Stable draft ID: person.jin wang qiugui Status: Phase 1 北都太子案宗室否认证人。",
+    "sourcePath": "references/southern-ming/people/jin-wang-qiugui.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/jin-wang-qiugui.json"
   },
   {
     "id": "po-zhen-zi__people__kang-xiong",
@@ -2143,7 +2453,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "li-chengdong",
     "title": "李成栋 / Li Chengdong",
-    "excerpt": "Stable draft ID: person.li chengdong Status: expanded profile; Phase 1 slice anchored, later career summarized",
+    "excerpt": "Stable draft ID: person.li chengdong Status: Phase 1 roleplay profile; later career summarized",
     "sourcePath": "references/southern-ming/people/li-chengdong.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/li-chengdong.json"
   },
@@ -2208,6 +2518,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/li-jia-taihu.json"
   },
   {
+    "id": "po-zhen-zi__people__li-jiantai",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "li-jiantai",
+    "title": "李建泰 / Li Jiantai",
+    "excerpt": "Stable draft ID: person.li jiantai Status: Phase 1 降顺降清旧辅、北使道德冲突和后续反清再分化人物。",
+    "sourcePath": "references/southern-ming/people/li-jiantai.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/li-jiantai.json"
+  },
+  {
     "id": "po-zhen-zi__people__li-laiheng",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -2233,7 +2553,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "li-mo",
     "title": "李模 / Li Mo",
-    "excerpt": "Stable draft ID: person.li mo Status: seed profile",
+    "excerpt": "Stable draft ID: person.li mo Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/li-mo.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/li-mo.json"
   },
@@ -2246,6 +2566,16 @@ export const wikiEntries = [
     "excerpt": "李颀，安龙十八先生案相关人物。为避免同其他李姓人物混淆，本页以安龙案消歧。",
     "sourcePath": "references/southern-ming/people/li-qi-anlong.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/li-qi-anlong.json"
+  },
+  {
+    "id": "po-zhen-zi__people__li-qiao",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "li-qiao",
+    "title": "李乔 / Li Qiao",
+    "excerpt": "Stable draft ID: person.li qiao Status: Phase 1 南京接管低可见度人物；清议堂和剃发层可见。",
+    "sourcePath": "references/southern-ming/people/li-qiao.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/li-qiao.json"
   },
   {
     "id": "po-zhen-zi__people__li-qisheng",
@@ -2288,6 +2618,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/li-sheng-qiyang.json"
   },
   {
+    "id": "po-zhen-zi__people__li-shichun",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "li-shichun",
+    "title": "李士春 / Li Shichun",
+    "excerpt": "Stable draft ID: person.li shichun Status: low visibility Jiujiang counsel profile",
+    "sourcePath": "references/southern-ming/people/li-shichun.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/li-shichun.json"
+  },
+  {
     "id": "po-zhen-zi__people__li-shiwei",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -2296,6 +2636,16 @@ export const wikiEntries = [
     "excerpt": "李世威，夔东七连坪山地簇人物。洪承畴奏报把其与李来亨、马重禧、党守素等并列，位于七连坪等处。",
     "sourcePath": "references/southern-ming/people/li-shiwei.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/li-shiwei.json"
+  },
+  {
+    "id": "po-zhen-zi__people__li-shiyin",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "li-shiyin",
+    "title": "李时印 / Li Shiyin",
+    "excerpt": "Stable draft ID: person.li shiyin Status: Phase 1 北都太子案指挥层识认证人。",
+    "sourcePath": "references/southern-ming/people/li-shiyin.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/li-shiyin.json"
   },
   {
     "id": "po-zhen-zi__people__li-shuaitai",
@@ -2368,6 +2718,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/li-xizuo.json"
   },
   {
+    "id": "po-zhen-zi__people__li-youlong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "li-youlong",
+    "title": "李犹龙 / Li Youlong",
+    "excerpt": "Stable draft ID: person.li youlong Status: low visibility Jiujiang counsel profile",
+    "sourcePath": "references/southern-ming/people/li-youlong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/li-youlong.json"
+  },
+  {
     "id": "po-zhen-zi__people__li-yuankai",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -2423,7 +2783,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "li-zushu",
     "title": "李祖述 / Li Zushu",
-    "excerpt": "Stable draft ID: person.li zushu Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.li zushu Status: Phase 1 low visibility profile; no direct CBDB hit",
     "sourcePath": "references/southern-ming/people/li-zushu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/li-zushu.json"
   },
@@ -2616,6 +2976,16 @@ export const wikiEntries = [
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/liu-chongxian.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/liu-chongxian.json"
+  },
+  {
+    "id": "po-zhen-zi__people__liu-guangdou",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "liu-guangdou",
+    "title": "刘光斗 / Liu Guangdou",
+    "excerpt": "Stable draft ID: person.liu guangdou Status: Phase 1 南京接管低可见度人物；无锡地方延伸可见。",
+    "sourcePath": "references/southern-ming/people/liu-guangdou.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/liu-guangdou.json"
   },
   {
     "id": "po-zhen-zi__people__liu-guangyin",
@@ -2823,7 +3193,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "liu-yunji",
     "title": "刘允极 / Liu Yunji",
-    "excerpt": "Stable draft ID: person.liu yunji Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.liu yunji Status: Phase 1 thin roster profile; no direct CBDB hit; 0515 source note",
     "sourcePath": "references/southern-ming/people/liu-yunji.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/liu-yunji.json"
   },
@@ -2838,6 +3208,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/liu-zeqing.json"
   },
   {
+    "id": "po-zhen-zi__people__liu-zhaoji",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "liu-zhaoji",
+    "title": "刘肇基 / Liu Zhaoji",
+    "excerpt": "Stable draft ID: person.liu zhaoji Status: low visibility Yangzhou defense profile",
+    "sourcePath": "references/southern-ming/people/liu-zhaoji.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/liu-zhaoji.json"
+  },
+  {
     "id": "po-zhen-zi__people__liu-zhengguo",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -2846,6 +3226,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.liu zhengguo Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/liu-zhengguo.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/liu-zhengguo.json"
+  },
+  {
+    "id": "po-zhen-zi__people__liu-zhengzong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "liu-zhengzong",
+    "title": "刘正宗 / Liu Zhengzong",
+    "excerpt": "Stable draft ID: person.liu zhengzong Status: low visibility Phase 1 recognition witness profile",
+    "sourcePath": "references/southern-ming/people/liu-zhengzong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/liu-zhengzong.json"
   },
   {
     "id": "po-zhen-zi__people__liu-zhifu",
@@ -2923,7 +3313,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "lu-jiude",
     "title": "卢九德 / Lu Jiude",
-    "excerpt": "Stable draft ID: person.lu jiude Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.lu jiude Status: Phase 1 low visibility profile; no direct CBDB hit",
     "sourcePath": "references/southern-ming/people/lu-jiude.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/lu-jiude.json"
   },
@@ -3018,6 +3408,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/luo-sizhong.json"
   },
   {
+    "id": "po-zhen-zi__people__luo-yangxing",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "luo-yangxing",
+    "title": "骆养性 / Luo Yangxing",
+    "excerpt": "Stable draft ID: person.luo yangxing Status: 弘光北使清方路线接迎/安全控制接口人物；完整降清过程待校。",
+    "sourcePath": "references/southern-ming/people/luo-yangxing.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/luo-yangxing.json"
+  },
+  {
     "id": "po-zhen-zi__people__luotuo",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -3033,7 +3433,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "lv-daqi",
     "title": "吕大器 / Lu Daqi",
-    "excerpt": "Stable draft ID: person.lv daqi Status: seed profile",
+    "excerpt": "Stable draft ID: person.lv daqi Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/lv-daqi.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/lv-daqi.json"
   },
@@ -3066,6 +3466,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.ma deming Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/ma-deming.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/ma-deming.json"
+  },
+  {
+    "id": "po-zhen-zi__people__ma-huabao",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ma-huabao",
+    "title": "马化豹 / Ma Huabao",
+    "excerpt": "Stable draft ID: person.ma huabao Status: Phase 1 low visibility profile; later same name continuity unresolved",
+    "sourcePath": "references/southern-ming/people/ma-huabao.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ma-huabao.json"
   },
   {
     "id": "po-zhen-zi__people__ma-jinbao",
@@ -3108,6 +3518,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/ma-luan.json"
   },
   {
+    "id": "po-zhen-zi__people__ma-minglu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ma-minglu",
+    "title": "马鸣騄 / Ma Minglu",
+    "excerpt": "Stable draft ID: person.ma minglu Status: anchored secondary Phase 1 profile",
+    "sourcePath": "references/southern-ming/people/ma-minglu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ma-minglu.json"
+  },
+  {
     "id": "po-zhen-zi__people__ma-ning",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -3126,6 +3546,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.ma sanheng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/ma-sanheng.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/ma-sanheng.json"
+  },
+  {
+    "id": "po-zhen-zi__people__ma-shaoyu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ma-shaoyu",
+    "title": "马绍愉 / Ma Shaoyu",
+    "excerpt": "Stable draft ID: person.ma shaoyu Status: thin but anchored Phase 1 secondary profile",
+    "sourcePath": "references/southern-ming/people/ma-shaoyu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ma-shaoyu.json"
   },
   {
     "id": "po-zhen-zi__people__ma-shi-yongli-taihou",
@@ -3228,6 +3658,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/mou-sheng.json"
   },
   {
+    "id": "po-zhen-zi__people__mu-hu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "mu-hu",
+    "title": "穆虎 / Mu Hu",
+    "excerpt": "Stable draft ID: person.mu hu Status: low visibility Phase 1 profile",
+    "sourcePath": "references/southern-ming/people/mu-hu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/mu-hu.json"
+  },
+  {
     "id": "po-zhen-zi__people__mu-tianbo",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -3306,6 +3746,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.na yue Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/na-yue.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/na-yue.json"
+  },
+  {
+    "id": "po-zhen-zi__people__ni-jiaqing",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ni-jiaqing",
+    "title": "倪嘉庆 / Ni Jiaqing",
+    "excerpt": "Stable draft ID: person.ni jiaqing Status: Phase 1 弘光初政科道/户科、瓜仪掣盐和加盐课执行低可见度人物；已按 audit.sm.0530 建页。",
+    "sourcePath": "references/southern-ming/people/ni-jiaqing.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ni-jiaqing.json"
   },
   {
     "id": "po-zhen-zi__people__pan-gengzhong",
@@ -3448,6 +3898,26 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/qian-bangqi.json"
   },
   {
+    "id": "po-zhen-zi__people__qian-fenglan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "qian-fenglan",
+    "title": "钱凤览 / Qian Fenglan",
+    "excerpt": "Stable draft ID: person.qian fenglan Status: Phase 1 北都太子案程序抗辩人物。",
+    "sourcePath": "references/southern-ming/people/qian-fenglan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/qian-fenglan.json"
+  },
+  {
+    "id": "po-zhen-zi__people__qian-jideng",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "qian-jideng",
+    "title": "钱继登 / Qian Jideng",
+    "excerpt": "Stable draft ID: person.qian jideng Status: Phase 1 两淮盐法/江防财政、扬州兼抚辞任和嘉兴监国请求尾声人物；已按 audit.sm.0528 建页。",
+    "sourcePath": "references/southern-ming/people/qian-jideng.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/qian-jideng.json"
+  },
+  {
     "id": "po-zhen-zi__people__qian-longwen",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -3468,6 +3938,26 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/qian-qianyi.json"
   },
   {
+    "id": "po-zhen-zi__people__qiao-shang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "qiao-shang",
+    "title": "乔尚 / Qiao Shang",
+    "excerpt": "Stable draft ID: person.qiao shang Status: Phase 1 内官/太监赏赉、两淮盐课和兵马粮饷稽察低可见度人物；已按 audit.sm.0529 建页。",
+    "sourcePath": "references/southern-ming/people/qiao-shang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/qiao-shang.json"
+  },
+  {
+    "id": "po-zhen-zi__people__qin-wang-cunshu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "qin-wang-cunshu",
+    "title": "秦王存枢 / 朱存枢 / Qin Wang Cunshu",
+    "excerpt": "Stable draft ID: person.qin wang cunshu Status: Phase 1 宗室被俘、清入北京旧精英吸收和西北宗室传闻边界人物。",
+    "sourcePath": "references/southern-ming/people/qin-wang-cunshu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/qin-wang-cunshu.json"
+  },
+  {
     "id": "po-zhen-zi__people__qiu-jin-tongan",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -3478,12 +3968,22 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/qiu-jin-tongan.json"
   },
   {
+    "id": "po-zhen-zi__people__qiu-lei",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "qiu-lei",
+    "title": "邱磊 / Qiu Lei",
+    "excerpt": "Stable draft ID: person.qiu lei Status: Phase 1 low visibility profile; death responsibility and motive unresolved",
+    "sourcePath": "references/southern-ming/people/qiu-lei.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/qiu-lei.json"
+  },
+  {
     "id": "po-zhen-zi__people__qiu-yue-wuhu",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
     "slug": "qiu-yue-wuhu",
     "title": "丘钺（芜湖末局） / Qiu Yue",
-    "excerpt": "Stable draft ID: person.qiu yue wuhu Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.qiu yue wuhu Status: low visibility profile with identity continuity caveats",
     "sourcePath": "references/southern-ming/people/qiu-yue-wuhu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/qiu-yue-wuhu.json"
   },
@@ -3546,6 +4046,16 @@ export const wikiEntries = [
     "excerpt": "任斗枢，安龙十八先生案相关人物。顾诚所录诏书作“任斗枢”，叙述和《明季南略》追赠层作“任斗墟”，需作为姓名异文处理。",
     "sourcePath": "references/southern-ming/people/ren-doushu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/ren-doushu.json"
+  },
+  {
+    "id": "po-zhen-zi__people__ren-minyu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "ren-minyu",
+    "title": "任民育 / Ren Minyu",
+    "excerpt": "Stable draft ID: person.ren minyu Status: low visibility civic official profile",
+    "sourcePath": "references/southern-ming/people/ren-minyu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/ren-minyu.json"
   },
   {
     "id": "po-zhen-zi__people__ren-yuansui",
@@ -3843,7 +4353,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "sun-jin",
     "title": "孙进 / Sun Jin",
-    "excerpt": "Stable draft ID: person.sun jin Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.sun jin Status: low visibility court household terminal profile",
     "sourcePath": "references/southern-ming/people/sun-jin.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/sun-jin.json"
   },
@@ -3988,6 +4498,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/tang-nanjin.json"
   },
   {
+    "id": "po-zhen-zi__people__tang-qilong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "tang-qilong",
+    "title": "唐起龙 / Tang Qilong",
+    "excerpt": "Stable draft ID: person.tang qilong Status: 弘光北使清方招抚接口人物；早年履历和亲属关系待清实录、《北使纪略》互校。",
+    "sourcePath": "references/southern-ming/people/tang-qilong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/tang-qilong.json"
+  },
+  {
     "id": "po-zhen-zi__people__tang-tai",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -3996,6 +4516,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.tang tai Status: anchored seed profile; identity pending",
     "sourcePath": "references/southern-ming/people/tang-tai.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/tang-tai.json"
+  },
+  {
+    "id": "po-zhen-zi__people__tang-tong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "tang-tong",
+    "title": "唐通 / Tang Tong",
+    "excerpt": "Stable draft ID: person.tang tong Status: Phase 1 起点低可见度人物；山海关接管和退却细节待校。",
+    "sourcePath": "references/southern-ming/people/tang-tong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/tang-tong.json"
   },
   {
     "id": "po-zhen-zi__people__tantai",
@@ -4026,6 +4556,26 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.tian xiong Status: roleplay source note available",
     "sourcePath": "references/southern-ming/people/tian-xiong.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/tian-xiong.json"
+  },
+  {
+    "id": "po-zhen-zi__people__tian-yang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "tian-yang",
+    "title": "田仰 / Tian Yang",
+    "excerpt": "Stable draft ID: person.tian yang Status: Phase 1 总漕/淮扬抚臣和刘泽清制约失败人物；已按 audit.sm.0527 升级。",
+    "sourcePath": "references/southern-ming/people/tian-yang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/tian-yang.json"
+  },
+  {
+    "id": "po-zhen-zi__people__tong-shi",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "tong-shi",
+    "title": "童氏 / Tong Shi",
+    "excerpt": "Stable draft ID: person.tong shi Status: succession risk seed profile",
+    "sourcePath": "references/southern-ming/people/tong-shi.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/tong-shi.json"
   },
   {
     "id": "po-zhen-zi__people__tong-yangjia",
@@ -4113,7 +4663,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "wan-yuanji",
     "title": "万元吉 / Wan Yuanji",
-    "excerpt": "Stable draft ID: person.wan yuanji Status: anchored seed profile",
+    "excerpt": "Stable draft ID: person.wan yuanji Status: anchored Phase 1 secondary profile; later Longwu/Ganzhou tail retained",
     "sourcePath": "references/southern-ming/people/wan-yuanji.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/wan-yuanji.json"
   },
@@ -4388,6 +4938,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/wang-tong-qing.json"
   },
   {
+    "id": "po-zhen-zi__people__wang-xie",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wang-xie",
+    "title": "王燮 / Wang Xie",
+    "excerpt": "Stable draft ID: person.wang xie Status: Phase 1 supporting profile; Shandong appointment and river defense responsibility anchored, full biography unresolved",
+    "sourcePath": "references/southern-ming/people/wang-xie.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wang-xie.json"
+  },
+  {
     "id": "po-zhen-zi__people__wang-xigun",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -4428,6 +4988,26 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/wang-yangzu.json"
   },
   {
+    "id": "po-zhen-zi__people__wang-ying-censor",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wang-ying-censor",
+    "title": "王懩（御史） / Wang Ying",
+    "excerpt": "Stable draft ID: person.wang ying censor Status: identity disambiguation profile；勿与 wang yinghua.md 混并。",
+    "sourcePath": "references/southern-ming/people/wang-ying-censor.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wang-ying-censor.json"
+  },
+  {
+    "id": "po-zhen-zi__people__wang-ying-denglai",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wang-ying-denglai",
+    "title": "王溁 / 王瀠 / Wang Ying (Denglai)",
+    "excerpt": "Stable draft ID: person.wang ying denglai Status: Phase 1 thin profile; Denglai appointment, non advance and seal/edict hand in anchored; full biography unre...",
+    "sourcePath": "references/southern-ming/people/wang-ying-denglai.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wang-ying-denglai.json"
+  },
+  {
     "id": "po-zhen-zi__people__wang-yinghua",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -4436,6 +5016,16 @@ export const wikiEntries = [
     "excerpt": "王应华，广州绍武政权建立线中的朝臣节点人物。现有锚点只稳妥支持其与苏观生、顾元镜、林察等同见于拥立朱聿𨮁的绍武建立层；官职、籍贯、责任比例和后续结局仍待校。",
     "sourcePath": "references/southern-ming/people/wang-yinghua.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/wang-yinghua.json"
+  },
+  {
+    "id": "po-zhen-zi__people__wang-yongji",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wang-yongji",
+    "title": "王永吉 / Wang Yongji",
+    "excerpt": "Stable draft ID: person.wang yongji Status: Phase 1 起点与江北防务中低可见度人物；已按 audit.sm.0526 升级。",
+    "sourcePath": "references/southern-ming/people/wang-yongji.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wang-yongji.json"
   },
   {
     "id": "po-zhen-zi__people__wang-yulong",
@@ -4458,6 +5048,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/wang-yunkai.json"
   },
   {
+    "id": "po-zhen-zi__people__wang-zhiming",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wang-zhiming",
+    "title": "王之明 / Wang Zhiming",
+    "excerpt": "Stable draft ID: person.wang zhiming Status: succession risk profile available",
+    "sourcePath": "references/southern-ming/people/wang-zhiming.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wang-zhiming.json"
+  },
+  {
     "id": "po-zhen-zi__people__wang-zhongxiao",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -4476,6 +5076,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.wang ziqi Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/wang-ziqi.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/wang-ziqi.json"
+  },
+  {
+    "id": "po-zhen-zi__people__wang-zunyuan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wang-zunyuan",
+    "title": "王尊垣 / Wang Zunyuan",
+    "excerpt": "Stable draft ID: person.wang zunyuan Status: thin Phase 1 low visibility profile; only Andong arrest action currently anchored",
+    "sourcePath": "references/southern-ming/people/wang-zunyuan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wang-zunyuan.json"
   },
   {
     "id": "po-zhen-zi__people__wei-biao",
@@ -4506,6 +5116,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.wei yinwen yunwen Status: low confidence disambiguation seed; Hongguang high camp monitor and Yangzhou actor",
     "sourcePath": "references/southern-ming/people/wei-yinwen-yunwen.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/wei-yinwen-yunwen.json"
+  },
+  {
+    "id": "po-zhen-zi__people__wei-zaode",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wei-zaode",
+    "title": "魏藻德 / Wei Zaode",
+    "excerpt": "Stable draft ID: person.wei zaode Status: Phase 1 起点低可见度人物；内阁责任比例待校。",
+    "sourcePath": "references/southern-ming/people/wei-zaode.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wei-zaode.json"
   },
   {
     "id": "po-zhen-zi__people__wen-anzhi",
@@ -4618,6 +5238,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/wu-jian-wujiang.json"
   },
   {
+    "id": "po-zhen-zi__people__wu-linzheng",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wu-linzheng",
+    "title": "吴麟征 / Wu Linzheng",
+    "excerpt": "Stable draft ID: person.wu linzheng Status: Phase 1 起点低可见度人物；职衔异文待校。",
+    "sourcePath": "references/southern-ming/people/wu-linzheng.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wu-linzheng.json"
+  },
+  {
     "id": "po-zhen-zi__people__wu-sangui",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -4646,6 +5276,26 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.wu shengzhao Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/wu-shengzhao.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/wu-shengzhao.json"
+  },
+  {
+    "id": "po-zhen-zi__people__wu-weihua",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wu-weihua",
+    "title": "吴惟华 / Wu Weihua",
+    "excerpt": "Stable draft ID: person.wu weihua Status: Phase 1 清入北京旧明勋贵招抚接口人物。",
+    "sourcePath": "references/southern-ming/people/wu-weihua.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wu-weihua.json"
+  },
+  {
+    "id": "po-zhen-zi__people__wu-xiang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "wu-xiang",
+    "title": "吴襄 / Wu Xiang",
+    "excerpt": "Stable draft ID: person.wu xiang Status: Phase 1 起点低可见度人物；吴三桂动机层待辨析。",
+    "sourcePath": "references/southern-ming/people/wu-xiang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/wu-xiang.json"
   },
   {
     "id": "po-zhen-zi__people__wu-yi",
@@ -4766,6 +5416,26 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.xiao shixian yongchang Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/xiao-shixian-yongchang.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/xiao-shixian-yongchang.json"
+  },
+  {
+    "id": "po-zhen-zi__people__xie-bi",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "xie-bi",
+    "title": "谢陛 / Xie Bi",
+    "excerpt": "Stable draft ID: person.xie bi Status: Phase 1 北方响应低可见度人物；与谢升误传关系已入 source note。",
+    "sourcePath": "references/southern-ming/people/xie-bi.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/xie-bi.json"
+  },
+  {
+    "id": "po-zhen-zi__people__xie-sheng",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "xie-sheng",
+    "title": "谢升 / 谢陞 / Xie Sheng",
+    "excerpt": "Stable draft ID: person.xie sheng Status: Phase 1 降清旧臣/姓名误传/身份识认接口人物。",
+    "sourcePath": "references/southern-ming/people/xie-sheng.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/xie-sheng.json"
   },
   {
     "id": "po-zhen-zi__people__xing-shi-gao-jie-wife",
@@ -5023,7 +5693,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "yang-biao-wuhu",
     "title": "杨彪（芜湖末局） / Yang Biao",
-    "excerpt": "Stable draft ID: person.yang biao wuhu Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.yang biao wuhu Status: low visibility profile with same name caveats",
     "sourcePath": "references/southern-ming/people/yang-biao-wuhu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/yang-biao-wuhu.json"
   },
@@ -5076,6 +5746,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.yang dinghe Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/yang-dinghe.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/yang-dinghe.json"
+  },
+  {
+    "id": "po-zhen-zi__people__yang-e",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "yang-e",
+    "title": "杨鹗 / Yang E",
+    "excerpt": "Stable draft ID: person.yang e Status: Phase 1 起点低可见度人物。",
+    "sourcePath": "references/southern-ming/people/yang-e.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/yang-e.json"
   },
   {
     "id": "po-zhen-zi__people__yang-fu-zheng",
@@ -5248,6 +5928,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/yang-ying.json"
   },
   {
+    "id": "po-zhen-zi__people__yang-yu-eunuch",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "yang-yu-eunuch",
+    "title": "杨玉 / 杨姓内监 / Yang Yu",
+    "excerpt": "Stable draft ID: person.yang yu eunuch Status: Phase 1 北都太子案内官识认证人，身份待辨。",
+    "sourcePath": "references/southern-ming/people/yang-yu-eunuch.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/yang-yu-eunuch.json"
+  },
+  {
     "id": "po-zhen-zi__people__yang-yulu",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -5316,6 +6006,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.yao shengwen Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/yao-shengwen.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/yao-shengwen.json"
+  },
+  {
+    "id": "po-zhen-zi__people__yao-sunju",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "yao-sunju",
+    "title": "姚孙榘 / Yao Sunju",
+    "excerpt": "Stable draft ID: person.yao sunju Status: thin low visibility profile",
+    "sourcePath": "references/southern-ming/people/yao-sunju.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/yao-sunju.json"
   },
   {
     "id": "po-zhen-zi__people__yao-zhizhuo",
@@ -5426,6 +6126,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.yinyuan Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/yinyuan.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/yinyuan.json"
+  },
+  {
+    "id": "po-zhen-zi__people__yong-wang-chongzhen",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "yong-wang-chongzhen",
+    "title": "永王 / Prince of Yong, Chongzhen Son",
+    "excerpt": "Stable draft ID: person.yong wang chongzhen Status: 崇祯诸子不确定性人物页；名讳和结局待辨析。",
+    "sourcePath": "references/southern-ming/people/yong-wang-chongzhen.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/yong-wang-chongzhen.json"
   },
   {
     "id": "po-zhen-zi__people__yu-cheng-zheng",
@@ -5558,6 +6268,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/zhang-chaogang.json"
   },
   {
+    "id": "po-zhen-zi__people__zhang-chengfu",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zhang-chengfu",
+    "title": "张成福 / Zhang Chengfu",
+    "excerpt": "Stable draft ID: person.zhang chengfu Status: Phase 1 low visibility profile; name variants unresolved",
+    "sourcePath": "references/southern-ming/people/zhang-chengfu.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zhang-chengfu.json"
+  },
+  {
     "id": "po-zhen-zi__people__zhang-congren",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -5593,7 +6313,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "zhang-gongri",
     "title": "张拱日 / Zhang Gongri",
-    "excerpt": "Stable draft ID: person.zhang gongri Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.zhang gongri Status: Phase 1 thin roster profile; no direct CBDB hit; 0515 source note",
     "sourcePath": "references/southern-ming/people/zhang-gongri.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zhang-gongri.json"
   },
@@ -5693,7 +6413,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "zhang-jie-wuhu",
     "title": "张杰（芜湖末局） / Zhang Jie",
-    "excerpt": "Stable draft ID: person.zhang jie wuhu Status: low confidence seed profile",
+    "excerpt": "Stable draft ID: person.zhang jie wuhu Status: low visibility profile with same name risk",
     "sourcePath": "references/southern-ming/people/zhang-jie-wuhu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zhang-jie-wuhu.json"
   },
@@ -5793,9 +6513,19 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "zhang-shenyan",
     "title": "张慎言 / Zhang Shenyan",
-    "excerpt": "Stable draft ID: person.zhang shenyan Status: seed profile",
+    "excerpt": "Stable draft ID: person.zhang shenyan Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/zhang-shenyan.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zhang-shenyan.json"
+  },
+  {
+    "id": "po-zhen-zi__people__zhang-shixun",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zhang-shixun",
+    "title": "张世勋 / Zhang Shixun",
+    "excerpt": "Stable draft ID: person.zhang shixun Status: low visibility Jiujiang command chain profile",
+    "sourcePath": "references/southern-ming/people/zhang-shixun.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zhang-shixun.json"
   },
   {
     "id": "po-zhen-zi__people__zhang-tianlu",
@@ -5896,6 +6626,16 @@ export const wikiEntries = [
     "excerpt": "张应科，一作章应科，孙可望派驻安龙的提塘官，是监视永历行在、传递安龙动静和连接贵阳权力中心的关键节点。",
     "sourcePath": "references/southern-ming/people/zhang-yingke.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zhang-yingke.json"
+  },
+  {
+    "id": "po-zhen-zi__people__zhang-yingyuan",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zhang-yingyuan",
+    "title": "张应元 / Zhang Yingyuan",
+    "excerpt": "Stable draft ID: person.zhang yingyuan Status: low visibility Jiujiang coercion profile",
+    "sourcePath": "references/southern-ming/people/zhang-yingyuan.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zhang-yingyuan.json"
   },
   {
     "id": "po-zhen-zi__people__zhang-zhong-eunuch",
@@ -6108,6 +6848,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/zheng-tai.json"
   },
   {
+    "id": "po-zhen-zi__people__zheng-yuanxun",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zheng-yuanxun",
+    "title": "郑元勋 / Zheng Yuanxun",
+    "excerpt": "Stable draft ID: person.zheng yuanxun Status: anchored secondary Phase 1 profile",
+    "sourcePath": "references/southern-ming/people/zheng-yuanxun.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zheng-yuanxun.json"
+  },
+  {
     "id": "po-zhen-zi__people__zheng-yunjin",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -6188,6 +6938,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/zhou-jintang.json"
   },
   {
+    "id": "po-zhen-zi__people__zhou-kui",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zhou-kui",
+    "title": "周奎 / Zhou Kui",
+    "excerpt": "Stable draft ID: person.zhou kui Status: Phase 1 清入北京旧明勋戚吸收与身份案周家节点。",
+    "sourcePath": "references/southern-ming/people/zhou-kui.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zhou-kui.json"
+  },
+  {
     "id": "po-zhen-zi__people__zhou-quanbin",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -6228,6 +6988,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/people/zhu-changfang.json"
   },
   {
+    "id": "po-zhen-zi__people__zhu-cilang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zhu-cilang",
+    "title": "朱慈烺 / 崇祯太子",
+    "excerpt": "Stable draft ID: person.zhu cilang Status: succession uncertainty profile",
+    "sourcePath": "references/southern-ming/people/zhu-cilang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zhu-cilang.json"
+  },
+  {
     "id": "po-zhen-zi__people__zhu-cunwu",
     "dlcId": "po-zhen-zi",
     "categoryId": "people",
@@ -6236,6 +7006,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.zhu cunwu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/zhu-cunwu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zhu-cunwu.json"
+  },
+  {
+    "id": "po-zhen-zi__people__zhu-dadian",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zhu-dadian",
+    "title": "朱大典 / Zhu Dadian",
+    "excerpt": "Stable draft ID: person.zhu dadian Status: Phase 1 terminal route profile with post Phase 1 boundary",
+    "sourcePath": "references/southern-ming/people/zhu-dadian.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zhu-dadian.json"
   },
   {
     "id": "po-zhen-zi__people__zhu-dongdan",
@@ -6453,7 +7233,7 @@ export const wikiEntries = [
     "categoryId": "people",
     "slug": "zou-cunyi",
     "title": "邹存义 / Zou Cunyi",
-    "excerpt": "Stable draft ID: person.zou cunyi Status: Phase 1 seed profile; no direct CBDB hit",
+    "excerpt": "Stable draft ID: person.zou cunyi Status: Phase 1 low visibility profile; no direct CBDB hit",
     "sourcePath": "references/southern-ming/people/zou-cunyi.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zou-cunyi.json"
   },
@@ -6476,6 +7256,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: person.zuo liangyu Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/zuo-liangyu.md",
     "contentPath": "/wiki-content/po-zhen-zi/people/zuo-liangyu.json"
+  },
+  {
+    "id": "po-zhen-zi__people__zuo-maodi",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "people",
+    "slug": "zuo-maodi",
+    "title": "左懋第 / Zuo Maodi",
+    "excerpt": "Stable draft ID: person.zuo maodi Status: anchored Phase 1 secondary profile with post fall martyr tail",
+    "sourcePath": "references/southern-ming/people/zuo-maodi.md",
+    "contentPath": "/wiki-content/po-zhen-zi/people/zuo-maodi.json"
   },
   {
     "id": "po-zhen-zi__people__zuo-menggeng",
@@ -6676,6 +7466,26 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: event.hongguang may terminal disputed points 1645 Status: Phase 1 uncertainty matrix",
     "sourcePath": "references/southern-ming/events/hongguang-may-terminal-disputed-points-1645.md",
     "contentPath": "/wiki-content/po-zhen-zi/events/hongguang-may-terminal-disputed-points-1645.json"
+  },
+  {
+    "id": "po-zhen-zi__events__hongguang-northern-envoy-1644",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "events",
+    "slug": "hongguang-northern-envoy-1644",
+    "title": "弘光北使与联清讨顺失败 / Hongguang Northern Envoy, 1644",
+    "excerpt": "Stable draft ID: event.hongguang northern envoy 1644 Status: anchored Phase 1 event dossier",
+    "sourcePath": "references/southern-ming/events/hongguang-northern-envoy-1644.md",
+    "contentPath": "/wiki-content/po-zhen-zi/events/hongguang-northern-envoy-1644.json"
+  },
+  {
+    "id": "po-zhen-zi__events__hongguang-succession-legitimacy-three-cases-1644-1645",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "events",
+    "slug": "hongguang-succession-legitimacy-three-cases-1644-1645",
+    "title": "弘光继统合法性三案 / Hongguang Succession-Legitimacy Three Cases",
+    "excerpt": "Stable draft ID: event.hongguang succession legitimacy three cases 1644 1645 Status: anchored Phase 1 segment",
+    "sourcePath": "references/southern-ming/events/hongguang-succession-legitimacy-three-cases-1644-1645.md",
+    "contentPath": "/wiki-content/po-zhen-zi/events/hongguang-succession-legitimacy-three-cases-1644-1645.json"
   },
   {
     "id": "po-zhen-zi__events__huang-daozhou-expedition-1645-1646",
@@ -6918,6 +7728,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/events/nanjing-surrender-1645.json"
   },
   {
+    "id": "po-zhen-zi__events__nanjing-wang-zhiming-succession-risk-1645",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "events",
+    "slug": "nanjing-wang-zhiming-succession-risk-1645",
+    "title": "王之明/伪太子案和南京另立风险 / Wang Zhiming Succession Risk",
+    "excerpt": "Stable draft ID: event.nanjing wang zhiming succession risk 1645 Status: anchored Phase 1 segment",
+    "sourcePath": "references/southern-ming/events/nanjing-wang-zhiming-succession-risk-1645.md",
+    "contentPath": "/wiki-content/po-zhen-zi/events/nanjing-wang-zhiming-succession-risk-1645.json"
+  },
+  {
     "id": "po-zhen-zi__events__qing-southwest-offensive-1658",
     "dlcId": "po-zhen-zi",
     "categoryId": "events",
@@ -7076,6 +7896,16 @@ export const wikiEntries = [
     "excerpt": "Stable draft ID: event.yangzhou fall 1645 Status: anchored seed dossier",
     "sourcePath": "references/southern-ming/events/yangzhou-fall-1645.md",
     "contentPath": "/wiki-content/po-zhen-zi/events/yangzhou-fall-1645.json"
+  },
+  {
+    "id": "po-zhen-zi__events__yangzhou-gao-jie-conflict-1644",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "events",
+    "slug": "yangzhou-gao-jie-conflict-1644",
+    "title": "高杰入扬冲突 / Gao Jie Yangzhou Conflict, 1644",
+    "excerpt": "Stable draft ID: event.yangzhou gao jie conflict 1644 Status: anchored Phase 1 event dossier",
+    "sourcePath": "references/southern-ming/events/yangzhou-gao-jie-conflict-1644.md",
+    "contentPath": "/wiki-content/po-zhen-zi/events/yangzhou-gao-jie-conflict-1644.json"
   },
   {
     "id": "po-zhen-zi__events__yongli-burma-terminal-network-1659-1662",
@@ -7268,6 +8098,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/places/chuzhou.json"
   },
   {
+    "id": "po-zhen-zi__places__fengrun",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "fengrun",
+    "title": "丰润 / Fengrun",
+    "excerpt": "Phase 1 demo 起点外部压力路线节点。丰润用于定位吴三桂入卫迟滞的到达时点，不扩成完整河北地图。",
+    "sourcePath": "references/southern-ming/places/fengrun.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/fengrun.json"
+  },
+  {
     "id": "po-zhen-zi__places__fengyang",
     "dlcId": "po-zhen-zi",
     "categoryId": "places",
@@ -7286,6 +8126,26 @@ export const wikiEntries = [
     "excerpt": "Phase 1 demo 的江防/渡口具体点位。瓜洲不是县级治理节点；它是因渡江、江防预警和南京震动而必须单独标记的 route site。",
     "sourcePath": "references/southern-ming/places/guazhou.md",
     "contentPath": "/wiki-content/po-zhen-zi/places/guazhou.json"
+  },
+  {
+    "id": "po-zhen-zi__places__guide",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "guide",
+    "title": "归德 / Guide",
+    "excerpt": "Phase 1 demo 的高杰北上外延 route/report 节点。归德在当前证据层主要用于承载徐州 睢州 开封/洛阳之间的河南方向机会、分汛防河和清军南下通道，不可写成弘光稳定控制区。",
+    "sourcePath": "references/southern-ming/places/guide.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/guide.json"
+  },
+  {
+    "id": "po-zhen-zi__places__hangzhou",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "hangzhou",
+    "title": "杭州 / Hangzhou",
+    "excerpt": "Phase 1 demo 的外部 seat continuity 节点。杭州不是本 demo 的完整可玩战场，而是弘光末局中太后/马士英路线、潞王端接纳想象和圣驾失联报告交汇的府城级节点。",
+    "sourcePath": "references/southern-ming/places/hangzhou.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/hangzhou.json"
   },
   {
     "id": "po-zhen-zi__places__hezhou",
@@ -7328,6 +8188,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/places/jiujiang.json"
   },
   {
+    "id": "po-zhen-zi__places__kaifeng",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "kaifeng",
+    "title": "开封 / Kaifeng",
+    "excerpt": "Phase 1 demo 的高杰北上外延 route/report 节点。开封在当前证据层主要代表“开、归”进取、河南经略和防河分汛方向，不可写成弘光朝稳定控制的中原基地。",
+    "sourcePath": "references/southern-ming/places/kaifeng.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/kaifeng.json"
+  },
+  {
     "id": "po-zhen-zi__places__linhuai",
     "dlcId": "po-zhen-zi",
     "categoryId": "places",
@@ -7346,6 +8216,16 @@ export const wikiEntries = [
     "excerpt": "Phase 1 demo 的弘光出奔路线候选节点。溧水不是独立终局地点，而是南京离城后从首都中枢滑向逃亡状态的第一层县级/城郭级中继。",
     "sourcePath": "references/southern-ming/places/lishui.md",
     "contentPath": "/wiki-content/po-zhen-zi/places/lishui.json"
+  },
+  {
+    "id": "po-zhen-zi__places__luoyang",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "luoyang",
+    "title": "洛阳 / Luoyang",
+    "excerpt": "Phase 1 demo 的高杰北上外延 route/report 节点，也是福藩旧国和河南西向压力记忆点。洛阳在当前证据层主要用于“开、雒/关、洛”方向和河洛报告，不可写成弘光朝稳定控制区。",
+    "sourcePath": "references/southern-ming/places/luoyang.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/luoyang.json"
   },
   {
     "id": "po-zhen-zi__places__nanjing",
@@ -7503,7 +8383,7 @@ export const wikiEntries = [
     "categoryId": "timeline",
     "slug": "1645",
     "title": "1645 年编年 / 1645 Chronicle",
-    "excerpt": "In era date: 弘光元年正月，具体日作正月十二/十三等异文。 Place: 徐州、归德、睢州、黄河一线。 Actors: 高杰、许定国、史可法、越其杰、陈潜夫、张缙彦、豪格、清军。 Event: 史可法安排高杰北上，试图由开封、洛阳方向行动并以会师剿闯向清方表态；高杰抵睢州后，许定国设宴诱杀高杰，并渡河...",
+    "excerpt": "In era date: 弘光元年正月，具体日作正月十二/十三等异文。 Place: 徐州、归德、睢州、开封、洛阳、黄河一线；归德、开封、洛阳为高杰北上外延 route/report 节点，不作弘光稳定控制区。 Actors: 高杰、许定国、史可法、越其杰、陈潜夫、张缙彦、豪格、清军。 Event: 史可法安排高...",
     "sourcePath": "references/southern-ming/chronicle/1645.md",
     "contentPath": "/wiki-content/po-zhen-zi/timeline/1645.json"
   },
@@ -7681,4 +8561,4 @@ export const wikiEntries = [
 
 export const initialWikiEntryId = "po-zhen-zi__people__index" as const;
 
-export const initialWikiEntryHtml = "<blockquote><p>短入口，不是全量目录。查具体人物时定向检索姓名、异写或文件名；完整盘点再读 <code>catalog.md</code>；当前接续看 <code>../current-focus.md</code>。</p></blockquote>\n<h3>Phase 1 Demo 人物组</h3>\n<ul><li>朝廷中枢：朱由崧、史可法、马士英、阮大铖。</li><li>起点外部压力：朱由检、李自成、吴三桂；崇祯诸子、吴襄、唐通、高第、多尔衮、范文程、洪承畴等先按事件页和 source-note 处理，人物单页待补。</li><li>江北军镇：高杰、黄得功、刘泽清、刘良佐，多铎为清军南下压力中心。</li><li>高营承继链：邢氏、高元爵/高元照、李本深、胡茂祯、卫允文/卫胤文、高起潜、越其杰、陈潜夫等；详见 <code>../events/suizhou-gao-jie-1645.md</code>。</li><li>左军东下链：左良玉、左梦庚、黄澍、袁继咸；张世勋、郝效忠、张应元、惠登相和地方死节名单先放 <code>../events/jiujiang-crisis-1645.md</code> 争议表。</li><li>南京迎降和功赏链：赵之龙、钱谦益、王铎、徐允爵/徐胤爵、邓文郁、朱国弼、汤国祚、柳祚昌、方一元、焦梦熊、齐赞元、韩赞周、卢九德、郭祚永、张拱日、李祖述、常应俊、邹存义、刘允极、黄九鼎及内官/勋臣名单；具体状态以人物单页和 <code>catalog.md</code> 为准。</li><li>芜湖末局已补 roleplay source-note：田雄/马得功、马銮、邹太后、翁之琪。</li><li>芜湖末局待补：张天禄、黄飞、邓林祖、杨彪、孙进、丘钺、张杰、黄名、陈献策等先作 <code>audit.sm.0469</code> 名单层种子人物。</li></ul>\n<h3>文件规则</h3>\n<ul><li>一人一个文件；同名、异写或身份混杂时先建待辨析条目。</li><li>人物事实、评价、行为模式和游戏近似必须分开；可进 curated data 的结论需要 <code>../source-audit.md#audit-sm-*</code> 或 source-note JSON 支撑。</li></ul>" as const;
+export const initialWikiEntryHtml = "<blockquote><p>短入口，不是全量目录。查具体人物时定向检索姓名、异写或文件名；完整盘点再读 <code>catalog.md</code>；当前接续看 <code>../current-focus.md</code>。</p></blockquote>\n<h3>Phase 1 Demo 人物组</h3>\n<ul><li>朝廷中枢：朱由崧、史可法、马士英、阮大铖；朱由崧主角页已接入 <code>audit.sm.0466/0497/0498/0496/0507/0508</code> 的福藩南奔、继统身份压力、末局路线和权威断裂层，史可法主角页已接入 <code>audit.sm.0530/0531</code> 的盐课/剥商风险和早年/崇祯任官骨架，马士英主角页已接入 <code>audit.sm.0508/0509/0517/0527/0528/0529/0530</code> 的制度反弹、文臣失位、财政/防河/盐课接口和末局幅纸任命断裂层，阮大铖主角页已接入 <code>audit.sm.0508</code> 的末局幅纸任命/权威断裂层。</li><li>弘光初政文臣中枢失位：高弘图、姜曰广、吕大器已有 <code>audit.sm.0517</code> source-note；分别对应阁臣用人秩序/新政漕粮、继统程序/反阮和监国礼仪/反马疏劾，被定策功、勋臣/军镇和马阮压力逐步压出中枢。</li><li>弘光初政制度反弹：张慎言、李模、常延龄已有 roleplay source-note；分别对应会推/廷争中的文臣制度路线、翊戴功赏名实疏谏和勋戚反阮/挂冠隐居记忆。</li><li>起点外部压力：朱由检、朱慈烺、吴襄、唐通、高第、定王、永王、李自成、吴三桂、多尔衮、范文程、洪承畴已有人物页；召吴三桂入卫迟滞层的王永吉、杨鹗、吴麟征、陈演、魏藻德已有人物页，其中王永吉已按 <code>audit.sm.0526</code> 升级为贯穿蓟辽召援、弘光山东河北经略、徐泗防河和淮安尾声的中低可见度人物；清入北京旧明精英吸收层的周奎、李建泰、吴惟华、秦王存枢已有低可见度人物页；北都太子识认链的钱凤览、晋王求桂、杨玉、常进节、李时印已有低可见度人物页。</li><li>北使和对清政策链：左懋第、陈洪范、马绍愉已补 Phase 1 侧写；多尔衮已有清方决策中心人物页，范文程/洪承畴已有入京政策接口页；唐起龙、骆养性、方大猷、刚林已有北使清方接口人物页；谢陛、谢升、冯铨已有北方旧臣接口/姓名误传人物页；多铎等清方/降清节点先按事件页和 source-note 处理。</li><li>江北军镇：高杰、黄得功、刘泽清、刘良佐，多铎为清军南下压力中心；高杰主角页已接入 <code>audit.sm.0490/0494/0495/0518</code> 的调停、北上地点和高营承继层；黄得功主角页已接入 <code>audit.sm.0481/0486/0487/0490/0506/0507/0508</code> 的部将降清、次级名单、从死名单、土桥调停、杭州/回銮接口、太平府-芜湖路线异文和幅纸任命断裂层；刘泽清主角页已接入 <code>audit.sm.0520/0521/0522/0523/0524/0525/0526/0527</code> 的徐州-淮安守备接替、清河防守候选、邱磊案、山东/登莱虚任、防河/总漕接口和淮安代理/逃海/畔附层；刘良佐主角页已接入 <code>audit.sm.0481/0486</code> 的田雄/马得功左右协转向和芜湖次级畔附名单层。</li><li>扬州入驻冲突和江北调停：郑元勋、黄家瑞、马鸣騄已补次要人物页；万元吉已补江北犒师、驻扎程序和四镇调停侧写；殷报、杨诚先放事件页低可见度细节，王永吉另见 <code>audit.sm.0526</code> 防河/并抚扬州链，倪嘉庆、胡承善另见 <code>audit.sm.0530</code> 弘光二月瓜/仪掣盐和加盐课执行链，钱继登另见 <code>audit.sm.0528</code> 两淮盐法/江防财政和兼抚扬州辞任链，乔尚/乔上另见 <code>audit.sm.0529</code> 内官/太监两淮盐课和兵马粮饷稽察链。</li><li>扬州失守和城内守御：刘肇基、任民育、何刚已补低可见度人物页；卫允文/卫胤文已有姓名待校页；张伯鲸、吴尔埙等先留死难名单层。</li><li>镇江/瓜洲江防失位：郑鸿逵、郑彩已补 1645 江防失用/退闽线；蒋云台已建低可见度降清 switch 人物页；张天禄仍作旧江防降将和清方战斗执行风险层，黄斌卿作水师失位/先遁边界人物。</li><li>高营承继命令链：邢氏、高元爵/高元照、李本深、胡茂祯、卫允文/卫胤文、高起潜、越其杰、陈潜夫等；<code>audit.sm.0518</code> 已把家属承继、幼嗣名义、文官/监军、内官宣谕、提督迟滞和中层将领离散风险分层，详见 <code>../events/suizhou-gao-jie-1645.md</code>。李成栋另按 <code>audit.sm.0519</code> 处理为徐州失位、弃镇/南遁/畔附异文和强力降将人物层；张成福按 <code>audit.sm.0520</code> 处理为徐州守备、山东河北总兵、姓名异写和畔附名单低可见度人物层；马化豹按 <code>audit.sm.0521</code> 处理为刘泽清举荐、徐州代须/回淮、清河废城防守建议和淮安畔附名单低可见度人物层；柏永馥/柏承馥按 <code>audit.sm.0522</code> 处理为刘泽清举荐、清河防守候选、安东擒邱磊、淮阳十四州县代理和淮安降清接口；邱磊按 <code>audit.sm.0523</code> 处理为山东总兵虚任、刘泽清竞争风险、安东被捕和淮安狱死人物，王尊垣只作安东捕邱薄人物；王燮按 <code>audit.sm.0524</code> 处理为山东巡抚虚任、淮上动员和河防/安东命令接口人物；王溁/王瀠按 <code>audit.sm.0525</code> 处理为登莱东江巡抚虚任、淮上观望、奉命不前被劾和印敕缴纳薄人物；王永吉按 <code>audit.sm.0526</code> 处理为原蓟督/辽蓟总督、山东河北经略、徐州告急、总督防河和淮安尾声分歧人物；田仰按 <code>audit.sm.0527</code> 处理为总漕/淮扬抚臣、刘泽清制约失败、安东至徐州防段报告和逃海尾声人物；倪嘉庆/胡承善按 <code>audit.sm.0530</code> 处理为瓜/仪掣盐、加盐课和史可法剥商风险人物层；钱继登按 <code>audit.sm.0528</code> 处理为两淮盐法/江防财政、扬州兼抚辞任和嘉兴请唐王监国尾声人物；乔尚/乔上按 <code>audit.sm.0529</code> 处理为内官赏赉、两淮盐课和兵马粮饷稽察薄人物。</li><li>左军东下链：左良玉、左梦庚、黄澍、袁继咸；张世勋、郝效忠、李士春、李犹龙、张应元、惠登相已有九江守城链低可见度人物页；邓林奇、汪硕画、李士元和地方死节名单先放 <code>../events/jiujiang-crisis-1645.md</code> 争议表。</li><li>南京迎降、继统风险和功赏链：大悲和尚、童氏/童妃、王之明、王之明案识认/看管链的高梦箕、穆虎、方拱乾、刘正宗、冯可宗，赵之龙、钱谦益、王铎、徐允爵/徐胤爵、邓文郁、朱国弼、汤国祚、柳祚昌、方一元、焦梦熊、齐赞元、韩赞周、卢九德、郭祚永、张拱日、李祖述、常应俊、邹存义、刘允极、黄九鼎及内官/勋臣名单；韩赞周、卢九德、常应俊、邹存义、李祖述已有 <code>audit.sm.0514</code> source-note；郭祚永、张拱日、刘允极、黄九鼎已有 <code>audit.sm.0515</code> source-note；接管低可见度人物已有黄端伯、何瑞征/何应瑞、李乔、管绍宁、姚孙榘、王懩、刘光斗、黄家鼒、陈于鼎。具体状态以人物单页和 <code>catalog.md</code> 为准。</li><li>芜湖末局已补 source-note：田雄/马得功、马銮、邹太后、翁之琪、张天禄；黄斌卿已补为水师失位/先遁和后续舟山边界人物；拟幸杭州/护驾回銮接口的朱大典、方国安、杜弘域/杜宏域、卜从善已有 source-note 和人物页；丘钺、张杰、黄名、陈献策已有低可见度次级畔附名单 source-note；黄飞、邓林祖、杨彪、孙进已有低可见度从死/随驾内官名单 source-note。</li></ul>\n<h3>文件规则</h3>\n<ul><li>一人一个文件；同名、异写或身份混杂时先建待辨析条目。</li><li>人物事实、评价、行为模式和游戏近似必须分开；可进 curated data 的结论需要 <code>../source-audit.md#audit-sm-*</code> 或 source-note JSON 支撑。</li></ul>" as const;

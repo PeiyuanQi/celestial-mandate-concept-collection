@@ -68,7 +68,7 @@ export const homePageContent: Record<Locale, HomePageContent> = {
           text: "水陆所通，方为可达。",
         },
         {
-          label: "身居高位",
+          label: "秉权",
           text: "天下事，未必尽明。",
         },
       ],

@@ -137,6 +137,52 @@ function compareSourceFiles(a, b) {
   return collator.compare(a.name, b.name);
 }
 
+function collectMarkdownSources(category, sourceDir) {
+  const dirents = readdirSync(sourceDir, { withFileTypes: true });
+  const topLevelFiles = dirents
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith(".md"))
+    .map((dirent) => ({
+      name: dirent.name,
+      slug: dirent.name.replace(/\.md$/, ""),
+      absolutePath: resolve(sourceDir, dirent.name),
+      fallbackTitleFilename: dirent.name,
+      sourcePathAliases: [],
+    }));
+
+  if (category.id !== "people") {
+    return topLevelFiles.sort(compareSourceFiles);
+  }
+
+  const profileSources = dirents
+    .filter(
+      (dirent) =>
+        dirent.isDirectory() &&
+        existsSync(resolve(sourceDir, dirent.name, "profile.md")),
+    )
+    .map((dirent) => {
+      const legacySourcePath = normalizeSourcePath(
+        relative(
+          resolve(referencesRoot, ".."),
+          resolve(sourceDir, `${dirent.name}.md`),
+        ),
+      );
+
+      return {
+        name: `${dirent.name}/profile.md`,
+        slug: dirent.name,
+        absolutePath: resolve(sourceDir, dirent.name, "profile.md"),
+        fallbackTitleFilename: `${dirent.name}.md`,
+        sourcePathAliases: [legacySourcePath],
+      };
+    });
+  const profileSlugs = new Set(profileSources.map((source) => source.slug));
+  const legacyFiles = topLevelFiles.filter(
+    (source) => priorityFiles.has(source.name) || !profileSlugs.has(source.slug),
+  );
+
+  return [...legacyFiles, ...profileSources].sort(compareSourceFiles);
+}
+
 function normalizeSourcePath(value) {
   return value.split(path.sep).join("/");
 }
@@ -455,31 +501,28 @@ function collectEntries() {
         continue;
       }
 
-      const files = readdirSync(sourceDir, { withFileTypes: true })
-        .filter((dirent) => dirent.isFile() && dirent.name.endsWith(".md"))
-        .sort(compareSourceFiles);
+      const sources = collectMarkdownSources(category, sourceDir);
 
-      for (const file of files) {
-        const absolutePath = resolve(sourceDir, file.name);
-        const markdown = readFileSync(absolutePath, "utf8");
-        const title = extractTitle(markdown, file.name);
+      for (const source of sources) {
+        const markdown = readFileSync(source.absolutePath, "utf8");
+        const title = extractTitle(markdown, source.fallbackTitleFilename);
         const excerpt = extractExcerpt(markdown, title);
-        const slug = file.name.replace(/\.md$/, "");
         const sourcePath = normalizeSourcePath(
-          relative(resolve(referencesRoot, ".."), absolutePath),
+          relative(resolve(referencesRoot, ".."), source.absolutePath),
         );
-        const id = `${dlc.id}__${category.id}__${slug}`;
-        const contentPath = `/wiki-content/${dlc.id}/${category.id}/${slug}.json`;
-        const portrait = findPortrait(category, sourceDir, dlc, slug, title);
+        const id = `${dlc.id}__${category.id}__${source.slug}`;
+        const contentPath = `/wiki-content/${dlc.id}/${category.id}/${source.slug}.json`;
+        const portrait = findPortrait(category, sourceDir, dlc, source.slug, title);
 
         entries.push({
           id,
           dlcId: dlc.id,
           categoryId: category.id,
-          slug,
+          slug: source.slug,
           title,
           excerpt,
           sourcePath,
+          sourcePathAliases: source.sourcePathAliases,
           contentPath,
           portrait,
           markdown,
@@ -492,9 +535,13 @@ function collectEntries() {
 }
 
 function writeGeneratedContent(entries) {
-  const entryBySourcePath = new Map(
-    entries.map((entry) => [entry.sourcePath, entry]),
-  );
+  const entryBySourcePath = new Map();
+  for (const entry of entries) {
+    entryBySourcePath.set(entry.sourcePath, entry);
+    for (const sourcePathAlias of entry.sourcePathAliases) {
+      entryBySourcePath.set(sourcePathAlias, entry);
+    }
+  }
 
   rmSync(publicWikiRoot, { recursive: true, force: true });
 
@@ -531,7 +578,7 @@ function writeGeneratedContent(entries) {
     : "";
 
   const publicEntries = entries.map(
-    ({ markdown: _markdown, portrait, ...entry }) => ({
+    ({ markdown: _markdown, portrait, sourcePathAliases: _aliases, ...entry }) => ({
       ...entry,
       ...(portrait ? { portrait: publicPortrait(portrait) } : {}),
     }),

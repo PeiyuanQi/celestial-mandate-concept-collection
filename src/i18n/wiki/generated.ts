@@ -75,7 +75,13 @@ export const wikiEntries = [
     "title": "阿格商 / A'geshang",
     "excerpt": "Status: seed profile; name variant pending.",
     "sourcePath": "references/southern-ming/people/a-geshang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/a-geshang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/a-geshang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/a-geshang/portrait.png",
+      "caption": "AI generated game concept art; likeness is not authenticated.",
+      "alt": "阿格商 / A'geshang portrait concept art",
+      "sourcePath": "references/southern-ming/people/a-geshang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__adegou",
@@ -85,7 +91,13 @@ export const wikiEntries = [
     "title": "阿得苟 / Adegou",
     "excerpt": "Stable draft ID: person.adegou Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/adegou.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/adegou.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/adegou.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/adegou/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "阿得苟 / Adegou portrait concept art",
+      "sourcePath": "references/southern-ming/people/adegou/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ai-chengxiang",
@@ -95,7 +107,13 @@ export const wikiEntries = [
     "title": "艾诚祥 / Ai Chengxiang",
     "excerpt": "Status: anchored seed profile; name variant pending.",
     "sourcePath": "references/southern-ming/people/ai-chengxiang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ai-chengxiang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ai-chengxiang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ai-chengxiang/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "艾诚祥 / Ai Chengxiang portrait concept art",
+      "sourcePath": "references/southern-ming/people/ai-chengxiang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ai-nengqi",
@@ -105,7 +123,13 @@ export const wikiEntries = [
     "title": "艾能奇 / Ai Nengqi",
     "excerpt": "Stable draft ID: person.ai nengqi Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/ai-nengqi.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ai-nengqi.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ai-nengqi.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ai-nengqi/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "艾能奇 / Ai Nengqi portrait concept art",
+      "sourcePath": "references/southern-ming/people/ai-nengqi/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__aixingga",
@@ -115,7 +139,13 @@ export const wikiEntries = [
     "title": "爱星阿 / Aixingga",
     "excerpt": "Stable draft ID: person.aixingga Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/aixingga.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/aixingga.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/aixingga.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/aixingga/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "爱星阿 / Aixingga portrait concept art",
+      "sourcePath": "references/southern-ming/people/aixingga/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ba-chenxing",
@@ -125,7 +155,13 @@ export const wikiEntries = [
     "title": "巴臣兴 / Ba Chenxing",
     "excerpt": "Status: seed profile; name variant pending.",
     "sourcePath": "references/southern-ming/people/ba-chenxing.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ba-chenxing.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ba-chenxing.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ba-chenxing/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page only. The likeness is not authenticated.",
+      "alt": "巴臣兴 / Ba Chenxing portrait concept art",
+      "sourcePath": "references/southern-ming/people/ba-chenxing/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__badu-qing",
@@ -135,7 +171,13 @@ export const wikiEntries = [
     "title": "巴都（清方） / Badu",
     "excerpt": "巴都，清方满洲将领，1656 年罗源、宁德后随阿格商等来援。",
     "sourcePath": "references/southern-ming/people/badu-qing.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/badu-qing.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/badu-qing.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/badu-qing/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page only. The likeness is not authenticated.",
+      "alt": "巴都（清方） / Badu portrait concept art",
+      "sourcePath": "references/southern-ming/people/badu-qing/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__baguizai",
@@ -145,7 +187,13 @@ export const wikiEntries = [
     "title": "拔鬼仔 / Baguizai",
     "excerpt": "Status: anchored seed profile; source transliteration pending.",
     "sourcePath": "references/southern-ming/people/baguizai.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/baguizai.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/baguizai.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/baguizai/portrait.png",
+      "caption": "AI generated game concept art, style inspired by the person page only. The likeness is not authenticated.",
+      "alt": "拔鬼仔 / Baguizai portrait concept art",
+      "sourcePath": "references/southern-ming/people/baguizai/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__bai-wenxuan",
@@ -155,7 +203,13 @@ export const wikiEntries = [
     "title": "白文选 / Bai Wenxuan",
     "excerpt": "Stable draft ID: person.bai wenxuan Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/bai-wenxuan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/bai-wenxuan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/bai-wenxuan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/bai-wenxuan/portrait.png",
+      "caption": "AI generated game concept art, style inspired by the person page only. The likeness is not authenticated.",
+      "alt": "白文选 / Bai Wenxuan portrait concept art",
+      "sourcePath": "references/southern-ming/people/bai-wenxuan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__bai-yongfu",
@@ -165,7 +219,13 @@ export const wikiEntries = [
     "title": "柏永馥 / Bai Yongfu",
     "excerpt": "Stable draft ID: person.bai yongfu Status: Phase 1 low visibility profile; name variant and later same name continuity unresolved",
     "sourcePath": "references/southern-ming/people/bai-yongfu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/bai-yongfu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/bai-yongfu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/bai-yongfu/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was available, and this is not an authenticated likeness.",
+      "alt": "柏永馥 / Bai Yongfu portrait concept art",
+      "sourcePath": "references/southern-ming/people/bai-yongfu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__boluo",
@@ -175,7 +235,13 @@ export const wikiEntries = [
     "title": "博洛 / Bolo",
     "excerpt": "Stable draft ID: person.boluo Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/boluo.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/boluo.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/boluo.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/boluo/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was available, and this is not an authenticated likeness.",
+      "alt": "博洛 / Bolo portrait concept art",
+      "sourcePath": "references/southern-ming/people/boluo/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__bu-congshan",
@@ -185,7 +251,13 @@ export const wikiEntries = [
     "title": "卜从善 / Bu Congshan",
     "excerpt": "Stable draft ID: person.bu congshan Status: low visibility Phase 1 roster profile",
     "sourcePath": "references/southern-ming/people/bu-congshan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/bu-congshan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/bu-congshan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/bu-congshan/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "卜从善 / Bu Congshan portrait concept art",
+      "sourcePath": "references/southern-ming/people/bu-congshan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cai-dechun",
@@ -195,7 +267,13 @@ export const wikiEntries = [
     "title": "蔡得春 / Cai Dechun",
     "excerpt": "Stable draft ID: person.cai dechun Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/cai-dechun.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cai-dechun.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cai-dechun.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cai-dechun/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "蔡得春 / Cai Dechun portrait concept art",
+      "sourcePath": "references/southern-ming/people/cai-dechun/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cai-lu",
@@ -205,7 +283,13 @@ export const wikiEntries = [
     "title": "蔡禄 / Cai Lu",
     "excerpt": "Stable draft ID: person.cai lu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/cai-lu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cai-lu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cai-lu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cai-lu/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "蔡禄 / Cai Lu portrait concept art",
+      "sourcePath": "references/southern-ming/people/cai-lu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cai-shi-anlong",
@@ -215,7 +299,13 @@ export const wikiEntries = [
     "title": "蔡氏（安龙案，姓名异文待校） / Cai Shi, Anlong Case",
     "excerpt": "蔡氏，永历安龙朝臣，十八先生案相关人物。顾诚正文 OCR 出现私用区字形，所录诏书作“蔡宿”；《明季南略》追赠层作“蔡縯”。目前不宜选定单一主名进入 curated data。",
     "sourcePath": "references/southern-ming/people/cai-shi-anlong.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cai-shi-anlong.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cai-shi-anlong.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cai-shi-anlong/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "蔡氏（安龙案，姓名异文待校） / Cai Shi, Anlong Case portrait concept art",
+      "sourcePath": "references/southern-ming/people/cai-shi-anlong/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cai-zheng",
@@ -225,7 +315,13 @@ export const wikiEntries = [
     "title": "蔡政 / Cai Zheng",
     "excerpt": "Stable draft ID: person.cai zheng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/cai-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cai-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cai-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cai-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "蔡政 / Cai Zheng portrait concept art",
+      "sourcePath": "references/southern-ming/people/cai-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cao-fude",
@@ -235,7 +331,13 @@ export const wikiEntries = [
     "title": "曹福德 / Cao Fude",
     "excerpt": "Stable draft ID: person.cao fude Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/cao-fude.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cao-fude.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cao-fude.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cao-fude/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction; not an authenticated likeness and not a historical evidence source.",
+      "alt": "曹福德 / Cao Fude portrait concept art",
+      "sourcePath": "references/southern-ming/people/cao-fude/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cao-zhijian",
@@ -245,7 +347,13 @@ export const wikiEntries = [
     "title": "曹志建 / Cao Zhijian",
     "excerpt": "Stable draft ID: person.cao zhijian Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/cao-zhijian.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cao-zhijian.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cao-zhijian.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cao-zhijian/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction; not an authenticated likeness and not a historical evidence source.",
+      "alt": "曹志建 / Cao Zhijian portrait concept art",
+      "sourcePath": "references/southern-ming/people/cao-zhijian/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chang-jinjie",
@@ -255,7 +363,13 @@ export const wikiEntries = [
     "title": "常进节 / Chang Jinjie",
     "excerpt": "Stable draft ID: person.chang jinjie Status: Phase 1 北都太子案太监识认证人。",
     "sourcePath": "references/southern-ming/people/chang-jinjie.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chang-jinjie.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chang-jinjie.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chang-jinjie/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction; not an authenticated likeness and not a historical evidence source.",
+      "alt": "常进节 / Chang Jinjie portrait concept art",
+      "sourcePath": "references/southern-ming/people/chang-jinjie/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chang-shouning",
@@ -265,7 +379,13 @@ export const wikiEntries = [
     "title": "常寿宁 / Chang Shouning",
     "excerpt": "Status: seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chang-shouning.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chang-shouning.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chang-shouning.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chang-shouning/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not historically authenticated.",
+      "alt": "常寿宁 / Chang Shouning portrait concept art",
+      "sourcePath": "references/southern-ming/people/chang-shouning/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chang-yanling",
@@ -275,7 +395,13 @@ export const wikiEntries = [
     "title": "常延龄 / Chang Yanling",
     "excerpt": "Stable draft ID: person.chang yanling Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/chang-yanling.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chang-yanling.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chang-yanling.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chang-yanling/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not historically authenticated.",
+      "alt": "常延龄 / Chang Yanling portrait concept art",
+      "sourcePath": "references/southern-ming/people/chang-yanling/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chang-yingjun",
@@ -285,7 +411,13 @@ export const wikiEntries = [
     "title": "常应俊 / Chang Yingjun",
     "excerpt": "Stable draft ID: person.chang yingjun Status: Phase 1 low visibility profile; no direct CBDB hit",
     "sourcePath": "references/southern-ming/people/chang-yingjun.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chang-yingjun.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chang-yingjun.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chang-yingjun/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "常应俊 / Chang Yingjun portrait concept art",
+      "sourcePath": "references/southern-ming/people/chang-yingjun/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chang-yuanliang",
@@ -295,7 +427,13 @@ export const wikiEntries = [
     "title": "常元亮 / Chang Yuanliang",
     "excerpt": "Stable draft ID: person.chang yuanliang Status: seed profile",
     "sourcePath": "references/southern-ming/people/chang-yuanliang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chang-yuanliang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chang-yuanliang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chang-yuanliang/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "常元亮 / Chang Yuanliang portrait concept art",
+      "sourcePath": "references/southern-ming/people/chang-yuanliang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__che-renxian",
@@ -305,7 +443,13 @@ export const wikiEntries = [
     "title": "车任暹 / Che Renxian",
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/che-renxian.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/che-renxian.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/che-renxian.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/che-renxian/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the person page only; this is not an authenticated likeness and is not a historical evidence source.",
+      "alt": "车任暹 / Che Renxian portrait concept art",
+      "sourcePath": "references/southern-ming/people/che-renxian/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-ba",
@@ -315,7 +459,13 @@ export const wikiEntries = [
     "title": "陈霸 / Chen Ba",
     "excerpt": "Stable draft ID: person.chen ba Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-ba.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-ba.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-ba.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-ba/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the person page only; this is not an authenticated likeness and is not a historical evidence source.",
+      "alt": "陈霸 / Chen Ba portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-ba/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-bangfu",
@@ -325,7 +475,13 @@ export const wikiEntries = [
     "title": "陈邦傅 / Chen Bangfu",
     "excerpt": "Stable draft ID: person.chen bangfu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-bangfu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-bangfu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-bangfu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-bangfu/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "陈邦傅 / Chen Bangfu portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-bangfu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-bangyan",
@@ -335,7 +491,13 @@ export const wikiEntries = [
     "title": "陈邦彦 / Chen Bangyan",
     "excerpt": "Stable draft ID: person.chen bangyan Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-bangyan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-bangyan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-bangyan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-bangyan/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "陈邦彦 / Chen Bangyan portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-bangyan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-baoyao",
@@ -345,7 +507,13 @@ export const wikiEntries = [
     "title": "陈宝钥 / Chen Baoyao",
     "excerpt": "Status: seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-baoyao.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-baoyao.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-baoyao.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-baoyao/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was available, and the image is not an authenticated likeness.",
+      "alt": "陈宝钥 / Chen Baoyao portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-baoyao/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-bin-zheng",
@@ -355,7 +523,13 @@ export const wikiEntries = [
     "title": "陈斌（郑氏） / Chen Bin",
     "excerpt": "Status: seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-bin-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-bin-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-bin-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-bin-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was available, and the image is not an authenticated likeness.",
+      "alt": "陈斌（郑氏） / Chen Bin portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-bin-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-de-zheng",
@@ -365,7 +539,13 @@ export const wikiEntries = [
     "title": "陈德（郑氏） / Chen De",
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-de-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-de-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-de-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-de-zheng/portrait.png",
+      "caption": "AI generated game concept art; likeness is not authenticated.",
+      "alt": "陈德（郑氏） / Chen De portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-de-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-ding-tongan",
@@ -375,7 +555,13 @@ export const wikiEntries = [
     "title": "陈鼎（同安） / Chen Ding",
     "excerpt": "Stable draft ID: person.chen ding tongan Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-ding-tongan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-ding-tongan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-ding-tongan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-ding-tongan/portrait.png",
+      "caption": "AI generated game concept art; likeness is not authenticated.",
+      "alt": "陈鼎（同安） / Chen Ding portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-ding-tongan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-guang-zheng",
@@ -385,7 +571,13 @@ export const wikiEntries = [
     "title": "陈广（郑氏） / Chen Guang",
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-guang-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-guang-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-guang-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-guang-zheng/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction. The likeness is not authenticated.",
+      "alt": "陈广（郑氏） / Chen Guang portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-guang-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-hongfan",
@@ -395,7 +587,13 @@ export const wikiEntries = [
     "title": "陈洪范 / Chen Hongfan",
     "excerpt": "Stable draft ID: person.chen hongfan Status: anchored Phase 1 profile with infiltration and post Hangzhou tail caveats",
     "sourcePath": "references/southern-ming/people/chen-hongfan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-hongfan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-hongfan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-hongfan/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction. The likeness is not authenticated.",
+      "alt": "陈洪范 / Chen Hongfan portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-hongfan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-hui",
@@ -405,7 +603,13 @@ export const wikiEntries = [
     "title": "陈辉 / Chen Hui",
     "excerpt": "Stable draft ID: person.chen hui Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-hui.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-hui.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-hui.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-hui/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "陈辉 / Chen Hui portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-hui/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-jiamo",
@@ -415,7 +619,13 @@ export const wikiEntries = [
     "title": "陈嘉谟 / Chen Jiamo",
     "excerpt": "Stable draft ID: person.chen jiamo Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-jiamo.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-jiamo.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-jiamo.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-jiamo/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "陈嘉谟 / Chen Jiamo portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-jiamo/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-jin-qing",
@@ -425,7 +635,13 @@ export const wikiEntries = [
     "title": "陈锦（清方福建总督线） / Chen Jin",
     "excerpt": "Stable draft ID: person.chen jin qing Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-jin-qing.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-jin-qing.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-jin-qing.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-jin-qing/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not an authenticated likeness of Chen Jin and must not be used as historical evidence.",
+      "alt": "陈锦（清方福建总督线） / Chen Jin portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-jin-qing/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-kui",
@@ -435,7 +651,13 @@ export const wikiEntries = [
     "title": "陈魁 / Chen Kui",
     "excerpt": "陈魁，郑成功系统将领，南京战役中与“铁人”军、护卫救援线索相关。",
     "sourcePath": "references/southern-ming/people/chen-kui.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-kui.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-kui.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-kui/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not an authenticated likeness of Chen Kui and must not be used as historical evidence.",
+      "alt": "陈魁 / Chen Kui portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-kui/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-linrui",
@@ -445,7 +667,13 @@ export const wikiEntries = [
     "title": "陈麟瑞 / Chen Linrui",
     "excerpt": "陈麟瑞，安龙十八先生追赠层人物。当前已核材料主要见《明季南略》1657 年追赠名单。",
     "sourcePath": "references/southern-ming/people/chen-linrui.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-linrui.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-linrui.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-linrui/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "陈麟瑞 / Chen Linrui portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-linrui/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-liuqi",
@@ -455,7 +683,13 @@ export const wikiEntries = [
     "title": "陈六奇 / Chen Liuqi",
     "excerpt": "Stable draft ID: person.chen liuqi Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-liuqi.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-liuqi.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-liuqi.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-liuqi/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "陈六奇 / Chen Liuqi portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-liuqi/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-liuyu",
@@ -465,7 +699,13 @@ export const wikiEntries = [
     "title": "陈六御 / Chen Liuyu",
     "excerpt": "陈六御，郑成功系统北上舟山线将领；《海上見聞錄》又称其为鲁王都督陈谦之子，需校。",
     "sourcePath": "references/southern-ming/people/chen-liuyu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-liuyu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-liuyu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-liuyu/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "陈六御 / Chen Liuyu portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-liuyu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-mang",
@@ -475,7 +715,13 @@ export const wikiEntries = [
     "title": "陈蟒 / Chen Mang",
     "excerpt": "Stable draft ID: person.chen mang Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-mang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-mang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-mang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-mang/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "陈蟒 / Chen Mang portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-mang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-mingyu",
@@ -485,7 +731,13 @@ export const wikiEntries = [
     "title": "陈明遇 / Chen Mingyu",
     "excerpt": "Stable draft ID: person.chen mingyu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-mingyu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-mingyu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-mingyu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-mingyu/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "陈明遇 / Chen Mingyu portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-mingyu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-peng-zheng",
@@ -495,7 +747,13 @@ export const wikiEntries = [
     "title": "陈鹏（郑氏） / Chen Peng",
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-peng-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-peng-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-peng-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-peng-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art. No local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "陈鹏（郑氏） / Chen Peng portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-peng-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-qianfu",
@@ -505,7 +763,13 @@ export const wikiEntries = [
     "title": "陈潜夫 / 陳潛夫 / Chen Qianfu",
     "excerpt": "Stable draft ID: person.chen qianfu Status: Phase 1 profile seed; Henan inspector and later Zhedong martyrdom actor",
     "sourcePath": "references/southern-ming/people/chen-qianfu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-qianfu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-qianfu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-qianfu/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction. The likeness is not authenticated.",
+      "alt": "陈潜夫 / 陳潛夫 / Chen Qianfu portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-qianfu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-qice",
@@ -515,7 +779,13 @@ export const wikiEntries = [
     "title": "陈奇策 / Chen Qice",
     "excerpt": "Stable draft ID: person.chen qice Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-qice.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-qice.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-qice.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-qice/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page and shared Celestial Mandate art direction. The likeness is not authenticated.",
+      "alt": "陈奇策 / Chen Qice portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-qice/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-rui-zheng",
@@ -525,7 +795,13 @@ export const wikiEntries = [
     "title": "陈瑞 / Chen Rui",
     "excerpt": "Stable draft ID: person.chen rui zheng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-rui-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-rui-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-rui-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-rui-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art based on the local person page and source audit anchors. The likeness is not authenticated.",
+      "alt": "陈瑞 / Chen Rui portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-rui-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-shi-mu-tianbo-mother",
@@ -535,7 +811,13 @@ export const wikiEntries = [
     "title": "陈氏（沐天波母） / Lady Chen, Mother of Mu Tianbo",
     "excerpt": "Status: anchored seed profile; name unknown.",
     "sourcePath": "references/southern-ming/people/chen-shi-mu-tianbo-mother.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-shi-mu-tianbo-mother.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-shi-mu-tianbo-mother.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-shi-mu-tianbo-mother/portrait.png",
+      "caption": "AI generated style inspired game concept art based on the local person page and source audit anchors. The likeness is not authenticated.",
+      "alt": "陈氏（沐天波母） / Lady Chen, Mother of Mu Tianbo portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-shi-mu-tianbo-mother/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-xiance",
@@ -545,7 +827,13 @@ export const wikiEntries = [
     "title": "陈献策 / Chen Xiance",
     "excerpt": "Stable draft ID: person.chen xiance Status: low visibility profile",
     "sourcePath": "references/southern-ming/people/chen-xiance.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-xiance.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-xiance.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-xiance/portrait.png",
+      "caption": "AI generated style inspired game concept art based on the local person page; the likeness is not authenticated.",
+      "alt": "陈献策 / Chen Xiance portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-xiance/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-yan",
@@ -555,7 +843,13 @@ export const wikiEntries = [
     "title": "陈演 / Chen Yan",
     "excerpt": "Stable draft ID: person.chen yan Status: Phase 1 起点低可见度人物；内阁责任比例待校。",
     "sourcePath": "references/southern-ming/people/chen-yan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-yan/portrait.png",
+      "caption": "AI generated style inspired game concept art based on the local person page; the likeness is not authenticated.",
+      "alt": "陈演 / Chen Yan portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-yan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-yaoce",
@@ -565,7 +859,13 @@ export const wikiEntries = [
     "title": "陈尧策 / Chen Yaoce",
     "excerpt": "Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-yaoce.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yaoce.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yaoce.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-yaoce/portrait.png",
+      "caption": "AI generated, style inspired game concept art; no authenticated likeness is claimed.",
+      "alt": "陈尧策 / Chen Yaoce portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-yaoce/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-yonghua",
@@ -575,7 +875,13 @@ export const wikiEntries = [
     "title": "陈永华 / Chen Yonghua",
     "excerpt": "Stable draft ID: person.chen yonghua Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-yonghua.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yonghua.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yonghua.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-yonghua/portrait.png",
+      "caption": "AI generated, style inspired game concept art; no authenticated likeness is claimed.",
+      "alt": "陈永华 / Chen Yonghua portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-yonghua/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-yuding",
@@ -585,7 +891,13 @@ export const wikiEntries = [
     "title": "陈于鼎 / Chen Yuding",
     "excerpt": "Stable draft ID: person.chen yuding Status: Phase 1 南京接管低可见度人物；造册接口。",
     "sourcePath": "references/southern-ming/people/chen-yuding.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yuding.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-yuding.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-yuding/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not an authenticated likeness of Chen Yuding and must not be used as historical evidence.",
+      "alt": "陈于鼎 / Chen Yuding portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-yuding/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-ze",
@@ -595,7 +907,13 @@ export const wikiEntries = [
     "title": "陈泽 / Chen Ze",
     "excerpt": "Stable draft ID: person.chen ze Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-ze.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-ze.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-ze.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-ze/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not an authenticated likeness of Chen Ze and must not be used as historical evidence.",
+      "alt": "陈泽 / Chen Ze portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-ze/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-zhang-zheng",
@@ -605,7 +923,13 @@ export const wikiEntries = [
     "title": "陈璋 / Chen Zhang",
     "excerpt": "Stable draft ID: person.chen zhang zheng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-zhang-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zhang-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zhang-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-zhang-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art; likeness is not authenticated.",
+      "alt": "陈璋 / Chen Zhang portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-zhang-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-zheng-dali",
@@ -615,7 +939,13 @@ export const wikiEntries = [
     "title": "陈正（大理） / Chen Zheng, Dali",
     "excerpt": "Stable draft ID: person.chen zheng dali Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/chen-zheng-dali.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zheng-dali.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zheng-dali.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-zheng-dali/portrait.png",
+      "caption": "AI generated style inspired game concept art; likeness is not authenticated.",
+      "alt": "陈正（大理） / Chen Zheng, Dali portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-zheng-dali/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-zilong",
@@ -625,7 +955,13 @@ export const wikiEntries = [
     "title": "陈子龙 / Chen Zilong",
     "excerpt": "Stable draft ID: person.chen zilong Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-zilong.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zilong.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zilong.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-zilong/portrait.png",
+      "caption": "AI generated style inspired game concept art based on the local person page and late Ming visual grammar. It is not an authenticated likeness and must not be used as historical evidence.",
+      "alt": "陈子龙 / Chen Zilong portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-zilong/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__chen-zizhuang",
@@ -635,7 +971,13 @@ export const wikiEntries = [
     "title": "陈子壮 / Chen Zizhuang",
     "excerpt": "Stable draft ID: person.chen zizhuang Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/chen-zizhuang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zizhuang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/chen-zizhuang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/chen-zizhuang/portrait.png",
+      "caption": "AI generated style inspired game concept art based on the local person page and late Ming visual grammar. It is not an authenticated likeness and must not be used as historical evidence.",
+      "alt": "陈子壮 / Chen Zizhuang portrait concept art",
+      "sourcePath": "references/southern-ming/people/chen-zizhuang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cheng-fan",
@@ -645,7 +987,13 @@ export const wikiEntries = [
     "title": "程璠 / Cheng Fan",
     "excerpt": "程璠，郑成功系统文职人物，1655 年设六官时列为刑官。",
     "sourcePath": "references/southern-ming/people/cheng-fan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cheng-fan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cheng-fan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cheng-fan/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not an authenticated likeness and must not be used as historical evidence for Cheng Fan's face, costume, or exact setting.",
+      "alt": "程璠 / Cheng Fan portrait concept art",
+      "sourcePath": "references/southern-ming/people/cheng-fan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__cheng-xun",
@@ -655,7 +1003,13 @@ export const wikiEntries = [
     "title": "程峋 / Cheng Xun",
     "excerpt": "Stable draft ID: person.cheng xun Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/cheng-xun.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/cheng-xun.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/cheng-xun.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/cheng-xun/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not an authenticated likeness and must not be used as historical evidence for Cheng Xun's face, costume, death scene, or exact travel route.",
+      "alt": "程峋 / Cheng Xun portrait concept art",
+      "sourcePath": "references/southern-ming/people/cheng-xun/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dabei-heshang",
@@ -665,7 +1019,13 @@ export const wikiEntries = [
     "title": "大悲和尚 / Dabei Heshang",
     "excerpt": "Stable draft ID: person.dabei heshang Status: succession risk seed profile",
     "sourcePath": "references/southern-ming/people/dabei-heshang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dabei-heshang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dabei-heshang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dabei-heshang/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "大悲和尚 / Dabei Heshang portrait concept art",
+      "sourcePath": "references/southern-ming/people/dabei-heshang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dai-jie-zheng",
@@ -675,7 +1035,13 @@ export const wikiEntries = [
     "title": "戴捷 / Dai Jie",
     "excerpt": "Stable draft ID: person.dai jie zheng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/dai-jie-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dai-jie-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dai-jie-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dai-jie-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "戴捷 / Dai Jie portrait concept art",
+      "sourcePath": "references/southern-ming/people/dai-jie-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dai-kejin",
@@ -685,7 +1051,13 @@ export const wikiEntries = [
     "title": "戴可进 / Dai Kejin",
     "excerpt": "Stable draft ID: person.dai kejin Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/dai-kejin.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dai-kejin.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dai-kejin.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dai-kejin/portrait.png",
+      "caption": "AI generated style inspired game concept art; no local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "戴可进 / Dai Kejin portrait concept art",
+      "sourcePath": "references/southern-ming/people/dai-kejin/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dang-shousu",
@@ -695,7 +1067,13 @@ export const wikiEntries = [
     "title": "党守素 / Dang Shousu",
     "excerpt": "Stable draft ID: person.dang shousu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/dang-shousu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dang-shousu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dang-shousu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dang-shousu/portrait.png",
+      "caption": "AI generated style inspired game concept art; no local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "党守素 / Dang Shousu portrait concept art",
+      "sourcePath": "references/southern-ming/people/dang-shousu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dasu",
@@ -705,7 +1083,13 @@ export const wikiEntries = [
     "title": "达素 / Dasu",
     "excerpt": "Stable draft ID: person.dasu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/dasu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dasu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dasu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dasu/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "达素 / Dasu portrait concept art",
+      "sourcePath": "references/southern-ming/people/dasu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__deng-kai",
@@ -715,7 +1099,13 @@ export const wikiEntries = [
     "title": "邓凯 / Deng Kai",
     "excerpt": "Stable draft ID: person.deng kai Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/deng-kai.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/deng-kai.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/deng-kai.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/deng-kai/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "邓凯 / Deng Kai portrait concept art",
+      "sourcePath": "references/southern-ming/people/deng-kai/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__deng-linzu",
@@ -725,7 +1115,13 @@ export const wikiEntries = [
     "title": "邓林祖 / Deng Linzu",
     "excerpt": "Stable draft ID: person.deng linzu Status: low visibility terminal loyalist roster profile",
     "sourcePath": "references/southern-ming/people/deng-linzu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/deng-linzu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/deng-linzu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/deng-linzu/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not a historically authenticated likeness and must not be used as visual evidence.",
+      "alt": "邓林祖 / Deng Linzu portrait concept art",
+      "sourcePath": "references/southern-ming/people/deng-linzu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__deng-wanggong",
@@ -735,7 +1131,13 @@ export const wikiEntries = [
     "title": "邓望功 / Deng Wanggong",
     "excerpt": "Stable draft ID: person.deng wanggong Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/deng-wanggong.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/deng-wanggong.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/deng-wanggong.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/deng-wanggong/portrait.png",
+      "caption": "AI generated style inspired game concept art. It is not a historically authenticated likeness and must not be used as visual evidence.",
+      "alt": "邓望功 / Deng Wanggong portrait concept art",
+      "sourcePath": "references/southern-ming/people/deng-wanggong/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__deng-wenchang",
@@ -745,7 +1147,13 @@ export const wikiEntries = [
     "title": "邓文昌 / Deng Wenchang",
     "excerpt": "Stable draft ID: person.deng wenchang Status: seed profile",
     "sourcePath": "references/southern-ming/people/deng-wenchang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/deng-wenchang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/deng-wenchang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/deng-wenchang/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and must not be treated as historical evidence.",
+      "alt": "邓文昌 / Deng Wenchang portrait concept art",
+      "sourcePath": "references/southern-ming/people/deng-wenchang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__deng-wenyu",
@@ -755,7 +1163,13 @@ export const wikiEntries = [
     "title": "邓文郁 / Deng Wenyu",
     "excerpt": "Stable draft ID: person.deng wenyu Status: anchored Phase 1 disambiguation profile",
     "sourcePath": "references/southern-ming/people/deng-wenyu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/deng-wenyu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/deng-wenyu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/deng-wenyu/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and must not be treated as historical evidence.",
+      "alt": "邓文郁 / Deng Wenyu portrait concept art",
+      "sourcePath": "references/southern-ming/people/deng-wenyu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__deng-yao",
@@ -765,7 +1179,13 @@ export const wikiEntries = [
     "title": "邓耀 / Deng Yao",
     "excerpt": "Stable draft ID: person.deng yao Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/deng-yao.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/deng-yao.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/deng-yao.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/deng-yao/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page only; not a historically authenticated likeness",
+      "alt": "邓耀 / Deng Yao portrait concept art",
+      "sourcePath": "references/southern-ming/people/deng-yao/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__di-sanpin",
@@ -775,7 +1195,13 @@ export const wikiEntries = [
     "title": "狄三品 / Di Sanpin",
     "excerpt": "Stable draft ID: person.di sanpin Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/di-sanpin.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/di-sanpin.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/di-sanpin.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/di-sanpin/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the person page only; not a historically authenticated likeness",
+      "alt": "狄三品 / Di Sanpin portrait concept art",
+      "sourcePath": "references/southern-ming/people/di-sanpin/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__diao-xun",
@@ -785,7 +1211,13 @@ export const wikiEntries = [
     "title": "刁勋 / Diao Xun",
     "excerpt": "Stable draft ID: person.diao xun Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/diao-xun.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/diao-xun.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/diao-xun.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/diao-xun/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated.",
+      "alt": "刁勋 / Diao Xun portrait concept art",
+      "sourcePath": "references/southern-ming/people/diao-xun/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ding-diaoding",
@@ -795,7 +1227,13 @@ export const wikiEntries = [
     "title": "丁调鼎 / Ding Diaoding",
     "excerpt": "Stable draft ID: person.ding diaoding Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/ding-diaoding.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ding-diaoding.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ding-diaoding.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ding-diaoding/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated.",
+      "alt": "丁调鼎 / Ding Diaoding portrait concept art",
+      "sourcePath": "references/southern-ming/people/ding-diaoding/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ding-kuichu",
@@ -805,7 +1243,13 @@ export const wikiEntries = [
     "title": "丁魁楚 / Ding Kuichu",
     "excerpt": "Stable draft ID: person.ding kuichu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/ding-kuichu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ding-kuichu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ding-kuichu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ding-kuichu/portrait.png",
+      "caption": "AI generated game concept art. The likeness is not authenticated and must not be used as historical evidence.",
+      "alt": "丁魁楚 / Ding Kuichu portrait concept art",
+      "sourcePath": "references/southern-ming/people/ding-kuichu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ding-wang-chongzhen",
@@ -815,7 +1259,13 @@ export const wikiEntries = [
     "title": "定王 / Prince of Ding, Chongzhen Son",
     "excerpt": "Stable draft ID: person.ding wang chongzhen Status: 崇祯诸子不确定性人物页；名讳和结局待辨析。",
     "sourcePath": "references/southern-ming/people/ding-wang-chongzhen.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ding-wang-chongzhen.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ding-wang-chongzhen.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ding-wang-chongzhen/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "定王 / Prince of Ding, Chongzhen Son portrait concept art",
+      "sourcePath": "references/southern-ming/people/ding-wang-chongzhen/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dong-gongzhong",
@@ -825,7 +1275,13 @@ export const wikiEntries = [
     "title": "董拱中 / Dong Gongzhong",
     "excerpt": "Stable draft ID: person.dong gongzhong Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/dong-gongzhong.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dong-gongzhong.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dong-gongzhong.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dong-gongzhong/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "董拱中 / Dong Gongzhong portrait concept art",
+      "sourcePath": "references/southern-ming/people/dong-gongzhong/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dorgon",
@@ -835,7 +1291,13 @@ export const wikiEntries = [
     "title": "多尔衮 / Dorgon",
     "excerpt": "Stable draft ID: person.dorgon Status: Phase 1 起点外部压力人物侧写；清方早期履历仍待清实录、宗室传和满文档案互校。",
     "sourcePath": "references/southern-ming/people/dorgon.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dorgon.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dorgon.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dorgon/portrait.png",
+      "caption": "AI generated style inspired game concept art; no local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "多尔衮 / Dorgon portrait concept art",
+      "sourcePath": "references/southern-ming/people/dorgon/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__dou-mingwang",
@@ -845,7 +1307,13 @@ export const wikiEntries = [
     "title": "窦名望 / 窦民望 / Dou Mingwang",
     "excerpt": "窦名望，南明泰安伯，磨盘山战役中李定国伏击部署的初伏将领。部分材料作“窦民望”。",
     "sourcePath": "references/southern-ming/people/dou-mingwang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/dou-mingwang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/dou-mingwang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/dou-mingwang/portrait.png",
+      "caption": "AI generated style inspired game concept art; no local rights clear visual reference was used, and the likeness is not authenticated.",
+      "alt": "窦名望 / 窦民望 / Dou Mingwang portrait concept art",
+      "sourcePath": "references/southern-ming/people/dou-mingwang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__du-hongyu",
@@ -855,7 +1323,13 @@ export const wikiEntries = [
     "title": "杜弘域 / 杜宏域 / Du Hongyu",
     "excerpt": "Stable draft ID: person.du hongyu uncertain Status: low visibility Phase 1 roster profile; identity disambiguation required",
     "sourcePath": "references/southern-ming/people/du-hongyu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/du-hongyu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/du-hongyu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/du-hongyu/portrait.png",
+      "caption": "AI generated style inspired game concept art; likeness is not authenticated.",
+      "alt": "杜弘域 / 杜宏域 / Du Hongyu portrait concept art",
+      "sourcePath": "references/southern-ming/people/du-hongyu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__du-hui-zheng",
@@ -865,7 +1339,13 @@ export const wikiEntries = [
     "title": "杜辉（郑氏） / Du Hui",
     "excerpt": "Status: seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/du-hui-zheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/du-hui-zheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/du-hui-zheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/du-hui-zheng/portrait.png",
+      "caption": "AI generated style inspired game concept art; likeness is not authenticated.",
+      "alt": "杜辉（郑氏） / Du Hui portrait concept art",
+      "sourcePath": "references/southern-ming/people/du-hui-zheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__du-yinxi",
@@ -875,7 +1355,13 @@ export const wikiEntries = [
     "title": "堵胤锡 / Du Yinxi",
     "excerpt": "Stable draft ID: person.du yinxi Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/du-yinxi.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/du-yinxi.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/du-yinxi.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/du-yinxi/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated and is not historically referenced to a rights clear local visual source.",
+      "alt": "堵胤锡 / Du Yinxi portrait concept art",
+      "sourcePath": "references/southern-ming/people/du-yinxi/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__du-yonghe",
@@ -885,7 +1371,13 @@ export const wikiEntries = [
     "title": "杜永和 / Du Yonghe",
     "excerpt": "Stable draft ID: person.du yonghe Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/du-yonghe.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/du-yonghe.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/du-yonghe.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/du-yonghe/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated and is not historically referenced to a rights clear local visual source.",
+      "alt": "杜永和 / Du Yonghe portrait concept art",
+      "sourcePath": "references/southern-ming/people/du-yonghe/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__duan-jianjin",
@@ -895,7 +1387,13 @@ export const wikiEntries = [
     "title": "段见锦 / Duan Jianjin",
     "excerpt": "Stable draft ID: person.duan jianjin Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/duan-jianjin.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/duan-jianjin.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/duan-jianjin.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/duan-jianjin/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated.",
+      "alt": "段见锦 / Duan Jianjin portrait concept art",
+      "sourcePath": "references/southern-ming/people/duan-jianjin/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__duoduo",
@@ -905,7 +1403,13 @@ export const wikiEntries = [
     "title": "多铎 / Duoduo",
     "excerpt": "Stable draft ID: person.duoduo Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/duoduo.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/duoduo.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/duoduo.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/duoduo/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated.",
+      "alt": "多铎 / Duoduo portrait concept art",
+      "sourcePath": "references/southern-ming/people/duoduo/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__duoni",
@@ -915,7 +1419,13 @@ export const wikiEntries = [
     "title": "多尼 / 铎尼 / Doni",
     "excerpt": "多尼，清宗室信郡王。1658 年清廷任命其为安远靖寇大将军，统筹西南后续入滇方向。《小腆紀年》作“铎尼”。",
     "sourcePath": "references/southern-ming/people/duoni.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/duoni.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/duoni.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/duoni/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the person page and Qing commander role; the likeness is not authenticated",
+      "alt": "多尼 / 铎尼 / Doni portrait concept art",
+      "sourcePath": "references/southern-ming/people/duoni/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fan-shi-sha-tingzhou",
@@ -925,7 +1435,13 @@ export const wikiEntries = [
     "title": "范氏（沙亭州线） / Lady Fan",
     "excerpt": "Stable draft ID: person.fan shi sha tingzhou Status: anchored seed profile; identity pending",
     "sourcePath": "references/southern-ming/people/fan-shi-sha-tingzhou.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fan-shi-sha-tingzhou.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fan-shi-sha-tingzhou.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fan-shi-sha-tingzhou/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the person page and contested textual role; the likeness is not authenticated",
+      "alt": "范氏（沙亭州线） / Lady Fan portrait concept art",
+      "sourcePath": "references/southern-ming/people/fan-shi-sha-tingzhou/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fan-wencheng",
@@ -935,7 +1451,13 @@ export const wikiEntries = [
     "title": "范文程 / Fan Wencheng",
     "excerpt": "Stable draft ID: person.fan wencheng Status: Phase 1 起点清方政策人物侧写；早年仕履和完整奏议仍待清方材料互校。",
     "sourcePath": "references/southern-ming/people/fan-wencheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fan-wencheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fan-wencheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fan-wencheng/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "范文程 / Fan Wencheng portrait concept art",
+      "sourcePath": "references/southern-ming/people/fan-wencheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fan-yingxu",
@@ -945,7 +1467,13 @@ export const wikiEntries = [
     "title": "范应旭 / Fan Yingxu",
     "excerpt": "范应旭，安龙时期安隆/安龙府知府，参与永历行在的供给和地方行政安排。",
     "sourcePath": "references/southern-ming/people/fan-yingxu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fan-yingxu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fan-yingxu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fan-yingxu/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "范应旭 / Fan Yingxu portrait concept art",
+      "sourcePath": "references/southern-ming/people/fan-yingxu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fang-dayou",
@@ -955,7 +1483,13 @@ export const wikiEntries = [
     "title": "方大猷 / Fang Dayou",
     "excerpt": "Stable draft ID: person.fang dayou Status: 弘光北使清方德州限制/山东行政接口人物；降顺、降清路径待校。",
     "sourcePath": "references/southern-ming/people/fang-dayou.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fang-dayou.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-dayou.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fang-dayou/portrait.png",
+      "caption": "AI generated game concept art, style inspired only; the likeness is not authenticated.",
+      "alt": "方大猷 / Fang Dayou portrait concept art",
+      "sourcePath": "references/southern-ming/people/fang-dayou/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fang-gonggan",
@@ -965,7 +1499,13 @@ export const wikiEntries = [
     "title": "方拱乾 / 方拱干 / Fang Gonggan",
     "excerpt": "Stable draft ID: person.fang gonggan Status: low visibility Phase 1 recognition witness profile",
     "sourcePath": "references/southern-ming/people/fang-gonggan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fang-gonggan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-gonggan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fang-gonggan/portrait.png",
+      "caption": "AI generated game concept art, style inspired only; the likeness is not authenticated.",
+      "alt": "方拱乾 / 方拱干 / Fang Gonggan portrait concept art",
+      "sourcePath": "references/southern-ming/people/fang-gonggan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fang-guoan",
@@ -975,7 +1515,13 @@ export const wikiEntries = [
     "title": "方国安 / Fang Guoan",
     "excerpt": "Stable draft ID: person.fang guoan Status: Phase 1 terminal route profile with Zhejiang boundary",
     "sourcePath": "references/southern-ming/people/fang-guoan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fang-guoan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-guoan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fang-guoan/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the local person page; the likeness is not authenticated.",
+      "alt": "方国安 / Fang Guoan portrait concept art",
+      "sourcePath": "references/southern-ming/people/fang-guoan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fang-yiyuan",
@@ -985,7 +1531,13 @@ export const wikiEntries = [
     "title": "方一元 / Fang Yiyuan",
     "excerpt": "Stable draft ID: person.fang yiyuan Status: Phase 1 seed profile; thin authority candidate",
     "sourcePath": "references/southern-ming/people/fang-yiyuan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fang-yiyuan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-yiyuan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fang-yiyuan/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the local person page; the likeness is not authenticated.",
+      "alt": "方一元 / Fang Yiyuan portrait concept art",
+      "sourcePath": "references/southern-ming/people/fang-yiyuan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fang-yuxuan",
@@ -995,7 +1547,13 @@ export const wikiEntries = [
     "title": "方于宣 / Fang Yuxuan",
     "excerpt": "方于宣，孙可望身边文臣，顾诚材料中作编修，是孙可望禅位/称帝礼制准备的参与者之一。",
     "sourcePath": "references/southern-ming/people/fang-yuxuan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fang-yuxuan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fang-yuxuan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fang-yuxuan/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the local person page; likeness is not authenticated.",
+      "alt": "方于宣 / Fang Yuxuan portrait concept art",
+      "sourcePath": "references/southern-ming/people/fang-yuxuan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-chengshi",
@@ -1005,7 +1563,13 @@ export const wikiEntries = [
     "title": "冯澄世 / Feng Chengshi",
     "excerpt": "冯澄世，郑成功系统参军、工官或参谋人物，参与海外供饷、北上和南京战役等战略讨论。",
     "sourcePath": "references/southern-ming/people/feng-chengshi.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-chengshi.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-chengshi.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-chengshi/portrait.png",
+      "caption": "AI generated game concept art; style inspired from the local person page; likeness is not authenticated.",
+      "alt": "冯澄世 / Feng Chengshi portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-chengshi/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-dacheng",
@@ -1015,7 +1579,13 @@ export const wikiEntries = [
     "title": "冯大成 / Feng Dacheng",
     "excerpt": "Stable draft ID: person.feng dacheng Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/feng-dacheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-dacheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-dacheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-dacheng/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "冯大成 / Feng Dacheng portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-dacheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-guoen",
@@ -1025,7 +1595,13 @@ export const wikiEntries = [
     "title": "冯国恩 / Feng Guoen",
     "excerpt": "Stable draft ID: person.feng guoen Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/feng-guoen.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-guoen.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-guoen.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-guoen/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "冯国恩 / Feng Guoen portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-guoen/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-kezong",
@@ -1035,7 +1611,13 @@ export const wikiEntries = [
     "title": "冯可宗 / 冯可京 / Feng Kezong",
     "excerpt": "Stable draft ID: person.feng kezong Status: low visibility Phase 1 custody interface profile",
     "sourcePath": "references/southern-ming/people/feng-kezong.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-kezong.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-kezong.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-kezong/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the person page and shared Celestial Mandate portrait direction; the likeness is not authenticated",
+      "alt": "冯可宗 / 冯可京 / Feng Kezong portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-kezong/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-quan",
@@ -1045,7 +1627,13 @@ export const wikiEntries = [
     "title": "冯铨 / Feng Quan",
     "excerpt": "Stable draft ID: person.feng quan Status: Phase 1 清内院/降清旧臣接口人物；完整清方履历待校。",
     "sourcePath": "references/southern-ming/people/feng-quan.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-quan.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-quan.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-quan/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the person page and shared Celestial Mandate portrait direction; the likeness is not authenticated",
+      "alt": "冯铨 / Feng Quan portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-quan/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-shi-zhang-chaogang-wife",
@@ -1055,7 +1643,13 @@ export const wikiEntries = [
     "title": "冯氏（张朝纲妻） / Feng Shi, Wife of Zhang Chaogang",
     "excerpt": "Stable draft ID: person.feng shi zhang chaogang wife Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/feng-shi-zhang-chaogang-wife.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-shi-zhang-chaogang-wife.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-shi-zhang-chaogang-wife.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-shi-zhang-chaogang-wife/portrait.png",
+      "caption": "AI generated game concept art. The likeness is not authenticated; this is a style inspired roster portrait based on the local person page only.",
+      "alt": "冯氏（张朝纲妻） / Feng Shi, Wife of Zhang Chaogang portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-shi-zhang-chaogang-wife/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__feng-shuangli",
@@ -1065,7 +1659,13 @@ export const wikiEntries = [
     "title": "冯双礼 / Feng Shuangli",
     "excerpt": "Stable draft ID: person.feng shuangli Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/feng-shuangli.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/feng-shuangli.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/feng-shuangli.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/feng-shuangli/portrait.png",
+      "caption": "AI generated game concept art. The likeness is not authenticated; this is a style inspired roster portrait based on the local person page only.",
+      "alt": "冯双礼 / Feng Shuangli portrait concept art",
+      "sourcePath": "references/southern-ming/people/feng-shuangli/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__fu-gang",
@@ -1075,7 +1675,13 @@ export const wikiEntries = [
     "title": "扶纲 / Fu Gang",
     "excerpt": "Stable draft ID: person.fu gang Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/fu-gang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/fu-gang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/fu-gang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/fu-gang/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "扶纲 / Fu Gang portrait concept art",
+      "sourcePath": "references/southern-ming/people/fu-gang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gan-hui",
@@ -1085,7 +1691,13 @@ export const wikiEntries = [
     "title": "甘辉 / Gan Hui",
     "excerpt": "Stable draft ID: person.gan hui Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gan-hui.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gan-hui.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gan-hui.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gan-hui/portrait.png",
+      "caption": "AI generated style inspired game concept art. No authenticated likeness is claimed.",
+      "alt": "甘辉 / Gan Hui portrait concept art",
+      "sourcePath": "references/southern-ming/people/gan-hui/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__ganglin",
@@ -1095,7 +1707,13 @@ export const wikiEntries = [
     "title": "刚林 / Ganglin",
     "excerpt": "Stable draft ID: person.ganglin Status: 弘光北使鸿胪寺礼仪/主权压迫接口人物；职衔异文待校。",
     "sourcePath": "references/southern-ming/people/ganglin.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/ganglin.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/ganglin.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/ganglin/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "刚林 / Ganglin portrait concept art",
+      "sourcePath": "references/southern-ming/people/ganglin/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-bizheng",
@@ -1105,7 +1723,13 @@ export const wikiEntries = [
     "title": "高必正 / Gao Bizheng",
     "excerpt": "Stable draft ID: person.gao bizheng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-bizheng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-bizheng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-bizheng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-bizheng/portrait.png",
+      "caption": "AI generated style inspired game concept art; the likeness is not authenticated.",
+      "alt": "高必正 / Gao Bizheng portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-bizheng/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-chengen",
@@ -1115,7 +1739,13 @@ export const wikiEntries = [
     "title": "高承恩 / Gao Chengen",
     "excerpt": "Stable draft ID: person.gao chengen Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-chengen.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-chengen.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-chengen.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-chengen/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "高承恩 / Gao Chengen portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-chengen/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-dejie",
@@ -1125,7 +1755,13 @@ export const wikiEntries = [
     "title": "高得捷 / Gao Dejie",
     "excerpt": "Stable draft ID: person.gao dejie Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-dejie.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-dejie.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-dejie.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-dejie/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated and should not be used as historical evidence.",
+      "alt": "高得捷 / Gao Dejie portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-dejie/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-di",
@@ -1135,7 +1771,13 @@ export const wikiEntries = [
     "title": "高第 / Gao Di",
     "excerpt": "Stable draft ID: person.gao di Status: Phase 1 起点低可见度人物；原山海关总兵层待校。",
     "sourcePath": "references/southern-ming/people/gao-di.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-di.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-di.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-di/portrait.png",
+      "caption": "AI generated, style inspired game concept art. The likeness is not authenticated.",
+      "alt": "高第 / Gao Di portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-di/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-gongji",
@@ -1145,7 +1787,13 @@ export const wikiEntries = [
     "title": "高拱极 / Gao Gongji",
     "excerpt": "Stable draft ID: person.gao gongji Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/gao-gongji.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-gongji.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-gongji.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-gongji/portrait.png",
+      "caption": "AI generated, style inspired game concept art. The likeness is not authenticated.",
+      "alt": "高拱极 / Gao Gongji portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-gongji/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-hongtu",
@@ -1155,7 +1803,13 @@ export const wikiEntries = [
     "title": "高弘图 / Gao Hongtu",
     "excerpt": "Stable draft ID: person.gao hongtu Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/gao-hongtu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-hongtu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-hongtu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-hongtu/portrait.png",
+      "caption": "AI generated style inspired game concept art; not an authenticated likeness and not historical evidence",
+      "alt": "高弘图 / Gao Hongtu portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-hongtu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-jie",
@@ -1165,7 +1819,13 @@ export const wikiEntries = [
     "title": "高杰 / Gao Jie",
     "excerpt": "Stable draft ID: person.gao jie Status: anchored Phase 1 profile; roleplay source note available",
     "sourcePath": "references/southern-ming/people/gao-jie.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-jie.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-jie.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-jie/portrait.png",
+      "caption": "AI generated style inspired game concept art; not an authenticated likeness and not historical evidence",
+      "alt": "高杰 / Gao Jie portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-jie/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-jinku",
@@ -1175,7 +1835,13 @@ export const wikiEntries = [
     "title": "高进库 / Gao Jinku",
     "excerpt": "Stable draft ID: person.gao jinku Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-jinku.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-jinku.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-jinku.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-jinku/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated.",
+      "alt": "高进库 / Gao Jinku portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-jinku/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-mengji",
@@ -1185,7 +1851,13 @@ export const wikiEntries = [
     "title": "高梦箕 / Gao Mengji",
     "excerpt": "Stable draft ID: person.gao mengji Status: low visibility Phase 1 profile",
     "sourcePath": "references/southern-ming/people/gao-mengji.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-mengji.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-mengji.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-mengji/portrait.png",
+      "caption": "AI generated style inspired game concept art. The likeness is not authenticated.",
+      "alt": "高梦箕 / Gao Mengji portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-mengji/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-mianzu",
@@ -1195,7 +1867,13 @@ export const wikiEntries = [
     "title": "高绵祖 / Gao Mianzu",
     "excerpt": "Stable draft ID: person.gao mianzu Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-mianzu.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-mianzu.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-mianzu.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-mianzu/portrait.png",
+      "caption": "AI generated style inspired game concept art grounded in the person page; not historically referenced, not an authenticated likeness, and not an evidence source.",
+      "alt": "高绵祖 / Gao Mianzu portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-mianzu/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-qian-zhenjiang",
@@ -1205,7 +1883,13 @@ export const wikiEntries = [
     "title": "高谦 / Gao Qian",
     "excerpt": "Stable draft ID: person.gao qian zhenjiang Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-qian-zhenjiang.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qian-zhenjiang.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qian-zhenjiang.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-qian-zhenjiang/portrait.png",
+      "caption": "AI generated style inspired game concept art grounded in the person page; not historically referenced, not an authenticated likeness, and not an evidence source.",
+      "alt": "高谦 / Gao Qian portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-qian-zhenjiang/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-qilong",
@@ -1215,7 +1899,13 @@ export const wikiEntries = [
     "title": "高启隆 / Gao Qilong",
     "excerpt": "Stable draft ID: person.gao qilong Status: seed profile",
     "sourcePath": "references/southern-ming/people/gao-qilong.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qilong.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qilong.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-qilong/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the local person page only; the likeness is not authenticated",
+      "alt": "高启隆 / Gao Qilong portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-qilong/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-qiqian",
@@ -1225,7 +1915,13 @@ export const wikiEntries = [
     "title": "高起潜 / Gao Qiqian",
     "excerpt": "Stable draft ID: person.gao qiqian Status: Phase 1 low confidence profile; inner official command and logistics actor",
     "sourcePath": "references/southern-ming/people/gao-qiqian.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qiqian.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qiqian.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-qiqian/portrait.png",
+      "caption": "AI generated game concept art, style inspired from the local person page only; the likeness is not authenticated",
+      "alt": "高起潜 / Gao Qiqian portrait concept art",
+      "sourcePath": "references/southern-ming/people/gao-qiqian/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-qixun",
@@ -1235,7 +1931,12 @@ export const wikiEntries = [
     "title": "高其勋 / Gao Qixun",
     "excerpt": "Stable draft ID: person.gao qixun Status: anchored seed profile; identity pending.",
     "sourcePath": "references/southern-ming/people/gao-qixun.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qixun.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-qixun.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-qixun/portrait.png",
+      "caption": "AI-generated game concept art; not an authenticated likeness.",
+      "alt": "高其勋 / Gao Qixun portrait concept art"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-wengui",
@@ -1245,7 +1946,12 @@ export const wikiEntries = [
     "title": "高文贵 / Gao Wengui",
     "excerpt": "高文贵，南明广昌侯，永历西撤和磨盘山战役相关将领。",
     "sourcePath": "references/southern-ming/people/gao-wengui.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-wengui.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-wengui.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-wengui/portrait.png",
+      "caption": "AI-generated game concept art; not an authenticated likeness.",
+      "alt": "高文贵 / Gao Wengui portrait concept art"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-yingfeng",
@@ -1255,7 +1961,12 @@ export const wikiEntries = [
     "title": "高应凤 / Gao Yingfeng",
     "excerpt": "Stable draft ID: person.gao yingfeng Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/gao-yingfeng.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/gao-yingfeng.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/gao-yingfeng.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/gao-yingfeng/portrait.png",
+      "caption": "AI-generated game concept art; not an authenticated likeness.",
+      "alt": "高应凤 / Gao Yingfeng portrait concept art"
+    }
   },
   {
     "id": "po-zhen-zi__people__gao-yuanjue-yuanzhao",
@@ -1535,7 +2246,13 @@ export const wikiEntries = [
     "title": "郝摇旗 / 郝永忠 / Hao Yaoqi",
     "excerpt": "郝摇旗，一作郝永忠，原大顺余部和夔东抗清系统重要将领。当前材料支撑其在房县、保康、竹山、竹溪等鄂西北山地活动，并在 1662 后夔东尾声中继续抵抗。",
     "sourcePath": "references/southern-ming/people/hao-yaoqi.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/hao-yaoqi.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/hao-yaoqi.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/hao-yaoqi/portrait.png",
+      "caption": "AI generated game concept art; likeness is not authenticated.",
+      "alt": "郝摇旗 / 郝永忠 / Hao Yaoqi portrait concept art",
+      "sourcePath": "references/southern-ming/people/hao-yaoqi/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__he-ai",
@@ -2265,7 +2982,13 @@ export const wikiEntries = [
     "title": "金世鼎 / Jin Shiding",
     "excerpt": "Stable draft ID: person.jin shiding Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/jin-shiding.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/jin-shiding.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/jin-shiding.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/jin-shiding/portrait.png",
+      "caption": "AI generated game concept art; the likeness is not authenticated and must not be treated as historical evidence",
+      "alt": "金世鼎 / Jin Shiding portrait concept art",
+      "sourcePath": "references/southern-ming/people/jin-shiding/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__jin-tongwu",
@@ -2995,7 +3718,13 @@ export const wikiEntries = [
     "title": "刘广胤 / Liu Guangyin",
     "excerpt": "Stable draft ID: person.liu guangyin Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/liu-guangyin.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/liu-guangyin.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/liu-guangyin.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/liu-guangyin/portrait.png",
+      "caption": "AI generated game concept art. The likeness is not authenticated and must not be used as historical evidence.",
+      "alt": "刘广胤 / Liu Guangyin portrait concept art",
+      "sourcePath": "references/southern-ming/people/liu-guangyin/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__liu-guochang",
@@ -3725,7 +4454,13 @@ export const wikiEntries = [
     "title": "那嵩 / Na Song",
     "excerpt": "Stable draft ID: person.na song Status: anchored seed profile",
     "sourcePath": "references/southern-ming/people/na-song.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/na-song.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/na-song.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/na-song/portrait.png",
+      "caption": "AI generated game concept art; style inspired only. The likeness is not authenticated and must not be treated as a historical evidence source.",
+      "alt": "那嵩 / Na Song portrait concept art",
+      "sourcePath": "references/southern-ming/people/na-song/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__na-tao",
@@ -4265,7 +5000,13 @@ export const wikiEntries = [
     "title": "史可法 / Shi Kefa",
     "excerpt": "Stable draft ID: person.shi kefa Status: anchored Phase 1 profile",
     "sourcePath": "references/southern-ming/people/shi-kefa.md",
-    "contentPath": "/wiki-content/po-zhen-zi/people/shi-kefa.json"
+    "contentPath": "/wiki-content/po-zhen-zi/people/shi-kefa.json",
+    "portrait": {
+      "imagePath": "/wiki-content/po-zhen-zi/people/shi-kefa/portrait.png",
+      "caption": "AI generated game concept art informed by a historical portrait tradition; not an authenticated likeness or evidence source.",
+      "alt": "史可法 / Shi Kefa portrait concept art",
+      "sourcePath": "references/southern-ming/people/shi-kefa/portrait.md"
+    }
   },
   {
     "id": "po-zhen-zi__people__shi-lang",
@@ -8078,6 +8819,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/places/index.json"
   },
   {
+    "id": "po-zhen-zi__places__anlong",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "anlong",
+    "title": "安龙 / Anlong",
+    "excerpt": "永历西南阶段的受控行在地点。安龙当前作为千户所/府城化候选和政治控制装置入口处理，不直接生成精确坐标、稳定府县边界、route cost 或完整控制权。",
+    "sourcePath": "references/southern-ming/places/anlong.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/anlong.json"
+  },
+  {
     "id": "po-zhen-zi__places__beijing",
     "dlcId": "po-zhen-zi",
     "categoryId": "places",
@@ -8268,6 +9019,16 @@ export const wikiEntries = [
     "contentPath": "/wiki-content/po-zhen-zi/places/sizhou.json"
   },
   {
+    "id": "po-zhen-zi__places__southwest-terminal-network",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "places",
+    "slug": "southwest-terminal-network",
+    "title": "西南终局地点网络 / Southwest Terminal Place Network",
+    "excerpt": "聚合页，不作单一 PlaceIdentity。本页把 1651 1662 年永历行在、西南军政中心、滇缅边境、缅甸阿瓦和暹罗备用路线的地点候选先收束成一张研究入口，后续再按县级/府城级、城郭级、route gate 或 SiteRef 拆页。",
+    "sourcePath": "references/southern-ming/places/southwest-terminal-network.md",
+    "contentPath": "/wiki-content/po-zhen-zi/places/southwest-terminal-network.json"
+  },
+  {
     "id": "po-zhen-zi__places__suizhou",
     "dlcId": "po-zhen-zi",
     "categoryId": "places",
@@ -8363,7 +9124,7 @@ export const wikiEntries = [
     "categoryId": "timeline",
     "slug": "README",
     "title": "南明编年 / Southern Ming Chronicle",
-    "excerpt": "范围：1644 04 25 至 1662 06 01。 规则：一年一个文件；条目优先公历排序，农历/年号写在 In era date。",
+    "excerpt": "范围：1644 04 25 至 1662 06 01。 规则：一年一个文件；条目优先公历排序，农历/年号写在 In era date。 接续入口：先读 ../current focus.md、../source audit index.md 和 ../workflow.md。广泛盘点可以并行，但落地编辑应收束到一...",
     "sourcePath": "references/southern-ming/chronicle/README.md",
     "contentPath": "/wiki-content/po-zhen-zi/timeline/README.json"
   },
@@ -8561,4 +9322,4 @@ export const wikiEntries = [
 
 export const initialWikiEntryId = "po-zhen-zi__people__index" as const;
 
-export const initialWikiEntryHtml = "<blockquote><p>短入口，不是全量目录。查具体人物时定向检索姓名、异写或文件名；完整盘点再读 <code>catalog.md</code>；当前接续看 <code>../current-focus.md</code>。</p></blockquote>\n<h3>Phase 1 Demo 人物组</h3>\n<ul><li>朝廷中枢：朱由崧、史可法、马士英、阮大铖；朱由崧主角页已接入 <code>audit.sm.0466/0497/0498/0496/0507/0508</code> 的福藩南奔、继统身份压力、末局路线和权威断裂层，史可法主角页已接入 <code>audit.sm.0530/0531</code> 的盐课/剥商风险和早年/崇祯任官骨架，马士英主角页已接入 <code>audit.sm.0508/0509/0517/0527/0528/0529/0530</code> 的制度反弹、文臣失位、财政/防河/盐课接口和末局幅纸任命断裂层，阮大铖主角页已接入 <code>audit.sm.0508</code> 的末局幅纸任命/权威断裂层。</li><li>弘光初政文臣中枢失位：高弘图、姜曰广、吕大器已有 <code>audit.sm.0517</code> source-note；分别对应阁臣用人秩序/新政漕粮、继统程序/反阮和监国礼仪/反马疏劾，被定策功、勋臣/军镇和马阮压力逐步压出中枢。</li><li>弘光初政制度反弹：张慎言、李模、常延龄已有 roleplay source-note；分别对应会推/廷争中的文臣制度路线、翊戴功赏名实疏谏和勋戚反阮/挂冠隐居记忆。</li><li>起点外部压力：朱由检、朱慈烺、吴襄、唐通、高第、定王、永王、李自成、吴三桂、多尔衮、范文程、洪承畴已有人物页；召吴三桂入卫迟滞层的王永吉、杨鹗、吴麟征、陈演、魏藻德已有人物页，其中王永吉已按 <code>audit.sm.0526</code> 升级为贯穿蓟辽召援、弘光山东河北经略、徐泗防河和淮安尾声的中低可见度人物；清入北京旧明精英吸收层的周奎、李建泰、吴惟华、秦王存枢已有低可见度人物页；北都太子识认链的钱凤览、晋王求桂、杨玉、常进节、李时印已有低可见度人物页。</li><li>北使和对清政策链：左懋第、陈洪范、马绍愉已补 Phase 1 侧写；多尔衮已有清方决策中心人物页，范文程/洪承畴已有入京政策接口页；唐起龙、骆养性、方大猷、刚林已有北使清方接口人物页；谢陛、谢升、冯铨已有北方旧臣接口/姓名误传人物页；多铎等清方/降清节点先按事件页和 source-note 处理。</li><li>江北军镇：高杰、黄得功、刘泽清、刘良佐，多铎为清军南下压力中心；高杰主角页已接入 <code>audit.sm.0490/0494/0495/0518</code> 的调停、北上地点和高营承继层；黄得功主角页已接入 <code>audit.sm.0481/0486/0487/0490/0506/0507/0508</code> 的部将降清、次级名单、从死名单、土桥调停、杭州/回銮接口、太平府-芜湖路线异文和幅纸任命断裂层；刘泽清主角页已接入 <code>audit.sm.0520/0521/0522/0523/0524/0525/0526/0527</code> 的徐州-淮安守备接替、清河防守候选、邱磊案、山东/登莱虚任、防河/总漕接口和淮安代理/逃海/畔附层；刘良佐主角页已接入 <code>audit.sm.0481/0486</code> 的田雄/马得功左右协转向和芜湖次级畔附名单层。</li><li>扬州入驻冲突和江北调停：郑元勋、黄家瑞、马鸣騄已补次要人物页；万元吉已补江北犒师、驻扎程序和四镇调停侧写；殷报、杨诚先放事件页低可见度细节，王永吉另见 <code>audit.sm.0526</code> 防河/并抚扬州链，倪嘉庆、胡承善另见 <code>audit.sm.0530</code> 弘光二月瓜/仪掣盐和加盐课执行链，钱继登另见 <code>audit.sm.0528</code> 两淮盐法/江防财政和兼抚扬州辞任链，乔尚/乔上另见 <code>audit.sm.0529</code> 内官/太监两淮盐课和兵马粮饷稽察链。</li><li>扬州失守和城内守御：刘肇基、任民育、何刚已补低可见度人物页；卫允文/卫胤文已有姓名待校页；张伯鲸、吴尔埙等先留死难名单层。</li><li>镇江/瓜洲江防失位：郑鸿逵、郑彩已补 1645 江防失用/退闽线；蒋云台已建低可见度降清 switch 人物页；张天禄仍作旧江防降将和清方战斗执行风险层，黄斌卿作水师失位/先遁边界人物。</li><li>高营承继命令链：邢氏、高元爵/高元照、李本深、胡茂祯、卫允文/卫胤文、高起潜、越其杰、陈潜夫等；<code>audit.sm.0518</code> 已把家属承继、幼嗣名义、文官/监军、内官宣谕、提督迟滞和中层将领离散风险分层，详见 <code>../events/suizhou-gao-jie-1645.md</code>。李成栋另按 <code>audit.sm.0519</code> 处理为徐州失位、弃镇/南遁/畔附异文和强力降将人物层；张成福按 <code>audit.sm.0520</code> 处理为徐州守备、山东河北总兵、姓名异写和畔附名单低可见度人物层；马化豹按 <code>audit.sm.0521</code> 处理为刘泽清举荐、徐州代须/回淮、清河废城防守建议和淮安畔附名单低可见度人物层；柏永馥/柏承馥按 <code>audit.sm.0522</code> 处理为刘泽清举荐、清河防守候选、安东擒邱磊、淮阳十四州县代理和淮安降清接口；邱磊按 <code>audit.sm.0523</code> 处理为山东总兵虚任、刘泽清竞争风险、安东被捕和淮安狱死人物，王尊垣只作安东捕邱薄人物；王燮按 <code>audit.sm.0524</code> 处理为山东巡抚虚任、淮上动员和河防/安东命令接口人物；王溁/王瀠按 <code>audit.sm.0525</code> 处理为登莱东江巡抚虚任、淮上观望、奉命不前被劾和印敕缴纳薄人物；王永吉按 <code>audit.sm.0526</code> 处理为原蓟督/辽蓟总督、山东河北经略、徐州告急、总督防河和淮安尾声分歧人物；田仰按 <code>audit.sm.0527</code> 处理为总漕/淮扬抚臣、刘泽清制约失败、安东至徐州防段报告和逃海尾声人物；倪嘉庆/胡承善按 <code>audit.sm.0530</code> 处理为瓜/仪掣盐、加盐课和史可法剥商风险人物层；钱继登按 <code>audit.sm.0528</code> 处理为两淮盐法/江防财政、扬州兼抚辞任和嘉兴请唐王监国尾声人物；乔尚/乔上按 <code>audit.sm.0529</code> 处理为内官赏赉、两淮盐课和兵马粮饷稽察薄人物。</li><li>左军东下链：左良玉、左梦庚、黄澍、袁继咸；张世勋、郝效忠、李士春、李犹龙、张应元、惠登相已有九江守城链低可见度人物页；邓林奇、汪硕画、李士元和地方死节名单先放 <code>../events/jiujiang-crisis-1645.md</code> 争议表。</li><li>南京迎降、继统风险和功赏链：大悲和尚、童氏/童妃、王之明、王之明案识认/看管链的高梦箕、穆虎、方拱乾、刘正宗、冯可宗，赵之龙、钱谦益、王铎、徐允爵/徐胤爵、邓文郁、朱国弼、汤国祚、柳祚昌、方一元、焦梦熊、齐赞元、韩赞周、卢九德、郭祚永、张拱日、李祖述、常应俊、邹存义、刘允极、黄九鼎及内官/勋臣名单；韩赞周、卢九德、常应俊、邹存义、李祖述已有 <code>audit.sm.0514</code> source-note；郭祚永、张拱日、刘允极、黄九鼎已有 <code>audit.sm.0515</code> source-note；接管低可见度人物已有黄端伯、何瑞征/何应瑞、李乔、管绍宁、姚孙榘、王懩、刘光斗、黄家鼒、陈于鼎。具体状态以人物单页和 <code>catalog.md</code> 为准。</li><li>芜湖末局已补 source-note：田雄/马得功、马銮、邹太后、翁之琪、张天禄；黄斌卿已补为水师失位/先遁和后续舟山边界人物；拟幸杭州/护驾回銮接口的朱大典、方国安、杜弘域/杜宏域、卜从善已有 source-note 和人物页；丘钺、张杰、黄名、陈献策已有低可见度次级畔附名单 source-note；黄飞、邓林祖、杨彪、孙进已有低可见度从死/随驾内官名单 source-note。</li></ul>\n<h3>文件规则</h3>\n<ul><li>一人一个文件；同名、异写或身份混杂时先建待辨析条目。</li><li>人物事实、评价、行为模式和游戏近似必须分开；可进 curated data 的结论需要 <code>../source-audit.md#audit-sm-*</code> 或 source-note JSON 支撑。</li></ul>" as const;
+export const initialWikiEntryHtml = "<blockquote><p>短入口，不是全量目录。查具体人物时定向检索姓名、异写或文件名；完整盘点再读 <code>catalog.md</code>；当前接续看 <code>../current-focus.md</code>。</p></blockquote>\n<h3>Phase 1 Demo 人物组</h3>\n<ul><li>朝廷中枢：朱由崧、史可法、马士英、阮大铖；朱由崧主角页已接入 <code>audit.sm.0466/0497/0498/0496/0507/0508</code> 的福藩南奔、继统身份压力、末局路线和权威断裂层，史可法主角页已接入 <code>audit.sm.0530/0531</code> 的盐课/剥商风险和早年/崇祯任官骨架，马士英主角页已接入 <code>audit.sm.0508/0509/0517/0527/0528/0529/0530</code> 的制度反弹、文臣失位、财政/防河/盐课接口和末局幅纸任命断裂层，阮大铖主角页已接入 <code>audit.sm.0508</code> 的末局幅纸任命/权威断裂层。</li><li>弘光初政文臣中枢失位：高弘图、姜曰广、吕大器已有 <code>audit.sm.0517</code> source-note；分别对应阁臣用人秩序/新政漕粮、继统程序/反阮和监国礼仪/反马疏劾，被定策功、勋臣/军镇和马阮压力逐步压出中枢。</li><li>弘光初政制度反弹：张慎言、李模、常延龄已有 roleplay source-note；分别对应会推/廷争中的文臣制度路线、翊戴功赏名实疏谏和勋戚反阮/挂冠隐居记忆。</li><li>起点外部压力：朱由检、朱慈烺、吴襄、唐通、高第、定王、永王、李自成、吴三桂、多尔衮、范文程、洪承畴已有人物页；召吴三桂入卫迟滞层的王永吉、杨鹗、吴麟征、陈演、魏藻德已有人物页，其中王永吉已按 <code>audit.sm.0526</code> 升级为贯穿蓟辽召援、弘光山东河北经略、徐泗防河和淮安尾声的中低可见度人物；清入北京旧明精英吸收层的周奎、李建泰、吴惟华、秦王存枢已有低可见度人物页；北都太子识认链的钱凤览、晋王求桂、杨玉、常进节、李时印已有低可见度人物页。</li><li>北使和对清政策链：左懋第、陈洪范、马绍愉已补 Phase 1 侧写；多尔衮已有清方决策中心人物页，范文程/洪承畴已有入京政策接口页；唐起龙、骆养性、方大猷、刚林已有北使清方接口人物页；谢陛、谢升、冯铨已有北方旧臣接口/姓名误传人物页；多铎等清方/降清节点先按事件页和 source-note 处理。</li><li>江北军镇：高杰、黄得功、刘泽清、刘良佐，多铎为清军南下压力中心；高杰主角页已接入 <code>audit.sm.0490/0494/0495/0518</code> 的调停、北上地点和高营承继层；黄得功主角页已接入 <code>audit.sm.0481/0486/0487/0490/0506/0507/0508</code> 的部将降清、次级名单、从死名单、土桥调停、杭州/回銮接口、太平府-芜湖路线异文和幅纸任命断裂层；刘泽清主角页已接入 <code>audit.sm.0520/0521/0522/0523/0524/0525/0526/0527</code> 的徐州-淮安守备接替、清河防守候选、邱磊案、山东/登莱虚任、防河/总漕接口和淮安代理/逃海/畔附层；刘良佐主角页已接入 <code>audit.sm.0481/0486</code> 的田雄/马得功左右协转向和芜湖次级畔附名单层。</li><li>扬州入驻冲突和江北调停：郑元勋、黄家瑞、马鸣騄已补次要人物页；万元吉已补江北犒师、驻扎程序和四镇调停侧写；殷报、杨诚先放事件页低可见度细节，王永吉另见 <code>audit.sm.0526</code> 防河/并抚扬州链，倪嘉庆、胡承善另见 <code>audit.sm.0530</code> 弘光二月瓜/仪掣盐和加盐课执行链，钱继登另见 <code>audit.sm.0528</code> 两淮盐法/江防财政和兼抚扬州辞任链，乔尚/乔上另见 <code>audit.sm.0529</code> 内官/太监两淮盐课和兵马粮饷稽察链。</li><li>扬州失守和城内守御：刘肇基、任民育、何刚已补低可见度人物页；卫允文/卫胤文已有姓名待校页；张伯鲸、吴尔埙等先留死难名单层。</li><li>镇江/瓜洲江防失位：郑鸿逵、郑彩已补 1645 江防失用/退闽线；蒋云台已建低可见度降清 switch 人物页；张天禄仍作旧江防降将和清方战斗执行风险层，黄斌卿作水师失位/先遁边界人物。</li><li>高营承继命令链：邢氏、高元爵/高元照、李本深、胡茂祯、卫允文/卫胤文、高起潜、越其杰、陈潜夫等；<code>audit.sm.0518</code> 已把家属承继、幼嗣名义、文官/监军、内官宣谕、提督迟滞和中层将领离散风险分层，详见 <code>../events/suizhou-gao-jie-1645.md</code>。李成栋另按 <code>audit.sm.0519</code> 处理为徐州失位、弃镇/南遁/畔附异文和强力降将人物层；张成福按 <code>audit.sm.0520</code> 处理为徐州守备、山东河北总兵、姓名异写和畔附名单低可见度人物层；马化豹按 <code>audit.sm.0521</code> 处理为刘泽清举荐、徐州代须/回淮、清河废城防守建议和淮安畔附名单低可见度人物层；柏永馥/柏承馥按 <code>audit.sm.0522</code> 处理为刘泽清举荐、清河防守候选、安东擒邱磊、淮阳十四州县代理和淮安降清接口；邱磊按 <code>audit.sm.0523</code> 处理为山东总兵虚任、刘泽清竞争风险、安东被捕和淮安狱死人物，王尊垣只作安东捕邱薄人物；王燮按 <code>audit.sm.0524</code> 处理为山东巡抚虚任、淮上动员和河防/安东命令接口人物；王溁/王瀠按 <code>audit.sm.0525</code> 处理为登莱东江巡抚虚任、淮上观望、奉命不前被劾和印敕缴纳薄人物；王永吉按 <code>audit.sm.0526</code> 处理为原蓟督/辽蓟总督、山东河北经略、徐州告急、总督防河和淮安尾声分歧人物；田仰按 <code>audit.sm.0527</code> 处理为总漕/淮扬抚臣、刘泽清制约失败、安东至徐州防段报告和逃海尾声人物；倪嘉庆/胡承善按 <code>audit.sm.0530</code> 处理为瓜/仪掣盐、加盐课和史可法剥商风险人物层；钱继登按 <code>audit.sm.0528</code> 处理为两淮盐法/江防财政、扬州兼抚辞任和嘉兴请唐王监国尾声人物；乔尚/乔上按 <code>audit.sm.0529</code> 处理为内官赏赉、两淮盐课和兵马粮饷稽察薄人物。</li><li>左军东下链：左良玉、左梦庚、黄澍、袁继咸；张世勋、郝效忠、李士春、李犹龙、张应元、惠登相已有九江守城链低可见度人物页；邓林奇、汪硕画、李士元和地方死节名单先放 <code>../events/jiujiang-crisis-1645.md</code> 争议表。</li><li>南京迎降、继统风险和功赏链：大悲和尚、童氏/童妃、王之明、王之明案识认/看管链的高梦箕、穆虎、方拱乾、刘正宗、冯可宗，赵之龙、钱谦益、王铎、徐允爵/徐胤爵、邓文郁、朱国弼、汤国祚、柳祚昌、方一元、焦梦熊、齐赞元、韩赞周、卢九德、郭祚永、张拱日、李祖述、常应俊、邹存义、刘允极、黄九鼎及内官/勋臣名单；韩赞周、卢九德、常应俊、邹存义、李祖述已有 <code>audit.sm.0514</code> source-note；郭祚永、张拱日、刘允极、黄九鼎已有 <code>audit.sm.0515</code> source-note；接管低可见度人物已有黄端伯、何瑞征/何应瑞、李乔、管绍宁、姚孙榘、王懩、刘光斗、黄家鼒、陈于鼎。具体状态以人物单页和 <code>catalog.md</code> 为准。</li><li>芜湖末局已补 source-note：田雄/马得功、马銮、邹太后、翁之琪、张天禄；黄斌卿已补为水师失位/先遁和后续舟山边界人物；拟幸杭州/护驾回銮接口的朱大典、方国安、杜弘域/杜宏域、卜从善已有 source-note 和人物页；丘钺、张杰、黄名、陈献策已有低可见度次级畔附名单 source-note；黄飞、邓林祖、杨彪、孙进已有低可见度从死/随驾内官名单 source-note。</li></ul>\n<h3>文件规则</h3>\n<ul><li>一人一个文件；同名、异写或身份混杂时先建待辨析条目。</li><li>人物页保持在 <code>people/&lt;slug&gt;.md</code>。人物立绘、历史画像参考图和生成 provenance 放入 <code>people/&lt;slug&gt;/</code> 同名子目录，例如 <code>people/shi-kefa/portrait.md</code>、<code>people/shi-kefa/portrait.png</code>。</li><li><code>people/&lt;slug&gt;/portrait.md</code> 是视觉资产说明，不是人物考据正文；它可以记录来源 URL、权利、prompt、历史参考边界和下一轮美术方向，但不要把这些生成过程细节写进 <code>people/&lt;slug&gt;.md</code>。</li><li>人物事实、评价、行为模式和游戏近似必须分开；可进 curated data 的结论需要 <code>../source-audit.md#audit-sm-*</code> 或 source-note JSON 支撑。</li></ul>" as const;

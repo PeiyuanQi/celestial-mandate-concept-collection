@@ -25,12 +25,16 @@ const categoryById = new Map(
   wikiCategoryGroups.map((category) => [category.id, category]),
 );
 const entries = [...wikiEntries];
+type WikiEntry = (typeof entries)[number];
+const getEntryPortrait = (entry: WikiEntry) =>
+  "portrait" in entry ? entry.portrait : undefined;
 const initialEntry =
   entries.find((entry) => entry.id === initialWikiEntryId) ?? entries[0];
 const initialDlc = initialEntry ? dlcById.get(initialEntry.dlcId) : undefined;
 const initialCategory = initialEntry
   ? categoryById.get(initialEntry.categoryId)
   : undefined;
+const initialPortrait = initialEntry ? getEntryPortrait(initialEntry) : undefined;
 const entryCount = entries.length;
 const countText = `${entryCount} ${pageContent.wiki.entryCountLabel}`;
 const groupedEntries = wikiDlcGroups
@@ -51,6 +55,7 @@ const browserEntries = entries.map((entry) => {
   const category = categoryById.get(entry.categoryId);
   const dlcLabel = dlc?.label[locale] ?? entry.dlcId;
   const categoryLabel = category?.label[locale] ?? entry.categoryId;
+  const portrait = getEntryPortrait(entry);
 
   return {
     id: entry.id,
@@ -59,6 +64,12 @@ const browserEntries = entries.map((entry) => {
     contentPath: withBasePath(entry.contentPath),
     dlcLabel,
     categoryLabel,
+    portrait: portrait
+      ? {
+          ...portrait,
+          imagePath: withBasePath(portrait.imagePath),
+        }
+      : undefined,
     searchText: [
       entry.title,
       entry.slug,
@@ -171,20 +182,45 @@ const safeEntryJson = JSON.stringify(browserEntries).replace(
         {
           initialEntry && (
             <>
-              <header class="wiki-reader-header">
-                <p class="wiki-reader-kicker" data-wiki-reader-dlc>
-                  {initialDlc?.label[locale]}
-                </p>
-                <h2 data-wiki-reader-title>{initialEntry.title}</h2>
-                <div class="wiki-reader-meta">
-                  <span data-wiki-reader-category>
-                    {initialCategory?.label[locale]}
-                  </span>
-                  <span>
-                    {pageContent.wiki.sourceLabel}:{" "}
-                    <code data-wiki-reader-source>{initialEntry.sourcePath}</code>
-                  </span>
+              <header
+                class:list={[
+                  "wiki-reader-header",
+                  initialPortrait && "has-portrait",
+                ]}
+              >
+                <div class="wiki-reader-copy">
+                  <p class="wiki-reader-kicker" data-wiki-reader-dlc>
+                    {initialDlc?.label[locale]}
+                  </p>
+                  <h2 data-wiki-reader-title>{initialEntry.title}</h2>
+                  <div class="wiki-reader-meta">
+                    <span data-wiki-reader-category>
+                      {initialCategory?.label[locale]}
+                    </span>
+                    <span>
+                      {pageContent.wiki.sourceLabel}:{" "}
+                      <code data-wiki-reader-source>{initialEntry.sourcePath}</code>
+                    </span>
+                  </div>
                 </div>
+                <figure
+                  class="wiki-reader-portrait"
+                  data-wiki-reader-portrait
+                  hidden={!initialPortrait}
+                >
+                  <img
+                    src={initialPortrait
+                      ? withBasePath(initialPortrait.imagePath)
+                      : undefined}
+                    alt={initialPortrait?.alt ?? ""}
+                    loading="eager"
+                    decoding="async"
+                    data-wiki-reader-portrait-image
+                  />
+                  <figcaption data-wiki-reader-portrait-caption>
+                    {initialPortrait?.caption}
+                  </figcaption>
+                </figure>
               </header>
               <div
                 class="wiki-article-content"
@@ -216,6 +252,14 @@ const safeEntryJson = JSON.stringify(browserEntries).replace(
       const categoryNode = document.querySelector("[data-wiki-reader-category]");
       const sourceNode = document.querySelector("[data-wiki-reader-source]");
       const contentNode = document.querySelector("[data-wiki-content]");
+      const headerNode = document.querySelector(".wiki-reader-header");
+      const portraitNode = document.querySelector("[data-wiki-reader-portrait]");
+      const portraitImageNode = document.querySelector(
+        "[data-wiki-reader-portrait-image]",
+      );
+      const portraitCaptionNode = document.querySelector(
+        "[data-wiki-reader-portrait-caption]",
+      );
       const countLabel = countNode?.textContent?.replace(/^\d+\s*/, "") ?? "";
       const loadingLabel = reader?.getAttribute("data-loading-label") ?? "";
       const emptyLabel = reader?.getAttribute("data-empty-label") ?? "";
@@ -258,6 +302,28 @@ const safeEntryJson = JSON.stringify(browserEntries).replace(
         if (dlcNode) dlcNode.textContent = entry.dlcLabel;
         if (categoryNode) categoryNode.textContent = entry.categoryLabel;
         if (sourceNode) sourceNode.textContent = entry.sourcePath;
+        if (
+          portraitNode instanceof HTMLElement &&
+          portraitImageNode instanceof HTMLImageElement
+        ) {
+          if (entry.portrait) {
+            portraitImageNode.src = entry.portrait.imagePath;
+            portraitImageNode.alt = entry.portrait.alt;
+            if (portraitCaptionNode) {
+              portraitCaptionNode.textContent = entry.portrait.caption ?? "";
+            }
+            portraitNode.hidden = false;
+            headerNode?.classList.add("has-portrait");
+          } else {
+            portraitImageNode.removeAttribute("src");
+            portraitImageNode.alt = "";
+            if (portraitCaptionNode) {
+              portraitCaptionNode.textContent = "";
+            }
+            portraitNode.hidden = true;
+            headerNode?.classList.remove("has-portrait");
+          }
+        }
         contentNode.setAttribute("aria-busy", "true");
         contentNode.innerHTML = `<p class="wiki-loading">${loadingLabel}</p>`;
 

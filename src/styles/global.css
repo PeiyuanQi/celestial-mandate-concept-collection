@@ -1934,6 +1934,17 @@ body[data-locale="en"] .wiki-dlc-group > h2 {
     rgba(246, 241, 230, 0.72);
 }
 
+.wiki-reader-header.has-portrait {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(10rem, 17vw, 15rem);
+  gap: 1.1rem;
+  align-items: start;
+}
+
+.wiki-reader-copy {
+  min-width: 0;
+}
+
 .wiki-reader-kicker {
   color: var(--cinnabar);
   font-size: 0.78rem;
@@ -1976,6 +1987,36 @@ body[data-locale="en"] .wiki-reader-header h2 {
 .wiki-reader-meta code {
   white-space: normal;
   word-break: break-word;
+}
+
+.wiki-reader-portrait {
+  margin: 0;
+  justify-self: end;
+  width: 100%;
+  color: rgba(17, 22, 16, 0.58);
+}
+
+.wiki-reader-portrait[hidden] {
+  display: none;
+}
+
+.wiki-reader-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border: 1px solid rgba(17, 22, 16, 0.16);
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+  background: rgba(232, 220, 197, 0.64);
+  box-shadow: 0 16px 34px rgba(17, 22, 16, 0.14);
+}
+
+.wiki-reader-portrait figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 750;
+  line-height: 1.34;
 }
 
 .wiki-article-content {
@@ -2778,6 +2819,10 @@ body[data-locale="en"] .wiki-article-content h3 {
     max-width: none;
     font-size: 1.85rem;
   }
+
+  .wiki-reader-header.has-portrait {
+    grid-template-columns: minmax(0, 1fr) minmax(8.5rem, 12rem);
+  }
 }
 
 @media (max-width: 620px) {
@@ -2814,6 +2859,15 @@ body[data-locale="en"] .wiki-article-content h3 {
 
   body[data-locale="en"] .wiki-reader-header h2 {
     font-size: 1.38rem;
+  }
+
+  .wiki-reader-header.has-portrait {
+    grid-template-columns: 1fr;
+  }
+
+  .wiki-reader-portrait {
+    justify-self: start;
+    width: min(14rem, 76vw);
   }
 
   .wiki-reader-meta {

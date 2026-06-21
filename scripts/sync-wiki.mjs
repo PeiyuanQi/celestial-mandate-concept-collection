@@ -1,5 +1,6 @@
 import {
   existsSync,
+  copyFileSync,
   mkdirSync,
   readdirSync,
   readFileSync,
@@ -72,6 +73,12 @@ const priorityFiles = new Map([
   ["README.md", 1],
   ["catalog.md", 2],
 ]);
+const portraitImageNames = [
+  "portrait.png",
+  "portrait.jpg",
+  "portrait.jpeg",
+  "portrait.webp",
+];
 const collator = new Intl.Collator("en", { numeric: true });
 
 function escapeHtml(value) {
@@ -132,6 +139,76 @@ function compareSourceFiles(a, b) {
 
 function normalizeSourcePath(value) {
   return value.split(path.sep).join("/");
+}
+
+function extractPortraitCaption(markdown) {
+  const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
+  const statusLine = lines.find((line) =>
+    /^(?:>\s*)?-\s*Status:\s+/i.test(line) ||
+    /^>\s*Status:\s+/i.test(line),
+  );
+  if (!statusLine) {
+    return "";
+  }
+
+  return stripMarkdown(
+    statusLine
+      .replace(/^(?:>\s*)?-\s*Status:\s+/i, "")
+      .replace(/^>\s*Status:\s+/i, ""),
+  );
+}
+
+function findPortrait(category, sourceDir, dlc, slug, title) {
+  if (category.id !== "people") {
+    return undefined;
+  }
+
+  const portraitDir = resolve(sourceDir, slug);
+  if (!existsSync(portraitDir)) {
+    return undefined;
+  }
+
+  const imageName = portraitImageNames.find((name) =>
+    existsSync(resolve(portraitDir, name)),
+  );
+  if (!imageName) {
+    return undefined;
+  }
+
+  const imagePath = `/wiki-content/${dlc.id}/${category.id}/${slug}/${imageName}`;
+  const sourceNotePath = resolve(portraitDir, "portrait.md");
+  const hasSourceNote = existsSync(sourceNotePath);
+  const caption = hasSourceNote
+    ? extractPortraitCaption(readFileSync(sourceNotePath, "utf8"))
+    : "";
+
+  return {
+    imagePath,
+    absoluteImagePath: resolve(portraitDir, imageName),
+    sourcePath: hasSourceNote
+      ? normalizeSourcePath(relative(resolve(referencesRoot, ".."), sourceNotePath))
+      : undefined,
+    caption:
+      caption ||
+      "AI-generated game concept art; not an authenticated likeness.",
+    alt: `${title} portrait concept art`,
+  };
+}
+
+function publicPortrait(portrait) {
+  if (!portrait) {
+    return undefined;
+  }
+
+  const {
+    absoluteImagePath: _absoluteImagePath,
+    sourcePath,
+    ...publicFields
+  } = portrait;
+  return {
+    ...publicFields,
+    ...(sourcePath ? { sourcePath } : {}),
+  };
 }
 
 function resolveWikiHref(href, sourcePath, entryBySourcePath) {
@@ -393,6 +470,7 @@ function collectEntries() {
         );
         const id = `${dlc.id}__${category.id}__${slug}`;
         const contentPath = `/wiki-content/${dlc.id}/${category.id}/${slug}.json`;
+        const portrait = findPortrait(category, sourceDir, dlc, slug, title);
 
         entries.push({
           id,
@@ -403,6 +481,7 @@ function collectEntries() {
           excerpt,
           sourcePath,
           contentPath,
+          portrait,
           markdown,
         });
       }
@@ -424,6 +503,11 @@ function writeGeneratedContent(entries) {
     mkdirSync(dirname(outputPath), { recursive: true });
     const html = markdownToHtml(entry.markdown, entry.sourcePath, entryBySourcePath);
     const plainText = stripMarkdown(entry.markdown);
+    if (entry.portrait) {
+      const imageOutputPath = resolve(projectRoot, `public${entry.portrait.imagePath}`);
+      mkdirSync(dirname(imageOutputPath), { recursive: true });
+      copyFileSync(entry.portrait.absoluteImagePath, imageOutputPath);
+    }
     writeFileSync(
       outputPath,
       `${JSON.stringify(
@@ -431,6 +515,7 @@ function writeGeneratedContent(entries) {
           id: entry.id,
           title: entry.title,
           sourcePath: entry.sourcePath,
+          ...(entry.portrait ? { portrait: publicPortrait(entry.portrait) } : {}),
           html,
           plainText,
         },
@@ -446,7 +531,10 @@ function writeGeneratedContent(entries) {
     : "";
 
   const publicEntries = entries.map(
-    ({ markdown: _markdown, ...entry }) => entry,
+    ({ markdown: _markdown, portrait, ...entry }) => ({
+      ...entry,
+      ...(portrait ? { portrait: publicPortrait(portrait) } : {}),
+    }),
   );
 
   mkdirSync(dirname(generatedModulePath), { recursive: true });

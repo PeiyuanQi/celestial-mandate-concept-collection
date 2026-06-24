@@ -43,6 +43,14 @@ export const wikiCategoryGroups = [
       "zh-Hans": "时间线",
       "en": "Timeline"
     }
+  },
+  {
+    "id": "map-data",
+    "sourceDir": "../map-data",
+    "label": {
+      "zh-Hans": "地图数据",
+      "en": "Map Data"
+    }
   }
 ] as const;
 
@@ -12704,6 +12712,56 @@ export const wikiEntries = [
     "excerpt": "范围：至 1662 06 01 为本资料库主研究终点；其后事件作为尾声线索。 状态：种子编年，日级换算待历表复核。",
     "sourcePath": "references/southern-ming/chronicle/1662.md",
     "contentPath": "/wiki-content/po-zhen-zi/timeline/1662.json"
+  },
+  {
+    "id": "po-zhen-zi__map-data__map-data-references",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "map-data",
+    "slug": "map-data-references",
+    "title": "Map Data References",
+    "excerpt": "This folder stores cross era map construction references that are not specific to one historical era package.",
+    "sourcePath": "references/map-data/README.md",
+    "contentPath": "/wiki-content/po-zhen-zi/map-data/map-data-references.json"
+  },
+  {
+    "id": "po-zhen-zi__map-data__open-map-data-references",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "map-data",
+    "slug": "open-map-data-references",
+    "title": "Open Map Data References",
+    "excerpt": "This folder stores license cleared or license reviewable non commercial source archives used for clean room world map construction.",
+    "sourcePath": "references/map-data/open/README.md",
+    "contentPath": "/wiki-content/po-zhen-zi/map-data/open-map-data-references.json"
+  },
+  {
+    "id": "po-zhen-zi__map-data__natural-earth-reference-collection",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "map-data",
+    "slug": "natural-earth-reference-collection",
+    "title": "Natural Earth Reference Collection",
+    "excerpt": "Natural Earth archives are used as the first clean room global basemap seed.",
+    "sourcePath": "references/map-data/open/natural-earth/README.md",
+    "contentPath": "/wiki-content/po-zhen-zi/map-data/natural-earth-reference-collection.json"
+  },
+  {
+    "id": "po-zhen-zi__map-data__geonames-reference-collection",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "map-data",
+    "slug": "geonames-reference-collection",
+    "title": "GeoNames Reference Collection",
+    "excerpt": "This folder stores the GeoNames China country dump used as a clean room modern reference for Phase 1 map construction.",
+    "sourcePath": "references/map-data/open/geonames/README.md",
+    "contentPath": "/wiki-content/po-zhen-zi/map-data/geonames-reference-collection.json"
+  },
+  {
+    "id": "po-zhen-zi__map-data__phase1-demo-map-cross-reference",
+    "dlcId": "po-zhen-zi",
+    "categoryId": "map-data",
+    "slug": "phase1-demo-map-cross-reference",
+    "title": "Phase 1 Demo Map Cross-Reference",
+    "excerpt": "Scope: cross reference the local Paradox grand strategy map inventory against the map dataset needed for the Phase 1 Pozhenzi Demo. Status: reference crosswa...",
+    "sourcePath": "references/map-data/paradox-grand-strategy/phase1-demo-cross-reference.md",
+    "contentPath": "/wiki-content/po-zhen-zi/map-data/phase1-demo-map-cross-reference.json"
   }
 ] as const;
 

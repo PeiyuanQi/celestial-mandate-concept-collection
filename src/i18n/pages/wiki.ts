@@ -5,7 +5,7 @@ export const wikiContent: Record<Locale, WikiContent> = {
     kicker: "维基",
     title: "社稷中文维基",
     body:
-      "按资料片浏览已有百科文件：人物、事件、地点和时间线都从相邻研究库同步，保持可检索、可追溯。",
+      "按资料片浏览已有百科文件：人物、事件、地点、时间线和地图数据说明都从相邻研究库同步，保持可检索、可追溯。",
     heroImageAlt:
       "皇史宬式砖石档案库里，木架、册匣、黄册与案牍在灯下层层排开。",
     navAriaLabel: "维基词条导航",
@@ -21,7 +21,7 @@ export const wikiContent: Record<Locale, WikiContent> = {
     kicker: "Wiki",
     title: "Celestial Mandate Wiki",
     body:
-      "Browse existing encyclopedia files by DLC: people, events, places, and timelines are synced from the adjacent research archive and kept searchable.",
+      "Browse existing encyclopedia files by DLC: people, events, places, timelines, and map-data notes are synced from the adjacent research archive and kept searchable.",
     heroImageAlt:
       "A Huangshicheng-style imperial archive with stone vaults, wooden shelves, register bundles, and dossiers under warm lamplight.",
     navAriaLabel: "Wiki entry navigation",

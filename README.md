@@ -54,6 +54,7 @@ See `COPYRIGHT.md` for the full license-scope note.
 ## Development Flow
 
 - Read `AGENTS.md` before using an agent on this repo.
+- Repo-specific skills live under `tools/skills/<skill-name>/`, with `.agents/skills/<skill-name>` pointer files for agent discovery.
 - Use a git worktree for parallel or unrelated agent work. The `.worktrees/` directory is ignored for local worktrees.
 - Setup: install Git LFS, use Node.js `22.12.0` or newer, then run `npm install`.
 - Sync public wiki content from the adjacent research archive when wiki entries change: run `npm run sync-wiki`.

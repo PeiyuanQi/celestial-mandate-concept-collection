@@ -1,0 +1,4 @@
+interface:
+  display_name: "Concept Wiki Website"
+  short_description: "Sync wiki content and website deploys"
+  default_prompt: "Use $sync-concept-wiki-website to sync public wiki content from the adjacent Celestial Mandate references and verify the concept website."

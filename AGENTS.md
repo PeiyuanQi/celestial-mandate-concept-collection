@@ -12,6 +12,7 @@
 ## Source Of Truth
 - `AGENTS.md` is canonical for shared agent instructions.
 - Update this file and `README.md` together when adding tooling, project structure, or verification commands.
+- Repo-specific skills live under `tools/skills/<skill-name>/`, with `.agents/skills/<skill-name>` pointer files that link to those skill directories.
 
 ## Git Workflow
 - Prefer git worktrees for parallel or unrelated agent work so multiple agents can develop concurrently without colliding.

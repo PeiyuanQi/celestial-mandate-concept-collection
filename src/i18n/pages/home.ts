@@ -8,7 +8,7 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       title: "社稷",
       titleSuffix: "历史策略模拟",
       description:
-        "一个关于权威、后勤、合法性，以及命令如何穿过崩坏国家的历史社会模拟与大战略概念。",
+        "一款以角色视角进入深层历史社会模拟的大战略概念：因果压力推动无人干预时的局势大体沿历史方向演变，而每道命令都受权限、信息、资源、制度与距离约束。",
     },
     brand: {
       mark: "社稷",
@@ -34,12 +34,12 @@ export const homePageContent: Record<Locale, HomePageContent> = {
     ],
     languageSwitcherLabel: "选择语言",
     hero: {
-      eyebrow: "历史社会模拟 · 大战略概念",
+      eyebrow: "深层历史社会模拟 · 大战略体验方向",
       title: "社稷",
       quote: "看试手，补天裂。",
       quoteSource: "——辛弃疾",
       copy:
-        "一个关于权威、后勤、合法性与命令传递的历史社会模拟。",
+        "从具体人物的席位进入历史社会：即使无人干预，因果压力也会推动局势大体沿历史方向演变；当你介入，每道命令仍受权限、信息、资源、制度与距离约束。项目以高品质大战略体验为方向。",
       imageAlt: "一张铺满地图、路线、筹码、封蜡与报告的指挥桌。",
       actions: [
         {
@@ -56,28 +56,28 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       signalsAriaLabel: "首页核心讯号",
       signals: [
         {
-          label: "奏报",
-          text: "迟之一瞬，局势已易。",
+          label: "视角",
+          text: "身在其位，所知有限。",
         },
         {
           label: "命令",
-          text: "令既出，行之有差。",
+          text: "权、信、财、制、路，缺一皆受阻。",
         },
         {
-          label: "江河",
-          text: "水陆所通，方为可达。",
+          label: "社会",
+          text: "人物与地方，各循其势。",
         },
         {
-          label: "秉权",
-          text: "天下事，未必尽明。",
+          label: "历史",
+          text: "因果导向，不以剧本锁定。",
         },
       ],
     },
     intro: {
       kicker: "这是什么",
-      title: "不是复述一段历史，而是模拟权力如何抵达现实。",
+      title: "不是复述历史，而是让历史社会在压力中继续运转。",
       body:
-        "公开资料、地理水文、人物关系和系统假设被整理成可玩的章节。每个资料片给出开局压力；玩法系统决定命令、回报、合法性与地方接受度如何相互牵扯。",
+        "公开资料、地理水文、人物关系与制度条件被整理为可玩的章节。开局提供历史压力而非固定剧本；角色、群体与机构依其处境行动，使无人干预的世界仍大体趋向历史，同时为有因有果的改变保留空间。",
     },
     footer: {
       label: "社稷",
@@ -96,7 +96,7 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       title: "Celestial Mandate (社稷)",
       titleSuffix: "Historical Strategy Simulation",
       description:
-        "A historical society-simulation and grand-strategy concept about authority, logistics, legitimacy, and decisions that must travel through a collapsing state.",
+        "A grand-strategy concept built around deep historical society simulation from a character's perspective: causal pressures keep an unattended world broadly historical, while authority, information, resources, institutions, and distance constrain every command.",
     },
     brand: {
       mark: "社稷",
@@ -122,12 +122,12 @@ export const homePageContent: Record<Locale, HomePageContent> = {
     ],
     languageSwitcherLabel: "Select language",
     hero: {
-      eyebrow: "Historical Society Simulation · Grand Strategy Concept",
+      eyebrow: "Deep Historical Society Simulation · Grand Strategy Direction",
       title: "社稷",
       quote: "Try the hand, and mend the broken sky.",
       quoteSource: "— Xin Qiji",
       copy:
-        "A historical society simulation and grand-strategy concept about authority, logistics, legitimacy, and orders that must travel through people, roads, and institutions.",
+        "Enter a historical society from a particular character's seat. Causal pressures keep the unattended world broadly historical without fixing it to a script; when you intervene, authority, information, resources, institutions, and distance still constrain every command. The project aims for a high-quality grand-strategy experience.",
       imageAlt:
         "A command table with layered maps, routes, tokens, wax seals, and reports.",
       actions: [
@@ -145,28 +145,28 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       signalsAriaLabel: "Home page core signals",
       signals: [
         {
-          label: "Reports",
-          text: "Late by design; the situation has moved.",
+          label: "Perspective",
+          text: "Your office defines what you can know.",
         },
         {
           label: "Orders",
-          text: "They change once they leave your desk.",
+          text: "Authority, knowledge, means, institutions, and distance all matter.",
         },
         {
-          label: "Waterways",
-          text: "Routes decide what can be reached.",
+          label: "Society",
+          text: "People and places follow pressures of their own.",
         },
         {
-          label: "Seat",
-          text: "You hold an office, not omniscience.",
+          label: "History",
+          text: "Causally directed, never locked to a script.",
         },
       ],
     },
     intro: {
       kicker: "What It Is",
-      title: "Not a retelling of history, but a model of power reaching reality.",
+      title: "Not a retelling, but a historical society that keeps moving under pressure.",
       body:
-        "Public sources, geography, waterways, relationships, and system assumptions are gathered into playable chapters. Each DLC defines the opening pressure; the systems decide how orders, reports, legitimacy, and local acceptance pull against one another.",
+        "Public sources, geography, waterways, relationships, and institutional conditions are shaped into playable chapters. The opening establishes historical pressures rather than a fixed script; characters, groups, and institutions act from their circumstances, keeping an unattended world broadly historical while leaving room for causally earned change.",
     },
     footer: {
       label: "Celestial Mandate",

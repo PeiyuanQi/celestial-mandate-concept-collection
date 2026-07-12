@@ -5,7 +5,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
     kicker: "玩法介绍",
     title: "权力有限，才有策略。",
     body:
-      "你不是站在地图外拖动棋子，而是坐进一个会迟疑、会缺粮、会传错话、会被地方社会反推的政权。",
+      "你不是站在地图外拖动棋子，而是从一个具体人物的席位进入持续运转的历史社会。你只能在权限、所知、资源、制度和距离允许的范围内施政，并承担命令离开案头后的变化。",
     heroImageAlt:
       "暮色中的驿站庭院，信使携文书换马，屋内官员围着地图商议命令。",
     pillarsTitle: "玩法的四个支点",
@@ -29,9 +29,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
     ],
     systemIndex: {
       kicker: "玩法系统",
-      title: "这些系统决定你的命令能不能变成现实。",
+      title: "这些系统共同决定你的意图能否成为现实。",
       body:
-        "下面只列你会在游戏里直接体验到的玩法系统：你会做什么选择、看到什么反馈、承担什么代价。",
+        "以下是项目希望让玩家直接体验的玩法方向：以两到四项可见战略重点整理计划，而非消费行动点；通过委任与制度常规推动执行，并从有日期、有来路的报告中判断后果。",
       ariaLabel: "玩法系统子页",
       sourceLabel: "玩法重点",
       openLabel: "了解玩法",
@@ -42,13 +42,13 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "身份与命令",
         title: "我是谁，我能命令谁？",
         body:
-          "你先选择一个权力席位，而不是选择一个抽象国家。皇帝、阁臣、督师、军镇主将和幕府赞画拥有不同的权限、视野和风险；同一条命令，在不同席位手里会有不同的成本。",
+          "你先选择一个权力席位，而不是选择抽象国家。皇帝、阁臣、督师、军镇主将和幕府赞画拥有不同的权限、视野、资源与风险；界面以两到四项可见战略重点呈现当前计划，而不是给你一池可随意消费的行动点。",
         question:
-          "当你想改变局势时，第一件事不是点哪里，而是弄清楚谁听你的、谁只会考虑你的请求。",
+          "当你想改变局势时，第一件事不是点哪里，而是弄清楚谁能受命、谁只能被说服，以及哪些事务必须交给官署与地方常规持续办理。",
         steps: [
-          "选择一个有权力也有盲区的历史席位。",
-          "把想法变成直接命令、正式请求、私人影响或情报行动。",
-          "在消息迟到、权限不足和地方拒绝之间重新安排优先级。",
+          "选择一个有权力也有盲区的历史席位，并明确当前两到四项战略重点。",
+          "把意图变成直接命令、正式请求、私人影响，或交由属官和既有制度常规处理。",
+          "根据预计送达、预计得报与实际回执重新排定计划，而不是等待即时结果。",
         ],
         systemSlugs: [
           "player-seat",
@@ -100,15 +100,15 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       {
         id: "cascading-consequence",
         label: "局势后果",
-        title: "局势如何越滚越大？",
+        title: "局势如何自行延续，又因你而改变？",
         body:
-          "承认、休战、借粮、改革、谣言和历史记忆都会改变下一轮选择。游戏不会只问你是否赢下一场危机，还会追问你用什么代价把局势推到了下一步。",
+          "承认、休战、借粮、改革、谣言和历史记忆会在你介入或不介入时继续作用。结构压力让无人干预的模拟大体沿历史方向推进，却不把结局锁进固定剧本；你的选择则改变下一轮可以承受的代价。",
         question:
-          "一次妥协可能换来喘息，也可能让盟友怀疑你；一次改革可能救财政，也可能引爆既得利益。",
+          "一次妥协可能换来喘息，也可能让盟友怀疑你；一次改革可能救财政，也可能引爆既得利益。你需要看清后果为何发生，以及还剩多少恢复余地。",
         steps: [
           "用外交、承认和交易争取时间，而不是只靠军事解决一切。",
-          "推动制度调整，同时承担推行成本和地方反弹。",
-          "让之前的选择以修正、声望、仇恨和惯例的形式留在局中。",
+          "阅读因果报告，分辨直接触发、长期压力与仍可动用的恢复路径。",
+          "让之前的选择以信誉、旧怨、制度惯例和物质损失留在局中。",
         ],
         systemSlugs: [
           "diplomacy-recognition",
@@ -136,19 +136,19 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "角色席位",
         title: "角色席位：你不是全知上帝",
         deck:
-          "选择一个历史人物或权力位置，带着他的权限、消息渠道、责任和生存压力进入危局。",
+          "选择一个历史人物或权力位置，带着其权限、消息渠道、责任和生存压力进入危局。",
         summary:
-          "同一场南明危机，弘光皇帝、马士英、史可法、江北诸镇主将和低权力幕府赞画看到的世界并不一样。你能直接下令的范围、能请求谁、谁会无视你、哪些消息会迟到，都由席位决定。",
-        indexPoints: ["可选角色", "权限边界", "信息视角"],
+          "同一场南明危机，弘光皇帝、马士英、史可法、江北诸镇主将和低权力幕府赞画看到的世界并不一样。席位决定你能直接命令什么、只能请求谁、可以调动哪些资源、要依靠哪些制度，以及消息要走多远。",
+        indexPoints: ["可选角色", "权限边界", "连续视角"],
         questions: [
           "选一个高位但脆弱的朝廷角色，还是选一个窄权但更能自保的军镇角色。",
-          "用自己的职权直接下令，或通过奏报、使节、私人关系和交易去影响别人。",
-          "在死亡、失势、流亡或继承之后，选择新的连续席位继续这局故事。",
+          "用职权、奏报、使节、私人关系和交易施加影响，并把日常事务委任给属官与机构。",
+          "在失官、流亡、投降、死亡或继承之后，于历史条件允许时转入继任席位或观察视角继续见证局势。",
         ],
         feedback: [
           {
             label: "权限",
-            text: "命令界面会区分直接命令、需要对方接受的请求，以及完全越权的想法。",
+            text: "命令预览区分直接命令、受条件约束的请求，以及超出权限的意图。",
           },
           {
             label: "视角",
@@ -156,7 +156,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "存续",
-            text: "角色的生死和职位变化不会只是结算画面，而会改变你能继续掌握的权力。",
+            text: "失官、流亡、投降、死亡与继承会改变可用席位；符合历史条件时，战局可由继任者或观察视角延续。",
           },
         ],
         guardrails: [
@@ -173,33 +173,33 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "命令与消息",
         title: "命令与消息：权力需要抵达",
         deck:
-          "你的限制来自起草、排队、信使、路途、回执、过期报告和地方是否接受。",
+          "起草、队列、信使、路途、回执、过期报告和地方接受度，共同限制命令。",
         summary:
-          "命令不是点击后全地图立刻生效。它会变成一份指令，经过幕僚起草、节点排队、信使传递、地方校验，再变成行动或被拒绝。消息回来也需要时间，所以你常常在过期情报上做决定。",
-        indexPoints: ["自然时钟", "信使延迟", "过期报告"],
+          "命令不是点击后全地图立刻生效。计划界面以两到四项可见战略重点组织当前意图，不把它们当作行动点；命令经幕僚起草、节点排队、信使传递与地方校验，日常事务则可交由属官和制度常规持续办理。",
+        indexPoints: ["战略重点", "委任常规", "命令周期"],
         questions: [
-          "把急令走最快但危险的路线，还是走慢一点但更可靠的渠道。",
-          "把权力委任给前线或地方，让他们更快行动，同时承担失控风险。",
-          "在回执未到时继续催逼、等待确认，或改用另一条命令链。",
+          "确定当前两到四项战略重点，并决定哪些亲自推动、哪些交给属官或既有制度常规。",
+          "为急令选择快速但危险的路线，或选择更慢、更可靠的渠道。",
+          "在预计得报日之前继续等待、追加授权、另发命令，或承担信息尚未回来的风险。",
         ],
         feedback: [
           {
-            label: "抵达",
-            text: "你会看到预计抵达时间、实际延误、信道拥堵和途中风险。",
+            label: "日期",
+            text: "命令会显示预计送达日与预计得报日；报告同时标明观察日和到达日。",
           },
           {
-            label: "回执",
-            text: "命令是否收到、是否接受、是否执行，可能要过几天才知道。",
+            label: "周期",
+            text: "你会跟踪起草、送出、抵达、受理、执行与回报等阶段，而不是只看一个完成标记。",
           },
           {
-            label: "过期",
-            text: "救援命令可能到得太晚，税报可能已经失真，战报可能只说明过去的局势。",
+            label: "余地",
+            text: "延误、拒绝或执行偏差会说明原因，并提示仍可改道、增援、撤回、委任或接受损失。",
           },
         ],
         guardrails: [
-          "不会用行动点把复杂政治压力简化成每月点数。",
+          "不会把两到四项战略重点做成每月可消费的行动点。",
           "不会允许远方状态在命令抵达前被玩家瞬间改写。",
-          "不会把暂停做成冻结世界后随便重排所有命令的玩法。",
+          "不会把暂停做成冻结世界后随意重排全部命令的编辑板。",
         ],
         relatedSlugs: ["player-seat", "place-flow", "battle-engagement"],
       },
@@ -580,35 +580,35 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "历史因果",
         source: "docs/sot/high-level/25-historical-state-modifiers-and-causal-memory.md",
         shortTitle: "历史后果",
-        title: "历史因果：局势会记住来路",
+        title: "历史因果：世界不等玩家才开始运转",
         deck:
-          "拥立争议、军镇功劳、派系记忆、欠饷、失败赈济和过去交易，会继续改变今天的选择。",
+          "拥立争议、军镇功劳、派系记忆、欠饷、失败赈济和过去交易，会在玩家介入之外继续推动局势。",
         summary:
-          "历史不是固定事件树，也不是纯随机背景。它像一组有来源的压力：改变人们信谁、军队听谁、地方愿不愿意配合，以及某些命令为什么比纸面上更难执行。",
-        indexPoints: ["历史压力", "决策后果", "可解释记忆"],
+          "设计方向不是固定事件树，也不是无因随机。角色、群体与机构按资源、利益、信息和既有关系行动；结构压力使无人干预的模拟大体沿历史方向发展，但不会锁死同一结局。有因果根据的介入可以改变进程，也必须承受留下的后效。",
+        indexPoints: ["无人干预走向", "因果报告", "恢复余地"],
         questions: [
           "面对一个已经有旧账的军镇或派系，是补偿、威胁、换人还是绕开它。",
           "用一次交易解决眼前危机，同时承担它在未来变成筹码的可能。",
-          "阅读报告里的因果说明，判断这次失败是新问题还是旧问题爆发。",
+          "阅读因果报告，判断直接触发、结构压力、连锁后果与尚存的恢复路径。",
         ],
         feedback: [
           {
-            label: "旧账",
-            text: "报告会说明某个阻力来自拥立、派系、欠饷、失败赈济或前次命令。",
+            label: "因果",
+            text: "报告会区分直接触发、长期压力与传播路径，说明结果为何发生。",
           },
           {
             label: "后效",
-            text: "你的选择会留下记忆，影响信任、接受度、军令保真和未来谈判。",
+            text: "选择会留下信誉、旧怨、制度惯例与物质损失，继续改变后来的接受度和谈判。",
           },
           {
-            label: "弹性",
-            text: "历史压力会推高风险，但不会强迫剧本按同一结局发生。",
+            label: "恢复",
+            text: "报告会标出仍可修复、需要长期恢复或已经难以挽回的部分，而不是只宣告成败。",
           },
         ],
         guardrails: [
-          "不会做成硬日期事件树。",
+          "不会做成硬日期事件树，也不会保证每局复制历史结果。",
           "不会把没有来源的性格判断变成隐藏惩罚。",
-          "不会让历史修饰倒改已经结算过的结果。",
+          "不会让后来的历史修饰倒改已经结算的结果。",
         ],
         relatedSlugs: ["legitimacy-rumors", "authority-control", "diplomacy-recognition"],
       },
@@ -618,7 +618,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
     kicker: "Gameplay",
     title: "Limited power makes strategy matter.",
     body:
-      "You do not stand outside the map moving obedient pieces. You sit inside a regime that hesitates, runs short of grain, misreads messages, and gets pushed back by local society.",
+      "You do not stand outside the map moving pieces. You enter a living historical society from a particular character's seat, governing only within the authority, knowledge, resources, institutions, and distance available to you—and living with what happens after an order leaves your desk.",
     heroImageAlt:
       "A relay station courtyard at dusk where a courier changes horses while officials study a map inside.",
     pillarsTitle: "Four Gameplay Pillars",
@@ -642,9 +642,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
     ],
     systemIndex: {
       kicker: "Gameplay Systems",
-      title: "These systems decide whether your orders become reality.",
+      title: "These systems determine whether intent can become reality.",
       body:
-        "This list only includes systems you directly experience in play: what you choose, what feedback you see, and what costs you inherit.",
+        "These are the project's player-facing design directions: organize plans around two to four visible strategic priorities rather than action points, work through delegation and institutional routines, and judge consequences through dated, sourced reports.",
       ariaLabel: "Gameplay system pages",
       sourceLabel: "Play Focus",
       openLabel: "Explore",
@@ -653,15 +653,15 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       {
         id: "seat-command",
         label: "Seat and Orders",
-        title: "Who Are You, and Who Actually Obeys?",
+        title: "Who Are You, and Who Can You Actually Direct?",
         body:
-          "You choose a position of power, not an abstract nation. An emperor, grand secretary, field commander, garrison leader, or staff adviser has different authority, sightlines, and personal risks. The same order can cost very different things from different seats.",
+          "You choose a position of power, not an abstract nation. An emperor, grand secretary, field commander, garrison leader, or staff adviser has different authority, sightlines, resources, and risks. The interface presents the current plan as two to four visible strategic priorities, not a pool of spendable action points.",
         question:
-          "When you want to change the situation, the first question is not where to click. It is who obeys you, and who only weighs your request.",
+          "When you want to change the situation, the first question is not where to click. It is who can be ordered, who must be persuaded, and which affairs must keep moving through offices and local routines.",
         steps: [
-          "Choose a historical seat with real authority and real blind spots.",
-          "Turn intent into direct orders, formal requests, private influence, or intelligence work.",
-          "Re-prioritize when messages are late, authority is thin, and local actors resist.",
+          "Choose a historical seat with real authority and blind spots, then define two to four current strategic priorities.",
+          "Turn intent into direct orders, formal requests, private influence, or work delegated through officials and existing institutions.",
+          "Re-plan around estimated delivery, expected reporting, and actual acknowledgement rather than instant results.",
         ],
         systemSlugs: [
           "player-seat",
@@ -713,15 +713,15 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       {
         id: "cascading-consequence",
         label: "Consequences",
-        title: "How Does the Crisis Keep Rolling Forward?",
+        title: "How Does the Situation Continue—and How Do You Change It?",
         body:
-          "Recognition, truces, loans, reform, rumor, and historical memory reshape the next round of choices. The game asks not only whether you survived a crisis, but what price moved the situation forward.",
+          "Recognition, truces, loans, reform, rumor, and historical memory keep working whether or not you intervene. Structural pressures keep an unattended simulation broadly historical without fixing it to a script; your choices alter what costs the next round can bear.",
         question:
-          "One compromise may buy time and make allies doubt you. One reform may save revenue and provoke entrenched interests.",
+          "A compromise may buy time and make allies doubt you. A reform may save revenue and provoke entrenched interests. You need to understand why consequences occurred and what room for recovery remains.",
         steps: [
           "Use diplomacy, recognition, and exchange to buy time instead of solving everything by force.",
-          "Push institutional change while carrying enforcement cost and local backlash.",
-          "Let earlier choices persist as modifiers, reputation, grudges, and precedents.",
+          "Read causal reports that separate immediate triggers, long pressures, and remaining paths to recovery.",
+          "Let earlier choices persist as credibility, grievances, institutional precedent, and material loss.",
         ],
         systemSlugs: [
           "diplomacy-recognition",
@@ -749,27 +749,27 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "Player Seat",
         title: "Player Seat: You Are Not Omniscient",
         deck:
-          "Choose a historical person or power position, then play through its permissions, channels, duties, and survival pressure.",
+          "Choose a historical person or power position, then enter the crisis through that seat's permissions, channels, duties, and survival pressure.",
         summary:
-          "The same Southern Ming crisis looks different from Hongguang Emperor, Ma Shiying, Shi Kefa, a Jiangbei commander, or a low-power staff adviser. Your seat decides what you can command, whom you can only persuade, who can ignore you, and which reports arrive late.",
-        indexPoints: ["Playable roles", "Permission limits", "Information view"],
+          "The same Southern Ming crisis looks different from the Hongguang Emperor, Ma Shiying, Shi Kefa, a Jiangbei commander, or a low-power staff adviser. Your seat determines what you can command, whom you can only petition, which resources you can move, which institutions you depend on, and how far information must travel.",
+        indexPoints: ["Playable roles", "Permission limits", "Continuity"],
         questions: [
           "Choose a high office with fragile survival, or a narrower command with more personal continuity.",
-          "Act through office power, memorials, envoys, personal ties, and bargains.",
-          "Continue the campaign through death, dismissal, exile, succession, or a changed seat.",
+          "Act through office power, memorials, envoys, personal ties, and bargains while delegating routine affairs to officials and institutions.",
+          "After loss of office, exile, surrender, death, or succession, continue through a successor seat or observer view where the historical situation allows.",
         ],
         feedback: [
           {
             label: "Permission",
-            text: "Command previews separate direct orders, constrained requests, and ideas beyond your authority.",
+            text: "Command previews distinguish direct orders, constrained requests, and intentions beyond your authority.",
           },
           {
             label: "Perspective",
             text: "You see the reports, rumors, and estimates available to your seat, not perfect world truth.",
           },
           {
-            label: "Survival",
-            text: "Death and office change alter your playable power instead of only showing a fail screen.",
+            label: "Continuity",
+            text: "Loss of office, exile, surrender, death, and succession change the available seat; where historically valid, the campaign continues through a successor or observer view.",
           },
         ],
         guardrails: [
@@ -786,33 +786,33 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "Orders",
         title: "Orders and Messages: Power Has to Arrive",
         deck:
-          "Your limits are drafting, queues, messengers, travel, acknowledgements, stale reports, and local acceptance.",
+          "Drafting, queues, messengers, travel, acknowledgement, stale reports, and local acceptance all constrain a command.",
         summary:
-          "An order is not an instant map edit. It becomes a packet drafted by staff, queued at a node, carried through a route, checked locally, and then accepted, rejected, delayed, or distorted. Reports take time to return, so you often decide with old information.",
-        indexPoints: ["Natural clock", "Messenger delay", "Stale reports"],
+          "An order is not an instant map edit. The planning view organizes intent into two to four visible strategic priorities rather than action points; orders pass through staff drafting, node queues, couriers, and local validation, while routine affairs can continue through delegated officials and institutions.",
+        indexPoints: ["Strategic priorities", "Delegated routines", "Command lifecycle"],
         questions: [
-          "Send an urgent order through the fastest risky channel, or a slower reliable one.",
-          "Delegate power to the front or local office to move faster while risking autonomy.",
-          "Act before acknowledgement, wait for confirmation, or send a second command chain.",
+          "Set two to four current strategic priorities, deciding which to press personally and which to leave to officials or established routines.",
+          "Send an urgent order through a fast, risky route or choose a slower, more reliable channel.",
+          "Before the expected report date, wait, extend authority, issue another order, or accept the risk of acting without news.",
         ],
         feedback: [
           {
-            label: "Arrival",
-            text: "You see estimated arrival, actual delay, channel overload, and route risk.",
+            label: "Dates",
+            text: "Orders show estimated delivery and expected reporting dates; reports show both observation and arrival dates.",
           },
           {
-            label: "Ack",
-            text: "Whether an order was received, accepted, or executed may take days to learn.",
+            label: "Lifecycle",
+            text: "You track drafting, dispatch, arrival, acceptance, execution, and reporting rather than a single completion mark.",
           },
           {
-            label: "Stale",
-            text: "A relief order may arrive too late; a tax or battle report may describe a world that already moved.",
+            label: "Options",
+            text: "Delay, refusal, or distorted execution explains its cause and shows whether rerouting, reinforcement, withdrawal, delegation, or accepting loss remains possible.",
           },
         ],
         guardrails: [
-          "It does not reduce political pressure to monthly action points.",
+          "It does not turn two to four strategic priorities into monthly action points.",
           "It does not let distant state change before an order arrives.",
-          "It does not make pause a frozen edit board for reshaping the world.",
+          "It does not make pause a frozen editing board for freely rearranging every command.",
         ],
         relatedSlugs: ["player-seat", "place-flow", "battle-engagement"],
       },
@@ -1193,35 +1193,35 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "Historical Consequences",
         source: "docs/sot/high-level/25-historical-state-modifiers-and-causal-memory.md",
         shortTitle: "Consequences",
-        title: "Historical Consequences: The Crisis Remembers Its Past",
+        title: "Historical Consequences: The World Does Not Wait for the Player",
         deck:
-          "Enthronement disputes, founding military merit, factional memory, arrears, failed relief, and past bargains continue to shape today.",
+          "Enthronement disputes, military merit, factional memory, arrears, failed relief, and past bargains keep moving the situation beyond player intervention.",
         summary:
-          "History is neither a fixed event tree nor random flavor. It acts as sourced pressure that changes whom people trust, whose orders armies accept, how places cooperate, and why some commands are harder than they look on paper.",
-        indexPoints: ["Historical pressure", "Decision memory", "Readable causes"],
+          "The design direction is neither a fixed event tree nor causeless randomness. Characters, groups, and institutions act from resources, interests, information, and existing relationships. Structural pressures keep an unattended simulation broadly historical without locking it to one ending; causally grounded intervention can redirect events and must carry its aftereffects.",
+        indexPoints: ["Unattended direction", "Causal reports", "Recovery room"],
         questions: [
           "Compensate, threaten, replace, or work around a command or faction with old grievances.",
           "Solve a crisis with a bargain while accepting that it may become leverage later.",
-          "Read causal reports to decide whether failure came from a new problem or an old one surfacing.",
+          "Read causal reports to separate the immediate trigger, structural pressure, cascading effects, and remaining paths to recovery.",
         ],
         feedback: [
           {
-            label: "Old Debts",
-            text: "Reports can explain resistance through enthronement, faction, arrears, failed relief, or prior orders.",
+            label: "Causes",
+            text: "Reports distinguish immediate triggers, long pressures, and transmission paths to explain why an outcome occurred.",
           },
           {
-            label: "Aftereffect",
-            text: "Your choices leave memory that shapes trust, acceptance, command fidelity, and later deals.",
+            label: "Aftereffects",
+            text: "Choices leave credibility, grievances, institutional precedent, and material loss that shape later acceptance and bargaining.",
           },
           {
-            label: "Flex",
-            text: "Historical pressure raises risk without forcing the same ending every run.",
+            label: "Recovery",
+            text: "Reports distinguish what can still be repaired, what requires long recovery, and what is becoming difficult to reverse rather than merely declaring success or failure.",
           },
         ],
         guardrails: [
-          "It does not become a hard-date event tree.",
+          "It does not become a hard-date event tree or guarantee the same historical outcome every run.",
           "It does not turn unsourced personality claims into hidden penalties.",
-          "It does not retroactively rewrite settled outcomes.",
+          "It does not let later historical context rewrite outcomes already settled.",
         ],
         relatedSlugs: ["legitimacy-rumors", "authority-control", "diplomacy-recognition"],
       },

@@ -143,7 +143,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         questions: [
           "选一个高位但脆弱的朝廷角色，还是选一个窄权但更能自保的军镇角色。",
           "用职权、奏报、使节、私人关系和交易施加影响，并把日常事务委任给属官与机构。",
-          "在失官、流亡、投降、死亡或继承之后，于历史条件允许时转入继任席位或观察视角继续见证局势。",
+          "在失官、流亡、投降、死亡或继承之后，若当前局势仍存在有效连续路径，可转入继任席位或观察视角；若不存在，战局也可能终结。",
         ],
         feedback: [
           {
@@ -156,7 +156,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "存续",
-            text: "失官、流亡、投降、死亡与继承会改变可用席位；符合历史条件时，战局可由继任者或观察视角延续。",
+            text: "失官、流亡、投降、死亡与继承会改变可用席位；当前局势允许时，战局可由继任者或观察视角延续，否则可能走向终局。",
           },
         ],
         guardrails: [
@@ -756,7 +756,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         questions: [
           "Choose a high office with fragile survival, or a narrower command with more personal continuity.",
           "Act through office power, memorials, envoys, personal ties, and bargains while delegating routine affairs to officials and institutions.",
-          "After loss of office, exile, surrender, death, or succession, continue through a successor seat or observer view where the historical situation allows.",
+          "After loss of office, exile, surrender, death, or succession, move to a successor seat or observer view only when the current state leaves a valid continuity path; otherwise the campaign may end.",
         ],
         feedback: [
           {
@@ -769,7 +769,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "Continuity",
-            text: "Loss of office, exile, surrender, death, and succession change the available seat; where historically valid, the campaign continues through a successor or observer view.",
+            text: "Loss of office, exile, surrender, death, and succession change the available seat. The campaign may continue through a successor or observer view only when the current state permits; otherwise it may reach a terminal end.",
           },
         ],
         guardrails: [

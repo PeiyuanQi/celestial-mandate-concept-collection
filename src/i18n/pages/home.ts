@@ -75,9 +75,9 @@ export const homePageContent: Record<Locale, HomePageContent> = {
     },
     intro: {
       kicker: "这是什么",
-      title: "不是复述历史，而是让历史社会在压力中继续运转。",
+      title: "让历史社会在压力中继续运转。",
       body:
-        "公开资料、地理水文、人物关系与制度条件被整理为可玩的章节。开局提供历史压力而非固定剧本；角色、群体与机构依其处境行动，使无人干预的世界仍大体趋向历史，同时为有因有果的改变保留空间。",
+        "公开资料、地理水文、人物关系与制度条件被整理为可玩的章节。开局建立历史压力与人物处境；角色、群体与机构依其利益与资源行动，使无人干预的世界仍大体趋向历史，同时为有因有果的改变保留空间。",
     },
     footer: {
       label: "社稷",
@@ -164,9 +164,9 @@ export const homePageContent: Record<Locale, HomePageContent> = {
     },
     intro: {
       kicker: "What It Is",
-      title: "Not a retelling, but a historical society that keeps moving under pressure.",
+      title: "A historical society that keeps moving under pressure.",
       body:
-        "Public sources, geography, waterways, relationships, and institutional conditions are shaped into playable chapters. The opening establishes historical pressures rather than a fixed script; characters, groups, and institutions act from their circumstances, keeping an unattended world broadly historical while leaving room for causally earned change.",
+        "Public sources, geography, waterways, relationships, and institutional conditions are shaped into playable chapters. The opening establishes historical pressures and character circumstances; people, groups, and institutions act from their interests and resources, keeping an unattended world broadly historical while leaving room for causally earned change.",
     },
     footer: {
       label: "Celestial Mandate",

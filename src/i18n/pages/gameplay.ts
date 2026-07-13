@@ -5,7 +5,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
     kicker: "玩法介绍",
     title: "权力有限，才有策略。",
     body:
-      "你不是站在地图外拖动棋子，而是从一个具体人物的席位进入持续运转的历史社会。你只能在权限、所知、资源、制度和距离允许的范围内施政，并承担命令离开案头后的变化。",
+      "从一个具体人物的席位进入持续运转的历史社会。你在权限、所知、资源、制度和距离允许的范围内施政，并承担命令离开案头后的变化。",
     heroImageAlt:
       "暮色中的驿站庭院，信使携文书换马，屋内官员围着地图商议命令。",
     pillarsTitle: "玩法的四个支点",
@@ -31,7 +31,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       kicker: "玩法系统",
       title: "这些系统共同决定你的意图能否成为现实。",
       body:
-        "以下是项目希望让玩家直接体验的玩法方向：以两到四项可见战略重点整理计划，而非消费行动点；通过委任与制度常规推动执行，并从有日期、有来路的报告中判断后果。",
+        "以下是项目希望让玩家直接体验的玩法方向：以两到四项可见战略重点整理计划；通过委任与制度常规推动执行；并从有日期、有来路的报告中判断后果。",
       ariaLabel: "玩法系统子页",
       sourceLabel: "玩法重点",
       openLabel: "了解玩法",
@@ -42,13 +42,13 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "身份与命令",
         title: "我是谁，我能命令谁？",
         body:
-          "你先选择一个权力席位，而不是选择抽象国家。皇帝、阁臣、督师、军镇主将和幕府赞画拥有不同的权限、视野、资源与风险；界面以两到四项可见战略重点呈现当前计划，而不是给你一池可随意消费的行动点。",
+          "你先选择一个权力席位：皇帝、阁臣、督师、军镇主将或幕府赞画，各自拥有不同的权限、视野、资源与风险。界面以两到四项可见战略重点呈现当前计划。",
         question:
-          "当你想改变局势时，第一件事不是点哪里，而是弄清楚谁能受命、谁只能被说服，以及哪些事务必须交给官署与地方常规持续办理。",
+          "当你想改变局势时，先弄清楚谁能受命、谁只能被说服，以及哪些事务必须交给官署与地方常规持续办理。",
         steps: [
           "选择一个有权力也有盲区的历史席位，并明确当前两到四项战略重点。",
           "把意图变成直接命令、正式请求、私人影响，或交由属官和既有制度常规处理。",
-          "根据预计送达、预计得报与实际回执重新排定计划，而不是等待即时结果。",
+          "根据预计送达、预计得报与实际回执重新排定计划。",
         ],
         systemSlugs: [
           "player-seat",
@@ -62,9 +62,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "地方阻力",
         title: "地方为什么不照办？",
         body:
-          "州县、士绅、盐商、军户、难民、道路和粮仓不是背景。它们决定命令抵达以后，是变成执行、拖延、讨价还价，还是新的危机。",
+          "州县、士绅、盐商、军户、难民、道路和粮仓共同决定命令抵达以后，是变成执行、拖延、讨价还价，还是新的危机。",
         question:
-          "你真正管理的不是地图颜色，而是地方愿不愿意、能不能、敢不敢把你的意图变成现实。",
+          "你真正管理的是地方愿不愿意、能不能、敢不敢把你的意图变成现实。",
         steps: [
           "判断一个地方由谁实际控制，谁能提供合作。",
           "在赈济、征发、修路、护路、借款和减税之间分配短缺资源。",
@@ -80,11 +80,11 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       {
         id: "war-pressure",
         label: "战争压力",
-        title: "战争为什么不只是推线？",
+        title: "战争为什么难只靠推线？",
         body:
-          "军队能守城、争渡、威慑地方，也会消耗粮饷、破坏秩序、制造债务。战斗不是孤立结算，而是路线、补给、将领、士气和地方承受力共同压出来的结果。",
+          "军队能守城、争渡、威慑地方，也会消耗粮饷、破坏秩序、制造债务。战斗由路线、补给、将领、士气和地方承受力共同压出。",
         question:
-          "你不是把兵力拖到前线就结束了；你还要决定军队如何被养活、被信任、被约束。",
+          "把兵力送上前线只是开始；你还要决定军队如何被养活、被信任、被约束。",
         steps: [
           "选择守哪里、救哪里、放弃哪里，以及命令是否来得及抵达。",
           "在战斗风险、补给压力、地方承受和军权膨胀之间取舍。",
@@ -102,11 +102,11 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "局势后果",
         title: "局势如何自行延续，又因你而改变？",
         body:
-          "承认、休战、借粮、改革、谣言和历史记忆会在你介入或不介入时继续作用。结构压力让无人干预的模拟大体沿历史方向推进，却不把结局锁进固定剧本；你的选择则改变下一轮可以承受的代价。",
+          "承认、休战、借粮、改革、谣言和历史记忆会在你介入或不介入时继续作用。结构压力让无人干预的模拟大体沿历史方向推进；你的选择则改变下一轮可以承受的代价。",
         question:
           "一次妥协可能换来喘息，也可能让盟友怀疑你；一次改革可能救财政，也可能引爆既得利益。你需要看清后果为何发生，以及还剩多少恢复余地。",
         steps: [
-          "用外交、承认和交易争取时间，而不是只靠军事解决一切。",
+          "用外交、承认和交易争取时间，为军事行动创造空间。",
           "阅读因果报告，分辨直接触发、长期压力与仍可动用的恢复路径。",
           "让之前的选择以信誉、旧怨、制度惯例和物质损失留在局中。",
         ],
@@ -124,7 +124,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       overviewTitle: "这套玩法是什么",
       questionsTitle: "你会做什么",
       feedbackTitle: "你会看到什么",
-      guardrailsTitle: "它不会变成什么",
+      guardrailsTitle: "策略从哪里来",
       relatedTitle: "继续了解",
       backLabel: "返回玩法",
     },
@@ -134,7 +134,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "角色与视角",
         source: "docs/sot/high-level/21-player-seat-ai-and-multiplayer.md",
         shortTitle: "角色席位",
-        title: "角色席位：你不是全知上帝",
+        title: "角色席位：身在其位，所知有限",
         deck:
           "选择一个历史人物或权力位置，带着其权限、消息渠道、责任和生存压力进入危局。",
         summary:
@@ -152,7 +152,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "视角",
-            text: "你看到的是这个席位能得到的报告、传闻和估计，而不是整张地图的真相。",
+            text: "你看到的是这个席位能得到的报告、传闻和估计。",
           },
           {
             label: "存续",
@@ -160,9 +160,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会让玩家因为知道历史结果就直接获得超自然能力。",
-          "不会把所有角色都做成对称国家玩家。",
-          "不会让角色席位绕过官职、军队、财政、交通和地方接受度。",
+          "你带着现代知识进局，也只能通过时代内的官职、关系与文书渠道行动。",
+          "每位角色的权限、视野、资源和风险各不相同，策略从席位差异里长出来。",
+          "席位把你接进官职、军队、财政、交通与地方接受度；离开这些条件，意图难成现实。",
         ],
         relatedSlugs: ["orders-messages", "authority-control", "intelligence-security"],
       },
@@ -175,7 +175,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "起草、队列、信使、路途、回执、过期报告和地方接受度，共同限制命令。",
         summary:
-          "命令不是点击后全地图立刻生效。计划界面以两到四项可见战略重点组织当前意图，不把它们当作行动点；命令经幕僚起草、节点排队、信使传递与地方校验，日常事务则可交由属官和制度常规持续办理。",
+          "命令离开案头后，仍要经幕僚起草、节点排队、信使传递与地方校验；计划界面以两到四项可见战略重点组织当前意图，日常事务则可交由属官和制度常规持续办理。",
         indexPoints: ["战略重点", "委任常规", "命令周期"],
         questions: [
           "确定当前两到四项战略重点，并决定哪些亲自推动、哪些交给属官或既有制度常规。",
@@ -189,7 +189,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "周期",
-            text: "你会跟踪起草、送出、抵达、受理、执行与回报等阶段，而不是只看一个完成标记。",
+            text: "你会跟踪起草、送出、抵达、受理、执行与回报等阶段。",
           },
           {
             label: "余地",
@@ -197,9 +197,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会把两到四项战略重点做成每月可消费的行动点。",
-          "不会允许远方状态在命令抵达前被玩家瞬间改写。",
-          "不会把暂停做成冻结世界后随意重排全部命令的编辑板。",
+          "计划以两到四项可见战略重点组织意图；日常靠委任与制度推进，急令则排队上路、等人回执。",
+          "远方在命令抵达与地方受理之前，仍按既有状态运转。",
+          "时间流速可以调节，但世界与在途命令继续前进；你要在延误中重新排定计划。",
         ],
         relatedSlugs: ["player-seat", "place-flow", "battle-engagement"],
       },
@@ -212,7 +212,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "朝廷有名义，军镇有兵，士绅有地方执行力，商人有粮与信用，敌军有压力。",
         summary:
-          "地图上的地点不是简单的我方或敌方。你可能拥有法理宣称，却没有财政汲取；军队能压住治安，却不能替文官建立统治；地方精英愿意合作时，命令才更像命令。",
+          "你可能拥有法理宣称，却没有财政汲取；军队能压住治安，却难以替文官建立统治；地方精英愿意合作时，命令才更像命令。",
         indexPoints: ["多重控制", "地方合作", "权力衰减"],
         questions: [
           "把稀缺行政注意力投向哪个城市、渡口或军镇。",
@@ -226,7 +226,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "惯性",
-            text: "权力控制通常缓慢移动，不会因为一道命令立刻翻面。",
+            text: "权力控制通常缓慢移动，需要持续经营才会改变。",
           },
           {
             label: "原因",
@@ -234,9 +234,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会把地图涂色当作统治本身。",
-          "不会把江北四镇合并成一个听话或不听话的整体。",
-          "不会让玩家直接调数值，只能通过政治、行政、军事和交易行动改变局势。",
+          "涂色只是表象——你要分开经营宣称、驻军、钱粮与地方是否肯办。",
+          "江北诸镇各有主将、粮饷与利害，需要分别经营，不能当成一块整体按钮。",
+          "局势通过政治、行政、军事和交易行动改变；你推动条件，而不是直接改写权力数值。",
         ],
         relatedSlugs: ["society-actors", "war-occupation", "legitimacy-rumors"],
       },
@@ -247,7 +247,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "人群与人物",
         title: "人群与人物：社会会回应你",
         deck:
-          "饥民、士绅、盐商、漕运行会、军户、官员和将领不是背景，他们会合作、讨价、阻挠或背离。",
+          "饥民、士绅、盐商、漕运行会、军户、官员和将领会合作、讨价、阻挠或背离。",
         summary:
           "普通人口形成饥饿、税负、迁徙和动荡压力；特殊人群带来粮、钱、船、工匠、训练、风评和阻挠能力；个人角色决定命令如何被执行、改写或背叛。",
         indexPoints: ["大众压力", "特殊人群", "关键角色"],
@@ -271,9 +271,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会变成每户每人的人口表。",
-          "不会把所有职业都做成一个可点击派系。",
-          "不会把军队当作普通特殊人群，军队有自己的军事制度和补给压力。",
+          "社会以人群压力、关键群体与关键人物进入玩法，便于你抓住杠杆。",
+          "策略落在能改变局面的人群与人物上：粮、钱、船、风评、阻挠与执行都从这里来。",
+          "军队另有军事制度与补给压力，需要按军镇逻辑经营，而不是当作普通人群。",
         ],
         relatedSlugs: ["authority-control", "economy-relief", "legitimacy-rumors"],
       },
@@ -290,7 +290,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         indexPoints: ["江河运河", "路线瓶颈", "抵达范围"],
         questions: [
           "修复运河、护卫渡口、改走长江，或先和地方人群谈妥通行。",
-          "把粮食、军队、信使和流民分别看作不同的流动，而不是同一条路线上的数字。",
+          "把粮食、军队、信使和流民分别看作不同的流动。",
           "在洪水、战乱或治安崩坏时，重新评估哪些地方仍然可达。",
         ],
         feedback: [
@@ -308,9 +308,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会把地理只做成漂亮背景图。",
-          "不会一开始就做无法解释的完整市场均衡或最大流黑箱。",
-          "不会把边疆或自然环境区当作免费空地。",
+          "地图是命令、粮食、军队与谣言真正会堵塞的网络，护路与改道都是策略。",
+          "路线反馈可读：你能看出卡在路程、渡口、运力、治安还是地方合作。",
+          "边疆与自然环境区带着路程、季节与补给代价，需要按真实条件经营。",
         ],
         relatedSlugs: ["orders-messages", "economy-relief", "war-occupation"],
       },
@@ -345,9 +345,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会做成全商品自由市场模拟。",
-          "不会把盐、粮、银、木材和运力变成抽象全国资源池。",
-          "不会在南明演示版里提前展开工业化玩法。",
+          "经济聚焦粮、银、盐、运力与信用——危机里真正短缺的东西。",
+          "物资落在仓储、路线与地方，开仓救人也会掏空下月军供。",
+          "南明演示版优先赈济、军供与财政压力，把后续时代的产业展开留给更后的章节。",
         ],
         relatedSlugs: ["society-actors", "place-flow", "war-occupation"],
       },
@@ -361,7 +361,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "军队需要粮、饷、路线、主将、制度和地方承受力；它能保国，也能掏空国家。",
         summary:
-          "战争不只是兵力对比。军队从军事制度中产生，消耗粮饷和社会资源，受命令与忠诚限制，并在驻防、护路、占领和征发中重塑地方权力。",
+          "军队从军事制度中产生，消耗粮饷和社会资源，受命令与忠诚限制，并在驻防、护路、占领和征发中重塑地方权力。",
         indexPoints: ["军饷补给", "将领自主", "占领代价"],
         questions: [
           "给哪支军队粮饷，放弃哪片地方或哪项赈济。",
@@ -383,9 +383,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会先做细碎战术棋盘。",
-          "不会让占领自动等于治理。",
-          "不会把所有江北军镇的反应写成一个统一 AI。",
+          "战略层关注粮饷、命令、将领与地方承受力——军队如何被养活、被信任、被约束。",
+          "占领之后仍要安抚、设官、征发或承认自治，才能把军事存在变成可持续秩序。",
+          "江北诸镇各有主将与利害，反应与筹码因镇而异。",
         ],
         relatedSlugs: ["battle-engagement", "economy-relief", "authority-control"],
       },
@@ -394,7 +394,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "战斗与战役",
         source: "docs/sot/high-level/15-battle-and-engagement-resolution.md",
         shortTitle: "战斗结算",
-        title: "战斗结算：胜负不是一个总战力数字",
+        title: "战斗结算：条件压出胜负",
         deck:
           "命令是否迟到、粮饷是否断裂、湿地是否拖慢展开、地方是否给向导，都可能改写战斗。",
         summary:
@@ -420,9 +420,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会用一个隐藏战斗力数值解释所有结果。",
-          "不会让随机事件脱离已有风险凭空决定胜负。",
-          "不会把所有背景战事都做成同等高保真战斗。",
+          "战报拆开指挥、补给、士气、地形与地方支持，让你看清胜负从何而来。",
+          "暴雨、截信、疫病与欠饷都来自既有风险，战斗里的偶然仍可追溯。",
+          "关键战役高保真结算；背景战事以更轻的方式反馈到补给、士气与地方压力。",
         ],
         relatedSlugs: ["war-occupation", "orders-messages", "intelligence-security"],
       },
@@ -435,7 +435,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "承认、休战、借粮、通商、军事合作和自治交易，会解决一种压力，也把另一种压力带进内部。",
         summary:
-          "外交不是关系数值。你谈的是谁承认谁、谁承诺什么、谁有能力兑现、谁在内部反对、违约会伤害什么信誉，以及这个交易会怎样改变正统性和地方权力。",
+          "你谈的是谁承认谁、谁承诺什么、谁有能力兑现、谁在内部反对、违约会伤害什么信誉，以及这个交易会怎样改变正统性和地方权力。",
         indexPoints: ["承认", "义务", "可信度"],
         questions: [
           "承认一个军镇或外部权力，换取防御、粮、银或时间。",
@@ -445,7 +445,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         feedback: [
           {
             label: "条款",
-            text: "协议会拆成具体承诺，而不是签完立刻产生魔法收益。",
+            text: "协议会拆成具体承诺，兑现需要时间、路线与内部条件。",
           },
           {
             label: "内部",
@@ -457,9 +457,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会用单一好感度代替外交。",
-          "不会让盟友无视路线、补给和内部政治瞬间送来援助。",
-          "不会把贸易和承认写成只有收益没有正统性代价的按钮。",
+          "外交围绕承认、条款、兑现能力与信誉展开，每一项承诺都有人买单。",
+          "援助仍受路线、补给与对方内部政治约束；答应了，也要运得动。",
+          "贸易与承认会换时间与资源，也会牵动正统性与地方权力。",
         ],
         relatedSlugs: ["legitimacy-rumors", "intelligence-security", "authority-control"],
       },
@@ -473,7 +473,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "堤防、账簿、操练、火器、修船和漕运调度都需要人、材料、路线、权威、接受和维护。",
         summary:
-          "改革不是科技树解锁。你可能知道该怎么做，却缺工匠、工具、账册、资金、路线、安全、合法性，或能把试点维持成制度的人。",
+          "你可能知道该怎么做，却缺工匠、工具、账册、资金、路线、安全、合法性，或能把试点维持成制度的人。",
         indexPoints: ["瓶颈诊断", "试点", "维护"],
         questions: [
           "资助试点、任命改革者、招募工匠、保护专业人群，或与反对者交易。",
@@ -495,9 +495,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会做线性科技时代。",
-          "不会让一个概念瞬间给全国加成。",
-          "不会让现代玩家知识直接跳过当时社会的执行条件。",
+          "改革按瓶颈推进：知识、人才、材料、资金、路线、权威与接受度缺一都慢。",
+          "成功先从试点长出来，再花代价推广；全国效果靠制度化，不靠一次点击。",
+          "你知道该怎么做，也要把答案接进当时的社会执行条件里。",
         ],
         relatedSlugs: ["economy-relief", "society-actors", "legitimacy-rumors"],
       },
@@ -510,7 +510,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "赈济、军功、继统、税役、军镇自治和外部承认，会被不同人群用不同方式理解。",
         summary:
-          "正统性不是全国单条数值。士绅、商人、军户、流民、官员和敌对势力会按自己的利益、记忆、信息渠道和观念框架理解你的行动。",
+          "士绅、商人、军户、流民、官员和敌对势力会按自己的利益、记忆、信息渠道和观念框架理解你的行动。",
         indexPoints: ["多维正统", "议题立场", "谣言传播"],
         questions: [
           "颁诏、举行仪式、公布赈济账目、惩处贪官或奖励忠义群体。",
@@ -532,9 +532,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会把正统性做成一个万能声望条。",
-          "不会让宣传凭空覆盖失败的物资和军事现实。",
-          "不会让叙事 AI 发明模拟中没有发生的事实。",
+          "正统性按人群与议题分开读：同一行动在不同受众眼里可以完全不同。",
+          "宣传要接住物资与军事现实；空话压不住断粮与溃败。",
+          "舆论与报告锚定已发生的事；叙事解释局面，不发明模拟中没有的事实。",
         ],
         relatedSlugs: ["society-actors", "diplomacy-recognition", "historical-consequences"],
       },
@@ -569,9 +569,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "不会给玩家全图全知。",
-          "不会把情报做成独立刺杀小游戏。",
-          "不会让报告改写真实世界状态；它只改变角色和 AI 认为自己知道什么。",
+          "你只掌握本席位能收集、拦截或买到的报告，盲区本身就是策略。",
+          "情报围绕侦察、线人、核验、保密与暴露风险展开，服务命令与战役。",
+          "报告改变角色与 AI 认为自己知道什么；世界真相仍按模拟推进。",
         ],
         relatedSlugs: ["player-seat", "orders-messages", "battle-engagement"],
       },
@@ -584,7 +584,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "拥立争议、军镇功劳、派系记忆、欠饷、失败赈济和过去交易，会在玩家介入之外继续推动局势。",
         summary:
-          "设计方向不是固定事件树，也不是无因随机。角色、群体与机构按资源、利益、信息和既有关系行动；结构压力使无人干预的模拟大体沿历史方向发展，但不会锁死同一结局。有因果根据的介入可以改变进程，也必须承受留下的后效。",
+          "角色、群体与机构按资源、利益、信息和既有关系行动；结构压力使无人干预的模拟大体沿历史方向发展。有因果根据的介入可以改变进程，也必须承受留下的后效。",
         indexPoints: ["无人干预走向", "因果报告", "恢复余地"],
         questions: [
           "面对一个已经有旧账的军镇或派系，是补偿、威胁、换人还是绕开它。",
@@ -602,13 +602,13 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "恢复",
-            text: "报告会标出仍可修复、需要长期恢复或已经难以挽回的部分，而不是只宣告成败。",
+            text: "报告会标出仍可修复、需要长期恢复或已经难以挽回的部分。",
           },
         ],
         guardrails: [
-          "不会做成硬日期事件树，也不会保证每局复制历史结果。",
-          "不会把没有来源的性格判断变成隐藏惩罚。",
-          "不会让后来的历史修饰倒改已经结算的结果。",
+          "结构压力推着无人干预的世界大体向历史走；有因果的介入可以改势，也会留下后效。",
+          "人物与局势判断尽量有来源、有不确定性；你读的是压力与机会，不是隐藏惩罚表。",
+          "已经结算的结果会作为信誉、旧怨与物质损失留下；后续解释不能倒改过去。",
         ],
         relatedSlugs: ["legitimacy-rumors", "authority-control", "diplomacy-recognition"],
       },
@@ -618,7 +618,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
     kicker: "Gameplay",
     title: "Limited power makes strategy matter.",
     body:
-      "You do not stand outside the map moving pieces. You enter a living historical society from a particular character's seat, governing only within the authority, knowledge, resources, institutions, and distance available to you—and living with what happens after an order leaves your desk.",
+      "Enter a living historical society from a particular character's seat. You govern within the authority, knowledge, resources, institutions, and distance available to you—and live with what happens after an order leaves your desk.",
     heroImageAlt:
       "A relay station courtyard at dusk where a courier changes horses while officials study a map inside.",
     pillarsTitle: "Four Gameplay Pillars",
@@ -644,7 +644,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       kicker: "Gameplay Systems",
       title: "These systems determine whether intent can become reality.",
       body:
-        "These are the project's player-facing design directions: organize plans around two to four visible strategic priorities rather than action points, work through delegation and institutional routines, and judge consequences through dated, sourced reports.",
+        "These are the project's player-facing design directions: organize plans around two to four visible strategic priorities, work through delegation and institutional routines, and judge consequences through dated, sourced reports.",
       ariaLabel: "Gameplay system pages",
       sourceLabel: "Play Focus",
       openLabel: "Explore",
@@ -655,13 +655,13 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "Seat and Orders",
         title: "Who Are You, and Who Can You Actually Direct?",
         body:
-          "You choose a position of power, not an abstract nation. An emperor, grand secretary, field commander, garrison leader, or staff adviser has different authority, sightlines, resources, and risks. The interface presents the current plan as two to four visible strategic priorities, not a pool of spendable action points.",
+          "You choose a position of power: emperor, grand secretary, field commander, garrison leader, or staff adviser—each with different authority, sightlines, resources, and risks. The interface presents the current plan as two to four visible strategic priorities.",
         question:
-          "When you want to change the situation, the first question is not where to click. It is who can be ordered, who must be persuaded, and which affairs must keep moving through offices and local routines.",
+          "When you want to change the situation, start by asking who can be ordered, who must be persuaded, and which affairs must keep moving through offices and local routines.",
         steps: [
           "Choose a historical seat with real authority and blind spots, then define two to four current strategic priorities.",
           "Turn intent into direct orders, formal requests, private influence, or work delegated through officials and existing institutions.",
-          "Re-plan around estimated delivery, expected reporting, and actual acknowledgement rather than instant results.",
+          "Re-plan around estimated delivery, expected reporting, and actual acknowledgement.",
         ],
         systemSlugs: [
           "player-seat",
@@ -675,9 +675,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "Local Friction",
         title: "Why Does the Local World Push Back?",
         body:
-          "Counties, gentry, salt merchants, soldiers, refugees, roads, and granaries are not scenery. They decide whether an arrived order becomes action, delay, bargaining, or a new crisis.",
+          "Counties, gentry, salt merchants, soldiers, refugees, roads, and granaries decide whether an arrived order becomes action, delay, bargaining, or a new crisis.",
         question:
-          "You are not managing map color. You are managing whether local society is willing, able, and brave enough to make your intent real.",
+          "You manage whether local society is willing, able, and brave enough to make your intent real.",
         steps: [
           "Read who actually controls a place, and who can provide cooperation.",
           "Divide scarce resources between relief, requisition, route repair, route security, credit, and tax pressure.",
@@ -693,11 +693,11 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       {
         id: "war-pressure",
         label: "War Pressure",
-        title: "Why Is War More Than Pushing a Front?",
+        title: "Why Is War Harder Than Pushing a Front?",
         body:
           "Armies can defend, contest crossings, and pressure local society, but they also consume grain and pay, damage order, and create debt. Battles emerge from routes, supply, commanders, morale, and local tolerance.",
         question:
-          "You do not simply drag forces to the front. You decide how armies are fed, trusted, and restrained.",
+          "Getting forces to the front is only the start. You decide how armies are fed, trusted, and restrained.",
         steps: [
           "Choose what to defend, rescue, abandon, and whether your orders can arrive in time.",
           "Trade off battle risk, supply pressure, local tolerance, and expanding military power.",
@@ -715,11 +715,11 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         label: "Consequences",
         title: "How Does the Situation Continue—and How Do You Change It?",
         body:
-          "Recognition, truces, loans, reform, rumor, and historical memory keep working whether or not you intervene. Structural pressures keep an unattended simulation broadly historical without fixing it to a script; your choices alter what costs the next round can bear.",
+          "Recognition, truces, loans, reform, rumor, and historical memory keep working whether or not you intervene. Structural pressures keep an unattended simulation broadly historical; your choices alter what costs the next round can bear.",
         question:
           "A compromise may buy time and make allies doubt you. A reform may save revenue and provoke entrenched interests. You need to understand why consequences occurred and what room for recovery remains.",
         steps: [
-          "Use diplomacy, recognition, and exchange to buy time instead of solving everything by force.",
+          "Use diplomacy, recognition, and exchange to buy time and create room for military action.",
           "Read causal reports that separate immediate triggers, long pressures, and remaining paths to recovery.",
           "Let earlier choices persist as credibility, grievances, institutional precedent, and material loss.",
         ],
@@ -737,7 +737,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
       overviewTitle: "What It Is",
       questionsTitle: "What You Do",
       feedbackTitle: "What You See",
-      guardrailsTitle: "What It Is Not",
+      guardrailsTitle: "Where Strategy Comes From",
       relatedTitle: "Keep Exploring",
       backLabel: "Back to Gameplay",
     },
@@ -747,7 +747,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "Role and Perspective",
         source: "docs/sot/high-level/21-player-seat-ai-and-multiplayer.md",
         shortTitle: "Player Seat",
-        title: "Player Seat: You Are Not Omniscient",
+        title: "Player Seat: Office Defines What You Know",
         deck:
           "Choose a historical person or power position, then enter the crisis through that seat's permissions, channels, duties, and survival pressure.",
         summary:
@@ -765,7 +765,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "Perspective",
-            text: "You see the reports, rumors, and estimates available to your seat, not perfect world truth.",
+            text: "You see the reports, rumors, and estimates available to your seat.",
           },
           {
             label: "Continuity",
@@ -773,9 +773,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not turn player historical knowledge into a supernatural ability.",
-          "It does not make every role a symmetric country player.",
-          "It does not bypass offices, armies, finance, routes, or local acceptance.",
+          "You enter with modern knowledge, yet you can act only through era-internal offices, relationships, and documentary channels.",
+          "Each role carries different authority, sightlines, resources, and risks—strategy grows from those differences.",
+          "Your seat plugs you into offices, armies, finance, routes, and local acceptance; without those conditions, intent rarely becomes reality.",
         ],
         relatedSlugs: ["orders-messages", "authority-control", "intelligence-security"],
       },
@@ -788,7 +788,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "Drafting, queues, messengers, travel, acknowledgement, stale reports, and local acceptance all constrain a command.",
         summary:
-          "An order is not an instant map edit. The planning view organizes intent into two to four visible strategic priorities rather than action points; orders pass through staff drafting, node queues, couriers, and local validation, while routine affairs can continue through delegated officials and institutions.",
+          "After an order leaves your desk, it still passes through staff drafting, node queues, couriers, and local validation. The planning view organizes intent into two to four visible strategic priorities, while routine affairs can continue through delegated officials and institutions.",
         indexPoints: ["Strategic priorities", "Delegated routines", "Command lifecycle"],
         questions: [
           "Set two to four current strategic priorities, deciding which to press personally and which to leave to officials or established routines.",
@@ -802,7 +802,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "Lifecycle",
-            text: "You track drafting, dispatch, arrival, acceptance, execution, and reporting rather than a single completion mark.",
+            text: "You track drafting, dispatch, arrival, acceptance, execution, and reporting.",
           },
           {
             label: "Options",
@@ -810,9 +810,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not turn two to four strategic priorities into monthly action points.",
-          "It does not let distant state change before an order arrives.",
-          "It does not make pause a frozen editing board for freely rearranging every command.",
+          "Plans organize intent into two to four visible strategic priorities; routines move through delegation, while urgent orders queue, travel, and wait for acknowledgement.",
+          "Distant places keep running under existing conditions until an order arrives and is accepted.",
+          "You can change time speed, but the world and orders already in motion keep advancing—so you re-plan under delay.",
         ],
         relatedSlugs: ["player-seat", "place-flow", "battle-engagement"],
       },
@@ -825,7 +825,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "The court may hold legitimacy, the army holds force, gentry hold execution, merchants hold credit, and enemies hold pressure.",
         summary:
-          "Places are not simply yours or theirs. You may have a legal claim without tax access; an army may impose order without civil rule; and local elites can decide whether an order behaves like an order at all.",
+          "You may have a legal claim without tax access; an army may impose order without civil rule; and local elites can decide whether an order behaves like an order at all.",
         indexPoints: ["Layered control", "Local cooperation", "Decaying reach"],
         questions: [
           "Spend scarce administrative attention on a city, crossing, or military command.",
@@ -839,7 +839,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "Inertia",
-            text: "Control usually shifts gradually rather than flipping instantly after one order.",
+            text: "Control usually shifts gradually and needs sustained effort to change.",
           },
           {
             label: "Cause",
@@ -847,9 +847,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not treat map color as rule.",
-          "It does not merge the Jiangbei Four Towns into one obedient or disobedient block.",
-          "It does not let players edit control values directly.",
+          "Map color is only the surface—you manage claims, garrisons, revenue, and local willingness separately.",
+          "Each Jiangbei command has its own leaders, supply, and interests, and must be handled on its own terms.",
+          "You change conditions through political, administrative, military, and bargain actions—not by editing control values.",
         ],
         relatedSlugs: ["society-actors", "war-occupation", "legitimacy-rumors"],
       },
@@ -860,7 +860,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         shortTitle: "Society",
         title: "Society and Characters: People Push Back",
         deck:
-          "Refugees, gentry, salt merchants, transport guilds, military households, officials, and generals are not backdrop.",
+          "Refugees, gentry, salt merchants, transport guilds, military households, officials, and generals cooperate, bargain, obstruct, or defect.",
         summary:
           "Population creates hunger, tax, migration, and unrest pressure. Special groups provide grain, silver, boats, artisans, training, reputation, and obstruction. Characters decide how orders are executed, bent, or betrayed.",
         indexPoints: ["Mass pressure", "Special groups", "Key people"],
@@ -884,9 +884,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not become a household-by-household census.",
-          "It does not make every profession a clickable faction.",
-          "It does not treat armies as ordinary social groups.",
+          "Society enters play as mass pressure, key groups, and key people—so you can grab the real levers.",
+          "Strategy focuses on groups and characters who can move grain, silver, boats, reputation, obstruction, and execution.",
+          "Armies run on military institutions and supply pressure, and must be managed as military power centers.",
         ],
         relatedSlugs: ["authority-control", "economy-relief", "legitimacy-rumors"],
       },
@@ -921,9 +921,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not make geography only background art.",
-          "It does not start with an opaque full market or max-flow model.",
-          "It does not treat frontier or natural zones as free empty land.",
+          "The map is a network where orders, grain, armies, and rumors can clog—securing and rerouting paths is strategy.",
+          "Route feedback stays readable: you can see whether distance, ferries, capacity, security, or cooperation is blocking you.",
+          "Frontier and natural zones carry travel, season, and supply cost, and must be handled on those terms.",
         ],
         relatedSlugs: ["orders-messages", "economy-relief", "war-occupation"],
       },
@@ -958,9 +958,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not become a full commodity market simulator.",
-          "It does not reduce salt, grain, silver, timber, and transport to one national resource pool.",
-          "It does not pull industrial gameplay into the Southern Ming demo.",
+          "The economy focuses on grain, silver, salt, transport, and credit—the shortages that define a crisis.",
+          "Goods live in stores, routes, and places; opening granaries saves lives and can empty next month's army reserve.",
+          "The Southern Ming demo prioritizes relief, army supply, and fiscal pressure, leaving later industrial expansion to later chapters.",
         ],
         relatedSlugs: ["society-actors", "place-flow", "war-occupation"],
       },
@@ -974,7 +974,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "Armies need grain, pay, routes, commanders, institutions, and local tolerance; they can save a state or hollow it out.",
         summary:
-          "War is more than troop count. Forces arise from military institutions, consume grain and society, obey or resist command, and reshape local authority through garrisoning, route security, occupation, and requisition.",
+          "Forces arise from military institutions, consume grain and society, obey or resist command, and reshape local authority through garrisoning, route security, occupation, and requisition.",
         indexPoints: ["Pay and supply", "Commander autonomy", "Occupation cost"],
         questions: [
           "Feed one army while abandoning another place, relief plan, or office budget.",
@@ -996,9 +996,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not start as a tactical battle board.",
-          "It does not make occupation equal administration.",
-          "It does not give every Jiangbei command the same reaction.",
+          "At the strategic layer you manage grain, pay, command, commanders, and local tolerance—how armies are fed, trusted, and restrained.",
+          "After occupation you still conciliate, install offices, requisition, or recognize autonomy to turn military presence into lasting order.",
+          "Jiangbei commands differ by leader and interest, so their reactions and leverage differ as well.",
         ],
         relatedSlugs: ["battle-engagement", "economy-relief", "authority-control"],
       },
@@ -1007,7 +1007,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "Battle and Campaigns",
         source: "docs/sot/high-level/15-battle-and-engagement-resolution.md",
         shortTitle: "Battles",
-        title: "Battle Resolution: Victory Is Not One Power Number",
+        title: "Battle Resolution: Conditions Decide Victory",
         deck:
           "A battle can turn on late orders, broken supply, wetland deployment, bad guides, morale, or an unpaid camp.",
         summary:
@@ -1033,9 +1033,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not explain every result with one hidden combat score.",
-          "It does not let random events decide outcomes without prior risk.",
-          "It does not simulate every background clash at the same fidelity.",
+          "Battle reports break down command, supply, morale, terrain, and local support so you can see where victory came from.",
+          "Rain, intercepted messages, disease, and pay failure arise from existing risks—chance remains traceable.",
+          "Key battles resolve at high fidelity; background clashes feed lighter pressure into supply, morale, and local order.",
         ],
         relatedSlugs: ["war-occupation", "orders-messages", "intelligence-security"],
       },
@@ -1048,7 +1048,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "Recognition, ceasefires, grain loans, trade access, cooperation, and autonomy bargains solve one pressure while moving another inside.",
         summary:
-          "Diplomacy is not a relation score. You negotiate who recognizes whom, who promises what, who can execute it, who opposes it internally, what breach would damage, and how the bargain changes legitimacy and local power.",
+          "You negotiate who recognizes whom, who promises what, who can execute it, who opposes it internally, what breach would damage, and how the bargain changes legitimacy and local power.",
         indexPoints: ["Recognition", "Obligations", "Credibility"],
         questions: [
           "Recognize a military command or outside power in exchange for defense, grain, silver, or time.",
@@ -1058,7 +1058,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         feedback: [
           {
             label: "Clauses",
-            text: "Agreements break into concrete promises instead of instant magical benefits.",
+            text: "Agreements break into concrete promises that still need time, routes, and internal conditions to deliver.",
           },
           {
             label: "Internal",
@@ -1070,9 +1070,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not replace diplomacy with one friendliness number.",
-          "It does not let allies ignore route, supply, and internal politics.",
-          "It does not make trade or recognition pure upside buttons.",
+          "Diplomacy turns on recognition, clauses, capacity to deliver, and credibility—every promise has someone who must pay.",
+          "Aid still faces routes, supply, and the other side's internal politics; a promise only helps if it can move.",
+          "Trade and recognition buy time and resources while also shifting legitimacy and local power.",
         ],
         relatedSlugs: ["legitimacy-rumors", "intelligence-security", "authority-control"],
       },
@@ -1086,7 +1086,7 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         deck:
           "Dikes, ledgers, drill, firearms, boat repair, and convoy scheduling need people, materials, routes, authority, acceptance, and upkeep.",
         summary:
-          "Reform is not a tech-tree unlock. You may know what should be done while lacking artisans, tools, ledgers, funding, routes, security, legitimacy, or people who can turn a pilot into an institution.",
+          "You may know what should be done while lacking artisans, tools, ledgers, funding, routes, security, legitimacy, or people who can turn a pilot into an institution.",
         indexPoints: ["Diagnosis", "Pilots", "Upkeep"],
         questions: [
           "Fund a pilot, appoint a reformer, recruit craftsmen, protect specialists, or bargain with opponents.",
@@ -1108,9 +1108,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not use linear technology ages.",
-          "It does not grant instant national modifiers.",
-          "It does not let modern player knowledge skip historical execution conditions.",
+          "Reform advances by bottleneck: knowledge, people, materials, money, routes, authority, and acceptance all matter.",
+          "Success grows from pilots, then costs to scale; nationwide effects come from institutions, not a single click.",
+          "Knowing the answer still means fitting it into the era's social execution conditions.",
         ],
         relatedSlugs: ["economy-relief", "society-actors", "legitimacy-rumors"],
       },
@@ -1119,11 +1119,11 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "Legitimacy and Rumor",
         source: "docs/sot/high-level/18-ideology-legitimacy-and-information.md",
         shortTitle: "Legitimacy",
-        title: "Legitimacy and Rumor: Events Are Not Beliefs",
+        title: "Legitimacy and Rumor: What Happened Is Not What People Believe",
         deck:
           "Relief, victory, succession, taxation, military autonomy, and recognition are interpreted differently by different audiences.",
         summary:
-          "Legitimacy is not one national meter. Gentry, merchants, military households, refugees, officials, and enemies interpret your actions through their interests, memory, information channels, and ideas of order.",
+          "Gentry, merchants, military households, refugees, officials, and enemies interpret your actions through their interests, memory, information channels, and ideas of order.",
         indexPoints: ["Multi-sided legitimacy", "Topic stance", "Rumor spread"],
         questions: [
           "Issue edicts, hold rites, publish relief accounts, punish corruption, or reward loyalty.",
@@ -1145,9 +1145,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not make legitimacy a universal prestige bar.",
-          "It does not let propaganda erase material or military failure.",
-          "It does not let narrative AI invent facts that did not happen.",
+          "Legitimacy is read by audience and issue: the same action can land differently with each group.",
+          "Propaganda has to meet material and military reality; empty words will not cover empty granaries or broken armies.",
+          "Rumor and reports stay anchored to what happened; narrative explains the state without inventing facts the simulation never produced.",
         ],
         relatedSlugs: ["society-actors", "diplomacy-recognition", "historical-consequences"],
       },
@@ -1182,9 +1182,9 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
         ],
         guardrails: [
-          "It does not give the player full omniscience.",
-          "It does not become a separate assassination game.",
-          "It does not let reports overwrite world truth; they change what actors believe.",
+          "You only have the reports your seat can collect, intercept, or buy—blind spots are part of the strategy.",
+          "Intelligence centers on scouting, informants, verification, secrecy, and exposure risk in service of orders and campaigns.",
+          "Reports change what characters and AI believe they know; world truth still advances through the simulation.",
         ],
         relatedSlugs: ["player-seat", "orders-messages", "battle-engagement"],
       },
@@ -1193,11 +1193,11 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
         category: "Historical Consequences",
         source: "docs/sot/high-level/25-historical-state-modifiers-and-causal-memory.md",
         shortTitle: "Consequences",
-        title: "Historical Consequences: The World Does Not Wait for the Player",
+        title: "Historical Consequences: The World Keeps Moving",
         deck:
           "Enthronement disputes, military merit, factional memory, arrears, failed relief, and past bargains keep moving the situation beyond player intervention.",
         summary:
-          "The design direction is neither a fixed event tree nor causeless randomness. Characters, groups, and institutions act from resources, interests, information, and existing relationships. Structural pressures keep an unattended simulation broadly historical without locking it to one ending; causally grounded intervention can redirect events and must carry its aftereffects.",
+          "Characters, groups, and institutions act from resources, interests, information, and existing relationships. Structural pressures keep an unattended simulation broadly historical. Causally grounded intervention can redirect events and must carry its aftereffects.",
         indexPoints: ["Unattended direction", "Causal reports", "Recovery room"],
         questions: [
           "Compensate, threaten, replace, or work around a command or faction with old grievances.",
@@ -1215,13 +1215,13 @@ export const gameplayContent: Record<Locale, GameplayContent> = {
           },
           {
             label: "Recovery",
-            text: "Reports distinguish what can still be repaired, what requires long recovery, and what is becoming difficult to reverse rather than merely declaring success or failure.",
+            text: "Reports mark what can still be repaired, what needs long recovery, and what is becoming hard to reverse.",
           },
         ],
         guardrails: [
-          "It does not become a hard-date event tree or guarantee the same historical outcome every run.",
-          "It does not turn unsourced personality claims into hidden penalties.",
-          "It does not let later historical context rewrite outcomes already settled.",
+          "Structural pressures keep an unattended world broadly historical; causally grounded intervention can redirect events and leave aftereffects.",
+          "Character and situation judgments stay sourced and uncertain where the record is thin—you read pressure and opportunity, not a hidden penalty table.",
+          "Settled results remain as credibility, grievances, and material loss; later explanation cannot rewrite what already resolved.",
         ],
         relatedSlugs: ["legitimacy-rumors", "authority-control", "diplomacy-recognition"],
       },

@@ -1,6 +1,6 @@
 ---
 name: sync-concept-wiki-website
-description: Sync and verify the Celestial Mandate concept collection public wiki and Astro website. Use when Codex needs to update website or wiki output from the adjacent celestial-mandate references, regenerate public wiki JSON and generated TypeScript, align Chinese-first product copy and English translations, build the Astro site, run configured website deploys, or prepare commit and push work for this repository.
+description: Sync and verify the Celestial Mandate concept collection public wiki and Astro website. Use when an agent needs to update website or wiki output from the adjacent celestial-mandate references, regenerate public wiki JSON and generated TypeScript, align Chinese-first product copy and English translations, build the Astro site, run configured website deploys, or prepare commit and push work for this repository.
 ---
 
 # Sync Concept Wiki Website

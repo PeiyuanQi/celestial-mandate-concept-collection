@@ -5,4 +5,5 @@ dist/
 .npm-cache/
 .playwright-mcp/
 .local/
+.obsidian/
 !package-lock.json

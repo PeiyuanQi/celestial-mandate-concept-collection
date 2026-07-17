@@ -37,6 +37,7 @@ const absoluteUrl = (path: string) =>
   new URL(withBasePath(path), Astro.site).toString();
 const socialImages: Record<SitePage, string> = {
   home: "/images/hero-command-table.png",
+  gameGuide: "/images/hero-command-table.png",
   gameplay: "/images/hero-gameplay-relay-station.png",
   dataPacks: "/images/hero-data-packs-archive.png",
   chapterOne: "/images/hero-po-zhen-zi-southern-ming.png",
@@ -53,10 +54,13 @@ const currentUrl = absoluteUrl(currentRoute);
 const defaultUrl = absoluteUrl(routeForLocale(defaultLocale));
 const navHref = (href: string) => withBasePath(href);
 const isExactRoute = (href: string) => href === currentRoute;
+const isRouteWithin = (href: string) =>
+  isExactRoute(href) ||
+  (href !== "/" && href !== "/en/" && currentRoute.startsWith(href));
 const isSectionActive = (item: SiteContent["nav"][number]) =>
   item.href === pageRoutes[locale][currentPage] ||
-  isExactRoute(item.href) ||
-  Boolean(item.children?.some((child) => isExactRoute(child.href)));
+  isRouteWithin(item.href) ||
+  Boolean(item.children?.some((child) => isRouteWithin(child.href)));
 const showWikiNotice = currentPage === "wiki";
 const buildYear = new Date().getFullYear();
 const brandIconPath = withBasePath("/brand-icon.svg");
@@ -115,14 +119,13 @@ const submenuToggleLabel = locale === "zh-Hans" ? "展开子菜单" : "Toggle su
         </button>
         <nav class="site-nav" aria-label={pageContent.navAriaLabel} data-mobile-nav-menu>
           {
-            pageContent.nav.map((item) => (
+            pageContent.nav.map((item, index) => (
               <div class={`nav-item${item.children ? " has-submenu" : ""}`}>
                 <div class="nav-link-row">
                   <a
                     class={`nav-link${isSectionActive(item) ? " active" : ""}`}
                     href={navHref(item.href)}
                     aria-current={isExactRoute(item.href) ? "page" : undefined}
-                    aria-haspopup={item.children ? "true" : undefined}
                   >
                     {item.label}
                   </a>
@@ -132,6 +135,7 @@ const submenuToggleLabel = locale === "zh-Hans" ? "展开子菜单" : "Toggle su
                       type="button"
                       aria-label={`${submenuToggleLabel}: ${item.label}`}
                       aria-expanded="false"
+                      aria-controls={`nav-submenu-${index}`}
                       data-submenu-toggle
                     >
                       <span class="submenu-toggle-icon" aria-hidden="true"></span>
@@ -139,18 +143,19 @@ const submenuToggleLabel = locale === "zh-Hans" ? "展开子菜单" : "Toggle su
                   )}
                 </div>
                 {item.children && (
-                  <div class="nav-submenu" role="menu">
+                  <ul class="nav-submenu" id={`nav-submenu-${index}`}>
                     {item.children.map((child) => (
-                      <a
-                        class={isExactRoute(child.href) ? "active" : ""}
-                        href={navHref(child.href)}
-                        role="menuitem"
-                        aria-current={isExactRoute(child.href) ? "page" : undefined}
-                      >
-                        {child.label}
-                      </a>
+                      <li>
+                        <a
+                          class={isExactRoute(child.href) ? "active" : ""}
+                          href={navHref(child.href)}
+                          aria-current={isExactRoute(child.href) ? "page" : undefined}
+                        >
+                          {child.label}
+                        </a>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 )}
               </div>
             ))
@@ -273,6 +278,12 @@ const submenuToggleLabel = locale === "zh-Hans" ? "展开子菜单" : "Toggle su
 
             const willOpen = navItem.getAttribute("data-submenu-open") !== "true";
             if (willOpen) {
+              for (const openItem of navRoot.querySelectorAll("[data-submenu-open]")) {
+                if (openItem !== navItem) openItem.removeAttribute("data-submenu-open");
+              }
+              for (const openToggle of navRoot.querySelectorAll("[data-submenu-toggle]")) {
+                if (openToggle !== submenuToggle) openToggle.setAttribute("aria-expanded", "false");
+              }
               navItem.setAttribute("data-submenu-open", "true");
             } else {
               navItem.removeAttribute("data-submenu-open");

@@ -1,4 +1,4 @@
-import { pageRoutes } from "../routes";
+import { gameGuideArticlePath, pageRoutes } from "../routes";
 import { type HomePageContent, type Locale } from "../types";
 
 export const homePageContent: Record<Locale, HomePageContent> = {
@@ -19,7 +19,17 @@ export const homePageContent: Record<Locale, HomePageContent> = {
     navAriaLabel: "网站导航",
     nav: [
       { href: pageRoutes["zh-Hans"].home, label: "首页" },
-      { href: pageRoutes["zh-Hans"].gameplay, label: "玩法介绍" },
+      {
+        href: pageRoutes["zh-Hans"].gameGuide,
+        label: "游戏指南",
+        children: [
+          { href: pageRoutes["zh-Hans"].gameGuide, label: "指南总览" },
+          { href: pageRoutes["zh-Hans"].gameplay, label: "玩法介绍" },
+          { href: gameGuideArticlePath("zh-Hans", "vision"), label: "游戏愿景" },
+          { href: gameGuideArticlePath("zh-Hans", "design"), label: "设计原则" },
+          { href: gameGuideArticlePath("zh-Hans", "systems"), label: "系统蓝图" },
+        ],
+      },
       {
         href: pageRoutes["zh-Hans"].dataPacks,
         label: "资料片",
@@ -43,8 +53,8 @@ export const homePageContent: Record<Locale, HomePageContent> = {
       imageAlt: "一张铺满地图、路线、筹码、封蜡与报告的指挥桌。",
       actions: [
         {
-          href: pageRoutes["zh-Hans"].gameplay,
-          label: "玩法介绍",
+          href: pageRoutes["zh-Hans"].gameGuide,
+          label: "游戏指南",
           variant: "primary",
         },
         {
@@ -107,7 +117,17 @@ export const homePageContent: Record<Locale, HomePageContent> = {
     navAriaLabel: "Site navigation",
     nav: [
       { href: pageRoutes.en.home, label: "Home" },
-      { href: pageRoutes.en.gameplay, label: "Gameplay" },
+      {
+        href: pageRoutes.en.gameGuide,
+        label: "Game Guide",
+        children: [
+          { href: pageRoutes.en.gameGuide, label: "Guide Overview" },
+          { href: pageRoutes.en.gameplay, label: "Gameplay" },
+          { href: gameGuideArticlePath("en", "vision"), label: "Game Vision" },
+          { href: gameGuideArticlePath("en", "design"), label: "Design Principles" },
+          { href: gameGuideArticlePath("en", "systems"), label: "Systems Blueprint" },
+        ],
+      },
       {
         href: pageRoutes.en.dataPacks,
         label: "DLC",
@@ -132,8 +152,8 @@ export const homePageContent: Record<Locale, HomePageContent> = {
         "A command table with layered maps, routes, tokens, wax seals, and reports.",
       actions: [
         {
-          href: pageRoutes.en.gameplay,
-          label: "Gameplay",
+          href: pageRoutes.en.gameGuide,
+          label: "Game Guide",
           variant: "primary",
         },
         {

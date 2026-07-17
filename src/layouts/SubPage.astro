@@ -40,6 +40,12 @@ type PageHeroImage = {
 };
 
 const pageHeroImages: Record<Exclude<SitePage, "home">, PageHeroImage> = {
+  gameGuide: {
+    src: "/images/hero-command-table.png",
+    width: 1672,
+    height: 941,
+    alt: pageContent.gameGuide.heroImageAlt,
+  },
   gameplay: {
     src: "/images/hero-gameplay-relay-station.png",
     width: 1659,
@@ -69,6 +75,11 @@ const pageHeroImages: Record<Exclude<SitePage, "home">, PageHeroImage> = {
 const pageHeroImage = pageHeroImages[currentPage];
 const heroImagePath = withBasePath(pageHeroImage.src);
 const defaultPageIntro = {
+  gameGuide: {
+    kicker: pageContent.gameGuide.kicker,
+    title: pageContent.gameGuide.title,
+    body: pageContent.gameGuide.body,
+  },
   gameplay: {
     kicker: pageContent.gameplay.kicker,
     title: pageContent.gameplay.title,

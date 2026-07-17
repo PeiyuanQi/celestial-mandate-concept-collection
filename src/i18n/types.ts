@@ -3,6 +3,7 @@ export const supportedLocales = ["zh-Hans", "en"] as const;
 export type Locale = (typeof supportedLocales)[number];
 export type SitePage =
   | "home"
+  | "gameGuide"
   | "gameplay"
   | "dataPacks"
   | "chapterOne"
@@ -51,6 +52,79 @@ export type GameplaySystemGroup = {
   question: string;
   steps: string[];
   systemSlugs: string[];
+};
+
+export type GameGuideItem = {
+  label: string;
+  text: string;
+};
+
+export type GameGuideSection = {
+  kicker: string;
+  title: string;
+  body: string;
+  layout: "sequence" | "grid" | "comparison";
+  items: GameGuideItem[];
+  note?: string;
+};
+
+export type GameGuideArticle = {
+  slug: string;
+  navLabel: string;
+  category: string;
+  kicker: string;
+  title: string;
+  body: string;
+  summary: string;
+  indexPoints: string[];
+  sections: GameGuideSection[];
+  closing: string;
+};
+
+export type GameGuideContent = {
+  kicker: string;
+  title: string;
+  body: string;
+  heroImageAlt: string;
+  intro: {
+    kicker: string;
+    title: string;
+    body: string;
+  };
+  gameplayCard: {
+    label: string;
+    title: string;
+    body: string;
+    points: string[];
+    openLabel: string;
+  };
+  library: {
+    kicker: string;
+    title: string;
+    body: string;
+    openLabel: string;
+  };
+  modePromise: {
+    kicker: string;
+    title: string;
+    body: string;
+    gameLabel: string;
+    gameText: string;
+    simulationLabel: string;
+    simulationText: string;
+    sharedRule: string;
+  };
+  status: {
+    label: string;
+    title: string;
+    body: string;
+  };
+  articleDetail: {
+    backLabel: string;
+    contentsLabel: string;
+    closingLabel: string;
+  };
+  articles: GameGuideArticle[];
 };
 
 export type HeroSignal = {
@@ -163,6 +237,7 @@ export type WikiContent = {
 };
 
 export type SiteContent = HomePageContent & {
+  gameGuide: GameGuideContent;
   gameplay: GameplayContent;
   dataPack: DataPackContent;
   wiki: WikiContent;

@@ -10,6 +10,7 @@ This repo includes an Astro static website for introducing Celestial Mandate as 
 - The preferred external website target is configured locally; deploy it with `npm run deploy-website`.
 - The site is Chinese-first. The canonical homepage is `/`; English is available at `/en/`.
 - Locale routes and shared content types live in `src/i18n/routes.ts` and `src/i18n/types.ts`; page copy is split under `src/i18n/pages/`, while data-pack copy lives under `src/i18n/data-packs/`.
+- The player-facing Game Guide lives under `/game-guide/` and `/en/game-guide/`; its localized product vision, design principles, and systems blueprint are authored in `src/i18n/pages/game-guide.ts` and rendered through the shared guide layouts under `src/layouts/subpages/`.
 - `src/i18n/content.ts` aggregates localized content for the Astro pages; shared page markup lives in `src/layouts/`, with individual subpage bodies under `src/layouts/subpages/`.
 - When updating product copy, update the Chinese source first, then keep the English translation aligned.
 - Use `资料片` as the Chinese display term for DLC; keep the English display term as `DLC`.

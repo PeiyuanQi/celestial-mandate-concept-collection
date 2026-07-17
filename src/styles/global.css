@@ -206,6 +206,7 @@ h3 {
   left: 0;
   z-index: 30;
   min-width: 13.5rem;
+  margin: 0;
   padding: 0.35rem;
   border: 1px solid rgba(246, 241, 230, 0.18);
   border-radius: 8px;
@@ -218,6 +219,11 @@ h3 {
   background: rgba(17, 22, 16, 0.86);
   box-shadow: 0 16px 44px rgba(17, 22, 16, 0.28);
   backdrop-filter: blur(14px);
+  list-style: none;
+}
+
+.nav-submenu li {
+  margin: 0;
 }
 
 .nav-submenu::before {
@@ -1434,6 +1440,502 @@ body[data-locale="zh-Hans"] .subpage-hero h1 {
   line-height: 1.06;
 }
 
+.guide-overview,
+.guide-library,
+.guide-mode-promise,
+.guide-status,
+.guide-article {
+  padding: 5rem 0;
+}
+
+.guide-overview {
+  background:
+    linear-gradient(180deg, var(--paper), #efe6d3 72%, var(--paper-deep)),
+    var(--paper);
+}
+
+.guide-overview-grid,
+.guide-mode-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1.12fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.guide-overview-copy h2,
+.guide-library-heading h2,
+.guide-mode-heading h2,
+.guide-status-inner h2 {
+  margin-top: 0.58rem;
+  font-family: var(--font-display);
+  line-height: 1.05;
+}
+
+.guide-overview-copy h2,
+.guide-mode-heading h2 {
+  max-width: 13ch;
+  font-size: 4rem;
+}
+
+.guide-overview-copy > p:last-child,
+.guide-library-heading > p:last-child,
+.guide-mode-heading > p:last-child,
+.guide-status-inner > p:last-child {
+  margin-top: 1rem;
+  color: var(--ink-soft);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.guide-gameplay-entry {
+  display: grid;
+  min-height: 21rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(17, 22, 16, 0.2);
+  border-radius: 8px;
+  color: var(--paper);
+  background:
+    linear-gradient(135deg, rgba(53, 95, 82, 0.96), rgba(17, 22, 16, 0.95)),
+    var(--ink);
+  box-shadow: var(--shadow);
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.guide-gameplay-entry:hover,
+.guide-gameplay-entry:focus-visible {
+  border-color: var(--brass);
+  transform: translateY(-2px);
+}
+
+.guide-gameplay-entry > span,
+.guide-document-category {
+  color: var(--brass);
+  font-size: 0.77rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.guide-gameplay-entry strong {
+  margin-top: 0.55rem;
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.guide-gameplay-entry p {
+  margin-top: 1rem;
+  color: rgba(246, 241, 230, 0.82);
+  font-size: 1.02rem;
+}
+
+.guide-gameplay-entry ul,
+.guide-document-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: end;
+  gap: 0.42rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guide-gameplay-entry li {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgba(246, 241, 230, 0.18);
+  border-radius: 6px;
+  color: rgba(246, 241, 230, 0.82);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.guide-gameplay-entry em,
+.guide-document-card em {
+  justify-self: start;
+  align-self: end;
+  margin-top: 1.25rem;
+  padding-bottom: 0.18rem;
+  border-bottom: 2px solid var(--brass);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.guide-library {
+  color: var(--paper);
+  background:
+    linear-gradient(110deg, rgba(37, 48, 41, 0.98), rgba(17, 22, 16, 0.98)),
+    var(--ink);
+}
+
+.guide-library-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(280px, 1.3fr);
+  gap: 1.5rem 3rem;
+  align-items: end;
+}
+
+.guide-library-heading .kicker {
+  grid-column: 1 / -1;
+}
+
+.guide-library-heading h2 {
+  max-width: 14ch;
+  font-size: 3.5rem;
+}
+
+.guide-library-heading > p:last-child {
+  margin-top: 0;
+  color: rgba(246, 241, 230, 0.72);
+}
+
+.guide-document-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 2.2rem;
+}
+
+.guide-document-card {
+  display: grid;
+  grid-template-rows: auto auto auto minmax(6.5rem, auto) auto auto;
+  min-height: 27rem;
+  padding: 1.2rem;
+  border: 1px solid rgba(246, 241, 230, 0.16);
+  border-radius: 8px;
+  color: var(--paper);
+  background: rgba(246, 241, 230, 0.055);
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.guide-document-card:hover,
+.guide-document-card:focus-visible {
+  border-color: rgba(216, 183, 93, 0.72);
+  background: rgba(246, 241, 230, 0.09);
+  transform: translateY(-2px);
+}
+
+.guide-document-index {
+  color: rgba(246, 241, 230, 0.42);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.guide-document-category {
+  margin-top: 1.1rem;
+}
+
+.guide-document-card > strong {
+  margin-top: 0.45rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.guide-document-card > p {
+  margin-top: 0.85rem;
+  color: rgba(246, 241, 230, 0.72);
+  font-size: 0.94rem;
+  line-height: 1.58;
+}
+
+.guide-document-card li {
+  padding: 0.28rem 0.45rem;
+  border: 1px solid rgba(79, 138, 139, 0.34);
+  border-radius: 6px;
+  color: #b8d4d0;
+  background: rgba(79, 138, 139, 0.08);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.guide-mode-promise {
+  background:
+    linear-gradient(180deg, var(--paper-deep), var(--paper)),
+    var(--paper);
+}
+
+.guide-mode-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.guide-mode-comparison article {
+  min-height: 15rem;
+  padding: 1.2rem;
+  border: 1px solid rgba(17, 22, 16, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.guide-mode-comparison article:first-child {
+  border-top: 4px solid var(--cinnabar);
+}
+
+.guide-mode-comparison article:nth-child(2) {
+  border-top: 4px solid var(--river);
+}
+
+.guide-mode-comparison article > span {
+  color: rgba(17, 22, 16, 0.42);
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+}
+
+.guide-mode-comparison h3 {
+  margin-top: 1.4rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.04;
+}
+
+.guide-mode-comparison article p {
+  margin-top: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.guide-shared-rule {
+  grid-column: 1 / -1;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--brass);
+  color: var(--ink);
+  background: rgba(216, 183, 93, 0.14);
+  font-weight: 850;
+}
+
+.guide-status {
+  padding: 3.5rem 0;
+  color: var(--paper);
+  background: var(--jade);
+}
+
+.guide-status-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(280px, 1.15fr);
+  gap: 0.8rem 3rem;
+  align-items: start;
+}
+
+.guide-status-inner .kicker {
+  grid-column: 1 / -1;
+  color: var(--brass);
+}
+
+.guide-status-inner h2 {
+  font-size: 2.9rem;
+}
+
+.guide-status-inner > p:last-child {
+  margin-top: 0;
+  color: rgba(246, 241, 230, 0.8);
+}
+
+.guide-article {
+  background:
+    linear-gradient(180deg, var(--paper), #efe6d3 58%, var(--paper-deep)),
+    var(--paper);
+}
+
+.guide-article-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.32fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.guide-article-rail {
+  position: sticky;
+  top: 6rem;
+  padding: 1rem 0;
+  border-top: 3px solid var(--cinnabar);
+  border-bottom: 1px solid var(--line);
+}
+
+.guide-article-category {
+  margin-top: 1.45rem;
+  color: var(--cinnabar);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.guide-article-rail h2 {
+  margin-top: 0.28rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.guide-article-rail ol {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guide-article-rail a:not(.system-back-link) {
+  display: grid;
+  grid-template-columns: 1.6rem minmax(0, 1fr);
+  gap: 0.5rem;
+  padding: 0.48rem 0.42rem;
+  border-radius: 6px;
+  color: rgba(17, 22, 16, 0.7);
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.guide-article-rail a:not(.system-back-link):hover,
+.guide-article-rail a:not(.system-back-link):focus-visible {
+  color: var(--ink);
+  background: rgba(193, 59, 39, 0.08);
+}
+
+.guide-article-rail a span {
+  color: var(--cinnabar);
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+.guide-article-body {
+  min-width: 0;
+}
+
+.guide-article-summary {
+  max-width: 52rem;
+  padding-left: 1.1rem;
+  border-left: 4px solid var(--brass);
+  color: var(--ink-soft);
+  font-size: 1.2rem;
+  line-height: 1.68;
+}
+
+.guide-section {
+  padding: 3.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.guide-section-heading {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.guide-section-heading > span {
+  color: rgba(193, 59, 39, 0.42);
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.guide-section-heading h2 {
+  max-width: 20ch;
+  margin-top: 0.45rem;
+  font-family: var(--font-display);
+  font-size: 3.1rem;
+  line-height: 1.06;
+}
+
+.guide-section-heading > div > p:last-child {
+  max-width: 50rem;
+  margin-top: 0.85rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.guide-section-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  margin-left: 4.4rem;
+}
+
+.guide-section-item {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid rgba(17, 22, 16, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.guide-section-item h3 {
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.guide-section-item p {
+  margin-top: 0.52rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.guide-section-sequence .guide-section-items {
+  grid-template-columns: 1fr;
+}
+
+.guide-section-sequence .guide-section-item {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(8rem, 0.28fr) minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  min-height: 5.4rem;
+}
+
+.guide-item-index {
+  color: var(--cinnabar);
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  line-height: 1;
+}
+
+.guide-section-sequence .guide-section-item p {
+  margin-top: 0;
+}
+
+.guide-section-comparison .guide-section-item:first-child {
+  border-top: 4px solid var(--cinnabar);
+}
+
+.guide-section-comparison .guide-section-item:nth-child(2) {
+  border-top: 4px solid var(--river);
+}
+
+.guide-section-note {
+  margin: 0.85rem 0 0 4.4rem;
+  padding: 0.8rem 0.95rem;
+  border-left: 4px solid var(--brass);
+  color: var(--ink-soft);
+  background: rgba(216, 183, 93, 0.13);
+  font-weight: 750;
+}
+
+.guide-article-closing {
+  margin-top: 3rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(53, 95, 82, 0.26);
+  border-radius: 8px;
+  background: rgba(53, 95, 82, 0.1);
+}
+
+.guide-article-closing > p:last-child {
+  margin-top: 0.6rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.22;
+}
+
 .scope {
   padding: 5rem 0;
   border-bottom: 1px solid var(--line);
@@ -2406,6 +2908,8 @@ body[data-locale="en"] .wiki-article-content h3 {
     gap: 0.2rem;
     width: auto;
     max-width: none;
+    max-height: calc(100svh - 6.2rem);
+    overflow-y: auto;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -2520,6 +3024,7 @@ body[data-locale="en"] .wiki-article-content h3 {
   .nav-submenu a {
     padding: 0.5rem 0.65rem 0.5rem 1rem;
     font-size: 0.86rem;
+    white-space: normal;
   }
 
   .language-switcher {
@@ -2744,6 +3249,131 @@ body[data-locale="en"] .wiki-article-content h3 {
 
   .footer-license [aria-hidden="true"] {
     display: none;
+  }
+}
+
+@media (max-width: 920px) {
+  .guide-overview-grid,
+  .guide-mode-grid,
+  .guide-library-heading,
+  .guide-status-inner,
+  .guide-article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-overview-copy h2,
+  .guide-mode-heading h2,
+  .guide-library-heading h2 {
+    max-width: 17ch;
+    font-size: 3.1rem;
+  }
+
+  .guide-gameplay-entry strong {
+    font-size: 2.9rem;
+  }
+
+  .guide-status-inner h2,
+  .guide-section-heading h2 {
+    font-size: 2.65rem;
+  }
+
+  .guide-document-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guide-document-card:last-child {
+    grid-column: 1 / -1;
+    min-height: 22rem;
+  }
+
+  .guide-article-rail {
+    position: static;
+  }
+
+  .guide-article-rail ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .guide-overview,
+  .guide-library,
+  .guide-mode-promise,
+  .guide-article {
+    padding: 3.5rem 0;
+  }
+
+  .guide-status {
+    padding: 3rem 0;
+  }
+
+  .guide-overview-copy h2,
+  .guide-mode-heading h2,
+  .guide-library-heading h2 {
+    font-size: 2.35rem;
+  }
+
+  .guide-gameplay-entry {
+    min-height: 19rem;
+  }
+
+  .guide-gameplay-entry strong {
+    font-size: 2.55rem;
+  }
+
+  .guide-document-grid,
+  .guide-mode-comparison,
+  .guide-section-items,
+  .guide-article-rail ol {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-document-card,
+  .guide-document-card:last-child {
+    grid-column: auto;
+    min-height: 24rem;
+  }
+
+  .guide-mode-comparison article {
+    min-height: 12rem;
+  }
+
+  .guide-section-heading {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    gap: 0.65rem;
+  }
+
+  .guide-section-heading > span {
+    font-size: 1.75rem;
+  }
+
+  .guide-section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .guide-section-items,
+  .guide-section-note {
+    margin-left: 0;
+  }
+
+  .guide-section-sequence .guide-section-item {
+    grid-template-columns: 2rem minmax(0, 1fr);
+  }
+
+  .guide-section-sequence .guide-section-item p {
+    grid-column: 2;
+  }
+
+  .guide-article-summary {
+    font-size: 1.05rem;
+  }
+
+  .guide-status-inner h2 {
+    font-size: 2.3rem;
+  }
+
+  .guide-article-closing > p:last-child {
+    font-size: 1.65rem;
   }
 }
 

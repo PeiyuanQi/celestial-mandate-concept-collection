@@ -1,0 +1,19 @@
+---
+import GameGuideArticlePage from "../../layouts/subpages/GameGuideArticlePage.astro";
+import { siteContent } from "../../i18n/content";
+
+export function getStaticPaths() {
+  return siteContent["zh-Hans"].gameGuide.articles.map((article) => ({
+    params: { article: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+---
+
+<GameGuideArticlePage
+  locale="zh-Hans"
+  pageContent={siteContent["zh-Hans"]}
+  article={article}
+/>

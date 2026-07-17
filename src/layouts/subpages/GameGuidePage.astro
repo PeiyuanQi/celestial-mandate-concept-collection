@@ -1,0 +1,97 @@
+---
+import {
+  gameGuideArticlePath,
+  pageRoutes,
+  type Locale,
+  type SiteContent,
+} from "../../i18n/content";
+import SubPage from "../SubPage.astro";
+
+interface Props {
+  pageContent: SiteContent;
+  locale: Locale;
+}
+
+const { pageContent, locale } = Astro.props;
+const basePath = import.meta.env.BASE_URL;
+const withBasePath = (path: string) =>
+  `${basePath.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
+const articleHref = (slug: string) =>
+  withBasePath(gameGuideArticlePath(locale, slug));
+---
+
+<SubPage locale={locale} currentPage="gameGuide" pageContent={pageContent}>
+  <section class="guide-overview" aria-labelledby="guide-overview-title">
+    <div class="section-inner guide-overview-grid">
+      <div class="guide-overview-copy">
+        <p class="kicker">{pageContent.gameGuide.intro.kicker}</p>
+        <h2 id="guide-overview-title">{pageContent.gameGuide.intro.title}</h2>
+        <p>{pageContent.gameGuide.intro.body}</p>
+      </div>
+      <a class="guide-gameplay-entry" href={withBasePath(pageRoutes[locale].gameplay)}>
+        <span>{pageContent.gameGuide.gameplayCard.label}</span>
+        <strong>{pageContent.gameGuide.gameplayCard.title}</strong>
+        <p>{pageContent.gameGuide.gameplayCard.body}</p>
+        <ul>
+          {pageContent.gameGuide.gameplayCard.points.map((point) => <li>{point}</li>)}
+        </ul>
+        <em>{pageContent.gameGuide.gameplayCard.openLabel}</em>
+      </a>
+    </div>
+  </section>
+
+  <section class="guide-library" aria-labelledby="guide-library-title">
+    <div class="section-inner">
+      <div class="guide-library-heading">
+        <p class="kicker">{pageContent.gameGuide.library.kicker}</p>
+        <h2 id="guide-library-title">{pageContent.gameGuide.library.title}</h2>
+        <p>{pageContent.gameGuide.library.body}</p>
+      </div>
+      <div class="guide-document-grid">
+        {pageContent.gameGuide.articles.map((article, index) => (
+          <a class="guide-document-card" href={articleHref(article.slug)}>
+            <span class="guide-document-index">{String(index + 1).padStart(2, "0")}</span>
+            <span class="guide-document-category">{article.category}</span>
+            <strong>{article.navLabel}</strong>
+            <p>{article.summary}</p>
+            <ul>
+              {article.indexPoints.map((point) => <li>{point}</li>)}
+            </ul>
+            <em>{pageContent.gameGuide.library.openLabel}</em>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="guide-mode-promise" aria-labelledby="guide-mode-title">
+    <div class="section-inner guide-mode-grid">
+      <div class="guide-mode-heading">
+        <p class="kicker">{pageContent.gameGuide.modePromise.kicker}</p>
+        <h2 id="guide-mode-title">{pageContent.gameGuide.modePromise.title}</h2>
+        <p>{pageContent.gameGuide.modePromise.body}</p>
+      </div>
+      <div class="guide-mode-comparison">
+        <article>
+          <span>01</span>
+          <h3>{pageContent.gameGuide.modePromise.gameLabel}</h3>
+          <p>{pageContent.gameGuide.modePromise.gameText}</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>{pageContent.gameGuide.modePromise.simulationLabel}</h3>
+          <p>{pageContent.gameGuide.modePromise.simulationText}</p>
+        </article>
+        <p class="guide-shared-rule">{pageContent.gameGuide.modePromise.sharedRule}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="guide-status" aria-labelledby="guide-status-title">
+    <div class="section-inner guide-status-inner">
+      <p class="kicker">{pageContent.gameGuide.status.label}</p>
+      <h2 id="guide-status-title">{pageContent.gameGuide.status.title}</h2>
+      <p>{pageContent.gameGuide.status.body}</p>
+    </div>
+  </section>
+</SubPage>

@@ -18,6 +18,7 @@
 - Prefer git worktrees for parallel or unrelated agent work so multiple agents can develop concurrently without colliding.
 - `.worktrees/` is ignored and may be used for project-local worktrees.
 - Treat existing uncommitted changes as user-owned unless told otherwise.
+- This is a single-maintainer project. Do not open a pull request unless the user explicitly requests one; direct commits and pushes to the current branch are the normal workflow.
 - Keep commits narrow; do not mix unrelated concept, reference, and workflow changes.
 - Prefer rebase-based conflict resolution unless the repo later documents a merge workflow.
 

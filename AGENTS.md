@@ -18,8 +18,24 @@
 - Prefer git worktrees for parallel or unrelated agent work so multiple agents can develop concurrently without colliding.
 - `.worktrees/` is ignored and may be used for project-local worktrees.
 - Treat existing uncommitted changes as user-owned unless told otherwise.
-- This is a single-maintainer project. Do not open a pull request unless the user explicitly requests one; direct commits and pushes to the current branch are the normal workflow.
-- Keep commits narrow; do not mix unrelated concept, reference, and workflow changes.
+- This is a single-maintainer project. Do not open a pull request unless the
+  user explicitly requests one; when a commit or push is requested, direct
+  delivery to the current branch is the normal workflow.
+- Minimize commit count. Do not create a commit per agent, turn, phase, file,
+  build, or review iteration, and do not use checkpoint, progress, WIP,
+  build-fix, or review-fix commits as agent state.
+- Unless the user requests a different boundary, keep a normal task uncommitted
+  through implementation and verification. When a commit is requested, produce
+  one coherent final commit for the requested change set without mixing
+  unrelated concept, reference, or workflow work.
+- If the same task already has an unpublished agent-owned commit, amend it
+  instead of appending another commit. If temporary local fixups already exist,
+  squash them before handoff. Never rewrite commits that predate the task, are
+  user-owned, or have been pushed or shared unless explicitly authorized.
+- Use multiple commits only when parts genuinely require independent review,
+  rollback, or release. In multi-agent work, the integrating agent owns the
+  final commit; delegated workers leave changes uncommitted unless assigned an
+  explicit commit boundary.
 - Prefer rebase-based conflict resolution unless the repo later documents a merge workflow.
 
 ## Content And Coding Rules

@@ -47,7 +47,7 @@ export const gameGuideContent: Record<Locale, GameGuideContent> = {
       label: "当前状态",
       title: "双模式是已确立的产品方向，研究工作台仍在设计与实现阶段。",
       body:
-        "当前正式 Rust/Bevy 宿主已可运行两条原生角色旅程（多尔衮、史可法），并提供四镇长期结算、原生存档/续入、确定性回放与受限报告。其余已编写角色、全国战区地图、完整报告钻取和研究工作台尚未完成；本页的历史模拟模式描述目标合同，不代表所有能力已开放。",
+        "当前正式 Rust/Bevy 宿主已可运行两条原生角色旅程（多尔衮、史可法）。史可法的江北四镇现有 Canwu 驱动的月度政策窗口：每月只能用印一项赈济、军镇协同或自治政策；下一月结算会把政策作为可追溯的模型来源写入报告后再重开窗口。原生存档/续入、确定性回放与受限报告均已覆盖这条循环。其余已编写角色、全国战区地图、完整报告钻取和研究工作台尚未完成；本页的历史模拟模式描述目标合同，不代表所有能力已开放。",
     },
     articleDetail: {
       backLabel: "返回游戏指南",
@@ -297,7 +297,7 @@ export const gameGuideContent: Record<Locale, GameGuideContent> = {
               "统一运行引擎与原子结算提供了基础；真正的研究模式仍需要补齐认知、随机、规则出处、导出与权限。",
             layout: "grid",
             items: [
-              { label: "已有基础", text: "正式 Rust/Bevy 宿主、两条原生角色旅程、江北四镇长期结算、原生存档续入、确定性回放与受限因果报告。" },
+              { label: "已有基础", text: "正式 Rust/Bevy 宿主、两条原生角色旅程、江北四镇的 Canwu 月度政策窗口与长期结算、原生存档续入、确定性回放与受限因果报告。" },
               { label: "认知缺口", text: "人物认知尚未成为完整独立状态，界面不能继续用当前真值代替迟到报告。" },
               { label: "复现缺口", text: "种子需要扩展为命名随机流、抽取位置、规则版本与数据语义哈希。" },
               { label: "检查缺口", text: "结果需要能够钻取到公式、参数、史料、假设、限制和运行谱系。" },
@@ -355,7 +355,7 @@ export const gameGuideContent: Record<Locale, GameGuideContent> = {
       label: "Current Status",
       title: "Dual-mode support is a ratified product direction; the research workbench is still being designed and implemented.",
       body:
-        "The formal Rust/Bevy host currently runs two native character journeys (Dorgon and Shi Kefa) with Jiangbei four-town long-run settlement, native save/continue, deterministic replay, and actor-scoped reports. The remaining authored roster, nationwide theatre map, full report drilldown, and research workbench remain incomplete; the Historical Simulation Mode pages describe the target contract rather than claiming every capability is open today.",
+        "The formal Rust/Bevy host currently runs two native character journeys (Dorgon and Shi Kefa). Shi Kefa’s Jiangbei four towns now use a Canwu-driven monthly policy window: each month permits one sealed relief, garrison-cooperation, or autonomy policy; the following month settles it as a traceable modelled report cause and reopens the window. Native save/continue, deterministic replay, and actor-scoped reports cover this loop. The remaining authored roster, nationwide theatre map, full report drilldown, and research workbench remain incomplete; the Historical Simulation Mode pages describe the target contract rather than claiming every capability is open today.",
     },
     articleDetail: {
       backLabel: "Back to Game Guide",
@@ -605,7 +605,7 @@ export const gameGuideContent: Record<Locale, GameGuideContent> = {
               "The shared run engine and atomic settlement provide a strong base. Real research support still needs complete knowledge, randomness, rule provenance, exports, and capability controls.",
             layout: "grid",
             items: [
-              { label: "Existing base", text: "Formal Rust/Bevy host, two native character journeys, Jiangbei four-town long-run settlement, native save/continue, deterministic replay, and actor-scoped reports." },
+              { label: "Existing base", text: "Formal Rust/Bevy host, two native character journeys, a Canwu monthly policy window and long-run settlement for the Jiangbei four towns, native save/continue, deterministic replay, and actor-scoped reports." },
               { label: "Knowledge gap", text: "Actor knowledge is not yet a complete independent state, and current truth cannot substitute for delayed reports." },
               { label: "Reproduction gap", text: "Seeds must become named random streams with draw positions, rule versions, and data semantic hashes." },
               { label: "Inspection gap", text: "Results must drill into formulas, parameters, evidence, assumptions, limitations, and run lineage." },
